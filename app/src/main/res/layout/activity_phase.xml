@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.aiton.taui.PhaseActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/add_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/big_button_up"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <RadioButton
+                android:id="@+id/main_tab_basetime"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+                android:checked="true"
+                android:text="时基" />
+
+            <RadioButton
+                android:id="@+id/main_tab_manual"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+
+                android:text="手控" />
+
+            <RadioButton
+                android:id="@+id/main_tab_phase"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+
+                android:text="相位" />
+
+            <RadioButton
+                android:id="@+id/main_tab_collision"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+                android:text="冲突" />
+
+            <RadioButton
+                android:id="@+id/main_tab_stage"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+                android:text="配时" />
+
+            <RadioButton
+                android:id="@+id/main_tab_detector"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+                android:text="检测器" />
+
+            <RadioButton
+                android:id="@+id/main_tab_checklight"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+                android:text="灯检" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

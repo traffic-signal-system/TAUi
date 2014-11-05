@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/back20130627"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left|center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/westLeft"
+            android:src="@drawable/greenone"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/westStriaght"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/westRight"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/westOther"
+            android:src="@drawable/greenone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right|center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/eastOther"
+            android:src="@drawable/greenone"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/eastRight"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/eastStriaght"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/eastLeft"
+            android:src="@drawable/greenone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/northOther"
+            android:src="@drawable/greenone"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/northRight"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/northStriaght"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/northLeft"
+            android:src="@drawable/greenone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="             "/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="              "/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/southOther"
+            android:src="@drawable/greenone"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/southRight"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/southStriaght"
+            android:src="@drawable/greenone"
+            />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:id="@+id/southLeft"
+            android:src="@drawable/greenone"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>
