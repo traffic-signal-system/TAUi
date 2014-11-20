@@ -33,25 +33,25 @@ public class ManaulActivity extends Activity {
     public final static int SUCCESS = 1;
     public final static int FAILURE = 0;
 
-    ImageView northLeft = (ImageView)findViewById(R.id.northLeft);
-    ImageView northStriaght = (ImageView)findViewById(R.id.northStriaght);
-    ImageView northRight = (ImageView)findViewById(R.id.northRight);
-    ImageView northOther = (ImageView)findViewById(R.id.northOther);
+    ImageView northLeft ;
+    ImageView northStriaght;
+    ImageView northRight;
+    ImageView northOther;
 
-    ImageView eastLeft = (ImageView)findViewById(R.id.eastLeft);
-    ImageView eastStriaght = (ImageView)findViewById(R.id.eastStriaght);
-    ImageView eastRight = (ImageView)findViewById(R.id.eastRight);
-    ImageView eastOther = (ImageView)findViewById(R.id.eastOther);
+    ImageView eastLeft;
+    ImageView eastStriaght;
+    ImageView eastRight;
+    ImageView eastOther;
 
-    ImageView southLeft = (ImageView)findViewById(R.id.southLeft);
-    ImageView southStriaght = (ImageView)findViewById(R.id.southStriaght);
-    ImageView southRight = (ImageView)findViewById(R.id.southRight);
-    ImageView southOther = (ImageView)findViewById(R.id.southOther);
+    ImageView southLeft;
+    ImageView southStriaght;
+    ImageView southRight ;
+    ImageView southOther;
 
-    ImageView westLeft = (ImageView)findViewById(R.id.westLeft);
-    ImageView westStriaght = (ImageView)findViewById(R.id.westStriaght);
-    ImageView westRight = (ImageView)findViewById(R.id.westRight);
-    ImageView westOther = (ImageView)findViewById(R.id.westOther);
+    ImageView westLeft ;
+    ImageView westStriaght;
+    ImageView westRight;
+    ImageView westOther;
     private Thread thread;
 
     public void updateRed(GbtDirec gbtDirec){
@@ -327,7 +327,27 @@ public class ManaulActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_manaul);
+        northLeft = (ImageView)findViewById(R.id.northLeft);
+        northStriaght = (ImageView)findViewById(R.id.northStriaght);
+        northRight = (ImageView)findViewById(R.id.northRight);
+        northOther = (ImageView)findViewById(R.id.northOther);
+
+        eastLeft = (ImageView)findViewById(R.id.eastLeft);
+        eastStriaght = (ImageView)findViewById(R.id.eastStriaght);
+        eastRight = (ImageView)findViewById(R.id.eastRight);
+        eastOther = (ImageView)findViewById(R.id.eastOther);
+
+        southLeft = (ImageView)findViewById(R.id.southLeft);
+        southStriaght = (ImageView)findViewById(R.id.southStriaght);
+        southRight = (ImageView)findViewById(R.id.southRight);
+        southOther = (ImageView)findViewById(R.id.southOther);
+
+        westLeft = (ImageView)findViewById(R.id.westLeft);
+        westStriaght = (ImageView)findViewById(R.id.westStriaght);
+        westRight = (ImageView)findViewById(R.id.westRight);
+        westOther = (ImageView)findViewById(R.id.westOther);
         thread = new Thread(runnable);
         thread.start();
     }
