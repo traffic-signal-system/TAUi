@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".FullscreenActivity"
+            android:name="cn.com.aiton.taui.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" >
@@ -22,52 +22,56 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PhaseActivity"
+            android:name="cn.com.aiton.taui.PhaseActivity"
             android:label="@string/title_activity_phase" >
         </activity>
         <activity
-            android:name=".PhaseConfigActivity"
+            android:name="cn.com.aiton.taui.PhaseConfigActivity"
             android:label="@string/title_activity_phase_config" >
         </activity>
         <activity
-            android:name=".BasetimeActivity"
+            android:name="cn.com.aiton.taui.BasetimeActivity"
             android:label="@string/title_activity_basetime" >
         </activity>
         <activity
-            android:name=".CollisionActivity"
+            android:name="cn.com.aiton.taui.CollisionActivity"
             android:label="@string/title_activity_collision" >
         </activity>
         <activity
-            android:name=".StageActivity"
+            android:name="cn.com.aiton.taui.StageActivity"
             android:label="@string/title_activity_stage" >
         </activity>
         <activity
-            android:name=".DetectorActivity"
+            android:name="cn.com.aiton.taui.DetectorActivity"
             android:label="@string/title_activity_detector" >
         </activity>
         <activity
-            android:name=".LampCheckActivity"
+            android:name="cn.com.aiton.taui.LampCheckActivity"
             android:label="@string/title_activity_lamp_check" >
         </activity>
         <activity
-            android:name=".BasetimeMonthActivity"
+            android:name="cn.com.aiton.taui.BasetimeMonthActivity"
             android:label="@string/title_activity_basetime_month" >
         </activity>
         <activity
-            android:name=".BasetimeWeekActivity"
+            android:name="cn.com.aiton.taui.BasetimeWeekActivity"
             android:label="@string/title_activity_basetime_week" >
         </activity>
         <activity
-            android:name=".BasetimeDayActivity"
+            android:name="cn.com.aiton.taui.BasetimeDayActivity"
             android:label="@string/title_activity_basetime_day" >
         </activity>
         <activity
-            android:name=".ManaulActivity"
+            android:name="cn.com.aiton.taui.ManaulActivity"
             android:label="@string/title_activity_manaul" >
         </activity>
         <activity
-            android:name=".ScheduleActivity"
+            android:name="cn.com.aiton.taui.ScheduleActivity"
             android:label="@string/title_activity_schedule" >
+        </activity>
+        <activity
+            android:name="cn.com.aiton.taui.LoadActivity"
+            android:label="@string/title_activity_load" >
         </activity>
     </application>
 

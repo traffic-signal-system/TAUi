@@ -1,10 +1,9 @@
-package cn.com.aiton.taui.util;
+package cn.com.aiton.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.com.aiton.gbt20999.domain.ExtReportState;
-import cn.com.aiton.gbt20999.utils.ByteUtils;
+import cn.com.aiton.domain.ExtReportState;
 
 /**
  * Created by Administrator on 2014/10/4.

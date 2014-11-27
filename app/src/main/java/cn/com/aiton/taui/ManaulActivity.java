@@ -1,38 +1,50 @@
 package cn.com.aiton.taui;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import org.apache.http.conn.util.InetAddressUtils;
+import net.tsz.afinal.FinalActivity;
+import net.tsz.afinal.FinalDb;
+import net.tsz.afinal.annotation.view.ViewInject;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
-import cn.com.aiton.gbt20999.domain.ExtReportState;
-import cn.com.aiton.gbt20999.domain.GbtDirec;
-import cn.com.aiton.gbt20999.utils.ExtReportUtils;
-import cn.com.aiton.gbt20999.utils.GbtDefine;
-import cn.com.aiton.gbt20999.utils.UdpClientSocket;
+import cn.com.aiton.domain.ExtReportState;
+import cn.com.aiton.domain.GbtChannel;
+import cn.com.aiton.domain.GbtDirec;
+import cn.com.aiton.domain.TscNode;
+import cn.com.aiton.utils.AndroidTscDefine;
+import cn.com.aiton.utils.ExtReportUtils;
+import cn.com.aiton.utils.GbtDefine;
+import cn.com.aiton.utils.TscDbUtils;
+import cn.com.aiton.utils.UdpClientSocket;
 
 
-public class ManaulActivity extends Activity {
+public class ManaulActivity extends FinalActivity {
     public final static int SUCCESS = 1;
     public final static int FAILURE = 0;
 
+    TscNode node;
+
+
+    List<GbtChannel> gbtChannelList;
+    List<GbtDirec> gbtDirecList;
     ImageView northLeft ;
     ImageView northStriaght;
     ImageView northRight;
@@ -206,21 +218,106 @@ public class ManaulActivity extends Activity {
             westOther.setImageResource(R.drawable.yellowone);
         }
     }
-    Handler mhandler = new Handler() {
+    private Handler mhandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case SUCCESS:
                     Bundle bundle = msg.getData();
                     ExtReportState ers = (ExtReportState)bundle.getSerializable("ers");
+                    TextView tv = (TextView)findViewById(R.id.tv_countdown);
+                    String countdown = String.valueOf(ers.getStageTotalTime() - ers.getStageRunTime());
+                    tv.setText(countdown);
                     List<Integer> listChannelGreen = ers.getListChannelGreenStatus();
-                    Iterator<Integer> iteratorGreen = listChannelGreen.iterator();
-                    for(int i=0;i<32;i++){
-                        if (listChannelGreen.get(i)==1){
-                            upateGreen(new GbtDirec());
+                    List<Integer> listChannelRed = ers.getListChannelRedStatus();
+                    List<Integer> listChannelYellow = ers.getListChannelYellowStatus();
+                    for(int i=0;i<listChannelGreen.size();i++){
+                        for(int j=0;j<gbtChannelList.size();j++){
+                            GbtChannel gbtchannel = gbtChannelList.get(j);
+                            if((i+1)==gbtchannel.getChannelId()){
+                                for(int k=0;k<gbtDirecList.size();k++){
+                                    GbtDirec direc = gbtDirecList.get(k);
+                                    if(direc.getPhaseId()!=0 ){
+                                        if(direc.getPhaseId() ==gbtchannel.getControlSource() ){
+                                            if (listChannelGreen.get(i)==1){
+                                                upateGreen(direc);
 
+                                            }
+                                        }
+                                    }else{
+                                        if (direc.getOverlapId() != 0){
+                                            if(direc.getOverlapId() == gbtchannel.getControlSource()){
+                                                if (listChannelGreen.get(i)==1){
+                                                    upateGreen(direc);
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                for(int a=0;a<listChannelRed.size();a++){
+                   for(int b=0;b<gbtChannelList.size();b++){
+                        GbtChannel gbtchannel = gbtChannelList.get(b);
+                        if((a+1)==gbtchannel.getChannelId()){
+                            for(int c=0;c<gbtDirecList.size();c++){
+                                GbtDirec direc = gbtDirecList.get(c);
+                                if(direc.getPhaseId()!=0 ){
+                                    if(direc.getPhaseId() ==gbtchannel.getControlSource() ){
+                                        if (listChannelRed.get(a)==1){
+                                            updateRed(direc);
+
+                                        }
+                                    }
+                                }else{
+                                    if (direc.getOverlapId() != 0){
+                                        if(direc.getOverlapId() == gbtchannel.getControlSource()){
+                                            if (listChannelRed.get(a)==1){
+                                                updateRed(direc);
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
+
+                }
+
+                for(int x=0;x<listChannelYellow.size();x++) {
+                    for(int y=0;y<gbtChannelList.size();y++){
+                        GbtChannel gbtchannel =gbtChannelList.get(y);
+                        if((x+1)==gbtchannel.getChannelId()){
+                            for(int z=0;z<gbtDirecList.size();z++){
+                                GbtDirec direc =gbtDirecList.get(z);
+                                if(direc.getPhaseId()!=0 ){
+                                    if(direc.getPhaseId() ==gbtchannel.getControlSource() ){
+                                        if (listChannelYellow.get(x)==1){
+                                            updateYellow(direc);
+
+                                        }
+                                    }
+                                }else{
+                                    if (direc.getOverlapId() != 0){
+                                        if(direc.getOverlapId() == gbtchannel.getControlSource()){
+                                            if (listChannelYellow.get(x)==1){
+                                                updateYellow(direc);
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
 
                     break;
                 case FAILURE:
@@ -249,9 +346,12 @@ public class ManaulActivity extends Activity {
             ArrayList list = new ArrayList();
             try {
                 //init();
+                FinalDb db = FinalDb.create(ManaulActivity.this,AndroidTscDefine.DBNAME);
+                gbtChannelList = TscDbUtils.getGbtChannelsByNode(db,node);
+                gbtDirecList = TscDbUtils.getGbtDirecsByNode(db,node);
 
                 ucs = new UdpClientSocket();
-                ucs.send("192.168.1.136",5435,GbtDefine.REPORT_TSC_STATUS);
+                ucs.send(node.getIpAddress(),node.getPort(),GbtDefine.REPORT_TSC_STATUS);
 
                 System.out.println("客户端发送连接请求");
             } catch (Exception exce) {
@@ -262,10 +362,10 @@ public class ManaulActivity extends Activity {
                     Message msg = new Message();
                     msg.what = SUCCESS;
 
-                    byte[] bytes = ucs.receiveByte("192.168.1.136",5435);
+                    byte[] bytes = ucs.receiveByte(node.getIpAddress(),node.getPort());
                     System.out.println("bytes : "+bytes[0]+" "+bytes[1]+" "+bytes[2]+" "+bytes[3]+" "+bytes[4]+" "+bytes[5]+" "+bytes[6]+" "+bytes[7]+" "+bytes[8]);
                     Bundle bundle = new Bundle();
-                    ExtReportState ers = cn.com.aiton.taui.util.ExtReportUtils.byte2ReportState(bytes);
+                    ExtReportState ers = ExtReportUtils.byte2ReportState(bytes);
 
                     bundle.putSerializable("ers", ers);
                     msg.setData(bundle);
@@ -348,6 +448,10 @@ public class ManaulActivity extends Activity {
         westStriaght = (ImageView)findViewById(R.id.westStriaght);
         westRight = (ImageView)findViewById(R.id.westRight);
         westOther = (ImageView)findViewById(R.id.westOther);
+
+        Context ctx = ManaulActivity.this;
+        SharedPreferences sp = ctx.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
+        node = AndroidTscDefine.spToTscNode(sp);
         thread = new Thread(runnable);
         thread.start();
     }

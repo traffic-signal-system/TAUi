@@ -2,21 +2,23 @@
 <resources>
 
     <string name="app_name">TAUi</string>
-    <string name="dummy_button">About me</string>
-    <string name="menu_tsc">Signal</string>
+    <string name="dummy_button">关于</string>
+    <string name="menu_tsc">信号</string>
+    <string name="menu_broadcast">广播</string>
+    <string name="menu_loadtsc">加载</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_phase">PhaseActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_phase_config">PhaseConfigActivity</string>
-    <string name="title_activity_basetime">BasetimeActivity</string>
-    <string name="title_activity_collision">CollisionActivity</string>
-    <string name="title_activity_stage">StageActivity</string>
-    <string name="title_activity_detector">DetectorActivity</string>
-    <string name="title_activity_lamp_check">LampCheckActivity</string>
-    <string name="title_activity_basetime_month">BasetimeMonthActivity</string>
-    <string name="title_activity_basetime_week">BasetimeWeekActivity</string>
-    <string name="title_activity_basetime_day">BasetimeDayActivity</string>
+    <string name="title_activity_basetime">时基</string>
+    <string name="title_activity_collision">绿冲突</string>
+    <string name="title_activity_stage">阶段</string>
+    <string name="title_activity_detector">检测器</string>
+    <string name="title_activity_lamp_check">灯泡检测</string>
+    <string name="title_activity_basetime_month">时基月</string>
+    <string name="title_activity_basetime_week">时基周</string>
+    <string name="title_activity_basetime_day">时基日</string>
     <string name="monday">Monday</string>
     <string name="tuesday">Tuesday</string>
     <string name="wednesday">Wednesday</string>
@@ -41,8 +43,7 @@
     <string name="read">Read</string>
     <string name="title_activity_manaul">ManaulActivity</string>
     <string name="title_activity_schedule">ScheduleActivity</string>
-
-
+    <string name="loadtsc">加载信号机</string>
     <string name="openhardwarecheck">Open hardware Check</string>
     <string name="openselfcheck">Open check on startup</string>
     <string name="can">CAN</string>
@@ -56,8 +57,9 @@
     <string name="r3">R3</string>
     <string name="y3">Y3</string>
     <string name="g3">G3</string>
-
     <string name="r4">R4</string>
     <string name="y4">Y4</string>
     <string name="g4">G4</string>
+    <string name="title_activity_load">LoadActivity</string>
+
 </resources>
