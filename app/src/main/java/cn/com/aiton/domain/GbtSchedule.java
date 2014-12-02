@@ -10,21 +10,21 @@ public class GbtSchedule {
 
 	private int deviceId;
 
-	private byte scheduleId;
+	private int scheduleId;
 
-	private byte eventId;
+	private int eventId;
 
-	private byte beginHour;
+	private int beginHour;
 
-	private byte beginMinute;
+	private int beginMinute;
 
-	private byte controlMode;
+	private int controlMode;
 
-	private byte timePatternId;
+	private int timePatternId;
 
-	private byte auxOut;
+	private int auxOut;
 
-	private byte specialOut;
+	private int specialOut;
 
     public int getId() {
         return id;
@@ -42,67 +42,67 @@ public class GbtSchedule {
         this.deviceId = deviceId;
     }
 
-    public byte getScheduleId() {
+    public int getScheduleId() {
         return scheduleId;
     }
 
-    public void setScheduleId(byte scheduleId) {
+    public void setScheduleId(int scheduleId) {
         this.scheduleId = scheduleId;
     }
 
-    public byte getEventId() {
+    public int getEventId() {
         return eventId;
     }
 
-    public void setEventId(byte eventId) {
+    public void setEventId(int eventId) {
         this.eventId = eventId;
     }
 
-    public byte getBeginHour() {
+    public int getBeginHour() {
         return beginHour;
     }
 
-    public void setBeginHour(byte beginHour) {
+    public void setBeginHour(int beginHour) {
         this.beginHour = beginHour;
     }
 
-    public byte getBeginMinute() {
+    public int getBeginMinute() {
         return beginMinute;
     }
 
-    public void setBeginMinute(byte beginMinute) {
+    public void setBeginMinute(int beginMinute) {
         this.beginMinute = beginMinute;
     }
 
-    public byte getControlMode() {
+    public int getControlMode() {
         return controlMode;
     }
 
-    public void setControlMode(byte controlMode) {
+    public void setControlMode(int controlMode) {
         this.controlMode = controlMode;
     }
 
-    public byte getTimePatternId() {
+    public int getTimePatternId() {
         return timePatternId;
     }
 
-    public void setTimePatternId(byte timePatternId) {
+    public void setTimePatternId(int timePatternId) {
         this.timePatternId = timePatternId;
     }
 
-    public byte getAuxOut() {
+    public int getAuxOut() {
         return auxOut;
     }
 
-    public void setAuxOut(byte auxOut) {
+    public void setAuxOut(int auxOut) {
         this.auxOut = auxOut;
     }
 
-    public byte getSpecialOut() {
+    public int getSpecialOut() {
         return specialOut;
     }
 
-    public void setSpecialOut(byte specialOut) {
+    public void setSpecialOut(int specialOut) {
         this.specialOut = specialOut;
     }
 }

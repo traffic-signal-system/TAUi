@@ -65,7 +65,13 @@ public class BasetimeActivity extends ActivityGroup {
                                 new Intent(context, BasetimeDayActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
                                 .getDecorView());
                         break;
-
+                    case R.id.main_tab_basetime_schedule://我的通知
+                        container.removeAllViews();
+                        container.addView(manager.startActivity(
+                                "PAGE_3",
+                                new Intent(context, ScheduleActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                                .getDecorView());
+                        break;
                     default:
                         //tabHost.setCurrentTabByTag("我的考试");
                         break;

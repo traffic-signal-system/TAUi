@@ -236,13 +236,16 @@ public class FullscreenActivity extends FinalActivity {
      */
     private SystemUiHider mSystemUiHider;
 
-
+    /**
+     *
+     * @param view
+     */
     public void broadCastIp(View view){
-        thread = new Thread(runnable);
-        thread.start();
-
-        Thread thread1 = new Thread(runnableSend);
-        thread1.start();
+//        thread = new Thread(runnable);
+//        thread.start();
+//
+//        Thread thread1 = new Thread(runnableSend);
+//        thread1.start();
     }
     //当AdapterView被单击(触摸屏或者键盘)，则返回的Item单击事件
       class  ItemClickListener implements AdapterView.OnItemClickListener

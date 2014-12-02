@@ -75,14 +75,14 @@ public class ScheduleServiceImpl implements ScheduleService {
             Iterator<GbtSchedule> gbtScheduleIterator = gbtSchedules.iterator();
             while(gbtScheduleIterator.hasNext()){
                 GbtSchedule gbtSchedule = gbtScheduleIterator.next();
-                hex = ArrayUtils.add(hex,gbtSchedule.getScheduleId());
-                hex = ArrayUtils.add(hex,gbtSchedule.getEventId());
-                hex = ArrayUtils.add(hex,gbtSchedule.getBeginHour());
-                hex = ArrayUtils.add(hex,gbtSchedule.getBeginMinute());
-                hex = ArrayUtils.add(hex,gbtSchedule.getControlMode());
-                hex = ArrayUtils.add(hex,gbtSchedule.getTimePatternId());
-                hex = ArrayUtils.add(hex,gbtSchedule.getAuxOut());
-                hex = ArrayUtils.add(hex,gbtSchedule.getSpecialOut());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getScheduleId());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getEventId());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getBeginHour());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getBeginMinute());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getControlMode());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getTimePatternId());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getAuxOut());
+                hex = ArrayUtils.add(hex,(byte)gbtSchedule.getSpecialOut());
                 //hex = ArrayUtils.addAll(hex,objectArray);
             }
             UdpClientSocket client = new UdpClientSocket();

@@ -24,7 +24,7 @@
     <style name="ButtonBarButton" />
 
     <style name="MMTabButton">
-        <item name="android:textSize">12.0dip</item>
+        <item name="android:textSize">14.0dip</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/bg_checkbox_menus</item>
         <item name="android:layout_width">fill_parent</item>
@@ -37,7 +37,7 @@
     </style>
 
     <style name="MMTabButton1">
-        <item name="android:textSize">12.0dip</item>
+        <item name="android:textSize">14.0dip</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/bg_checkbox_menus_up</item>
         <item name="android:layout_width">fill_parent</item>

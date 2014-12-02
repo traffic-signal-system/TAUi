@@ -235,13 +235,13 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Manual"/>
+                    android:text="@string/manual_manual"/>
 
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Self"/>
+                    android:text="@string/manual_self"/>
             </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -250,15 +250,15 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next Step"/>
+                android:text="@string/manual_next_step"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next Phase"/>
+                android:text="@string/manual_next_phase"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next Direc"/>
+                android:text="@string/manual_next_direc"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -267,19 +267,19 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="North"/>
+                android:text="@string/manual_north"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="East"/>
+                android:text="@string/manual_east"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="South"/>
+                android:text="@string/manual_south"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="West"/>
+                android:text="@string/manual_west"/>
         </LinearLayout>
     </LinearLayout>
 

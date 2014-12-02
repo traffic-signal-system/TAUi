@@ -13,7 +13,7 @@
         <RadioGroup
             android:id="@+id/add_tab_basetime_group"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:background="@drawable/big_button_up"
             android:gravity="center"
             android:orientation="horizontal"
@@ -39,7 +39,11 @@
                 style="@style/MMTabButton1"
                 android:layout_weight="1.0"
                 android:text="特殊时基" />
-
+            <RadioButton
+                android:id="@+id/main_tab_basetime_schedule"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
+                android:text="时段" />
 
         </RadioGroup>
 

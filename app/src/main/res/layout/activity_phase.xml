@@ -21,7 +21,7 @@
         <RadioGroup
             android:id="@+id/add_tab_group"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:background="@drawable/big_button_up"
             android:gravity="center"
             android:orientation="horizontal"
