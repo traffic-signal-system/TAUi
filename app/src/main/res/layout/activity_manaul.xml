@@ -16,8 +16,8 @@
 
             >
             <ImageView
-                android:layout_width="480dp"
-                android:layout_height="480dp"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
                 android:src="@drawable/back20130627"/>
 
             <LinearLayout
@@ -41,34 +41,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""/>
+
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/westLeft"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
 
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/westStriaght"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/westRight"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/westOther"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
             </LinearLayout>
 
@@ -80,34 +77,30 @@
 
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/eastOther"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
 
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/eastRight"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/eastStriaght"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:id="@+id/eastLeft"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -133,34 +126,34 @@
                 android:layout_gravity="center_horizontal|top">
 
                 <ImageView
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:id="@+id/northOther"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
 
                 <ImageView
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:id="@+id/northRight"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <ImageView
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:id="@+id/northStriaght"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <ImageView
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:id="@+id/northLeft"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="                        "/>
+                    android:text="                   "/>
 
 
 
@@ -173,32 +166,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="                            "/>
+                    android:text="                   "/>
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/southOther"
-                    android:src="@drawable/greenone"
-                    />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/southRight"
-                    android:src="@drawable/greenone"
-                    />
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/southStriaght"
-                    android:src="@drawable/greenone"
-                    />
-                <ImageView
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:id="@+id/southLeft"
-                    android:src="@drawable/greenone"
+                    android:src="@drawable/offone"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/southStriaght"
+                    android:src="@drawable/offone"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/southRight"
+                    android:src="@drawable/offone"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/southOther"
+                    android:src="@drawable/offone"
                     />
 
 
@@ -223,12 +216,12 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:scrollbars="horizontal"
         >
         <LinearLayout
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_height="wrap_content">
 
 
@@ -246,7 +239,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -263,7 +256,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

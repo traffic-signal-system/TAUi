@@ -33,7 +33,7 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "Channel")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.OVERLAPPHASE_BYTE_SIZE];
@@ -70,7 +70,7 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
     public Message setOverlapPhase(TscNode node, List<GbtOverlap> gbtOverlaps) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_OVERLAPPHASE_RESPONSE, (byte) GbtDefine.OVERLAPPHASE_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_OVERLAPPHASE_RESPONSE, (byte) gbtOverlaps.size());
             Iterator<GbtOverlap> gbtOverlapIterator = gbtOverlaps.iterator();
             while(gbtOverlapIterator.hasNext()){
                 GbtOverlap gbtChannel = gbtOverlapIterator.next();

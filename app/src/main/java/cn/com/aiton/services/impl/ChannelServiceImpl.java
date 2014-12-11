@@ -36,7 +36,7 @@ public class ChannelServiceImpl implements ChannelService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if (!CheckGbt.check(bytes, "Channel")) {
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.CHANNEL_BYTE_SIZE];
@@ -68,7 +68,7 @@ public class ChannelServiceImpl implements ChannelService {
     public Message setChannel(TscNode node, List<GbtChannel> gbtChannels) {
         Message message = new Message();
         try {
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_CHANNEL_RESPONSE, (byte) GbtDefine.CHANNEL_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_CHANNEL_RESPONSE, (byte) gbtChannels.size());
             Iterator<GbtChannel> gbtChannelIterator = gbtChannels.iterator();
             while (gbtChannelIterator.hasNext()) {
                 GbtChannel gbtChannel = gbtChannelIterator.next();

@@ -28,7 +28,7 @@ public class CollisionServiceImpl implements CollisionService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(CheckGbt.check(bytes, "Collision16")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.GBT20999_COLLISION_BYTE_SIZE];
@@ -57,7 +57,7 @@ public class CollisionServiceImpl implements CollisionService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByASCII(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes,"Collision32")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.COLLISION_BYTE_SIZE];
@@ -81,7 +81,7 @@ public class CollisionServiceImpl implements CollisionService {
     public Message setCollision(List<GbtCollision> gbtCollisions ,TscNode node) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_COLLISION_RESPONSE, (byte) GbtDefine.COLLISION_RESULT_LENGTH);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_COLLISION_RESPONSE, (byte)gbtCollisions.size());
             Iterator<GbtCollision> gbtCollisionIterator = gbtCollisions.iterator();
             while(gbtCollisionIterator.hasNext()){
                 GbtCollision gbtCollision = gbtCollisionIterator.next();

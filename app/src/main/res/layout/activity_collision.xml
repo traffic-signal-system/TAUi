@@ -18,8 +18,8 @@
             >
 
             <ImageView
-                android:layout_width="480dp"
-                android:layout_height="480dp"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
                 android:src="@drawable/back20130627" />
 
             <LinearLayout
@@ -48,16 +48,12 @@
                     android:layout_height="wrap_content"
                     android:text="" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
 
 
                 <ImageView
                     android:id="@+id/westLeft"
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:onClick="westLeft"
                     android:src="@drawable/greenone" />
 
@@ -65,21 +61,21 @@
                     android:id="@+id/westStriaght"
                     android:layout_width="100dp"
                     android:onClick="westStriaght"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="westRight"
                     android:id="@+id/westRight"
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="westOther"
                     android:id="@+id/westOther"
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:src="@drawable/greenone" />
             </LinearLayout>
 
@@ -93,14 +89,14 @@
                     android:onClick="eastOther"
                     android:id="@+id/eastOther"
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="eastRight"
                     android:id="@+id/eastRight"
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
@@ -114,13 +110,9 @@
                     android:onClick="eastLeft"
                     android:id="@+id/eastLeft"
                     android:layout_width="100dp"
-                    android:layout_height="20dp"
+                    android:layout_height="15dp"
                     android:src="@drawable/greenone" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -152,28 +144,28 @@
                 <ImageView
                     android:onClick="northOther"
                     android:id="@+id/northOther"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="northRight"
                     android:id="@+id/northRight"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="northStriaght"
                     android:id="@+id/northStriaght"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="northLeft"
                     android:id="@+id/northLeft"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
@@ -182,30 +174,7 @@
                     android:layout_height="wrap_content"
                     android:text="                     " />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
 
             </LinearLayout>
 
@@ -218,35 +187,35 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="                         " />
+                    android:text="                  " />
 
 
 
                 <ImageView
                     android:onClick="southOther"
                     android:id="@+id/southOther"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="southRight"
                     android:id="@+id/southRight"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="southStriaght"
                     android:id="@+id/southStriaght"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
                 <ImageView
                     android:onClick="southLeft"
                     android:id="@+id/southLeft"
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:src="@drawable/greenone" />
 
@@ -256,10 +225,12 @@
         </FrameLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -270,76 +241,76 @@
         <include
             android:id="@+id/stage1"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage2"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage3"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage4"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage5"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage6"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage7"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage8"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
 
         <include
             android:id="@+id/stage9"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <include
             android:id="@+id/stage10"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <include
             android:id="@+id/stage11"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <include
             android:id="@+id/stage12"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <include
             android:id="@+id/stage13"
             layout="@layout/small_phase_direc"
-            android:layout_width="250dp"
-            android:layout_height="250dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <include
             android:id="@+id/stage14"
             layout="@layout/small_phase_direc"
@@ -356,6 +327,6 @@
             android:layout_width="250dp"
             android:layout_height="250dp" />
     </LinearLayout>
-
+</HorizontalScrollView>
 
 </LinearLayout>

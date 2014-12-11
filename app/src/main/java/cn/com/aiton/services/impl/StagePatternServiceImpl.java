@@ -32,7 +32,7 @@ public class StagePatternServiceImpl implements StagePatternService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "GbtStagePattern")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[GbtDefine.STAGE_RESULT_LEN * GbtDefine.STAGEPATTERN_RESULT_LEN * GbtDefine.STAGEPATTERN_BYTE_SIZE];
@@ -70,7 +70,7 @@ public class StagePatternServiceImpl implements StagePatternService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "GbtStagePattern")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[GbtDefine.STAGE_RESULT_LEN * GbtDefine.STAGEPATTERN_RESULT_LEN * GbtDefine.STAGE_PATTERN_BYTE_SIZE_16];
@@ -104,7 +104,7 @@ public class StagePatternServiceImpl implements StagePatternService {
     public Message setStagePatternBy16Phase(TscNode node, List<GbtStagePattern> gbtStagePatterns) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_STAGEPATTERN_RESPONSE, (byte) GbtDefine.STAGEPATTERN_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_STAGEPATTERN_RESPONSE, (byte) gbtStagePatterns.size());
             hex = ArrayUtils.add(hex, (byte) (GbtDefine.STAGE_RESULT_LEN));
             Iterator<GbtStagePattern> gbtStagePatternIterator = gbtStagePatterns.iterator();
             while(gbtStagePatternIterator.hasNext()){
@@ -138,7 +138,7 @@ public class StagePatternServiceImpl implements StagePatternService {
     public Message setStagePatternBy32Phase(TscNode node, List<GbtStagePattern> gbtStagePatterns) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_STAGEPATTERN_RESPONSE, (byte) GbtDefine.STAGEPATTERN_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_STAGEPATTERN_RESPONSE, (byte) gbtStagePatterns.size());
             hex = ArrayUtils.add(hex,(byte)(GbtDefine.STAGE_RESULT_LEN));
             Iterator<GbtStagePattern> gbtStagePatternIterator = gbtStagePatterns.iterator();
             while(gbtStagePatternIterator.hasNext()){

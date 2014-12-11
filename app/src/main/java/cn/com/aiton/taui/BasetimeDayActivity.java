@@ -4,25 +4,27 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.widget.CalendarView;
+import android.widget.NumberPicker;
 import android.widget.Toast;
 
+import net.tsz.afinal.FinalActivity;
+import net.tsz.afinal.annotation.view.ViewInject;
 
-public class BasetimeDayActivity extends Activity {
 
+public class BasetimeDayActivity extends FinalActivity {
+    @ViewInject(id=R.id.numberPicker)
+    NumberPicker np_basetime_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basetime_day);
-        CalendarView cv = (CalendarView)findViewById(R.id.calendarView);
-        cv.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-            @Override
-            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
-                String date = year + "年" + month + "月" + dayOfMonth +"日";
-                Toast.makeText(BasetimeDayActivity.this, date, Toast.LENGTH_LONG).show();
 
-            }
-        });
+        setContentView(R.layout.activity_basetime_day);
+        np_basetime_id.setMinValue(30);
+        np_basetime_id.setMaxValue(50);
+        np_basetime_id.setValue(40);
+
     }
 
 

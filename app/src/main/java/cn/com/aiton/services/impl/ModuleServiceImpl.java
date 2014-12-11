@@ -30,7 +30,7 @@ public class ModuleServiceImpl implements ModuleService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "Module")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             //去除协议头

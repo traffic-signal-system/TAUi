@@ -31,7 +31,7 @@ public class LogEventServiceImpl implements LogEventService {
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "EventLog")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[6] * GbtDefine.EVENT_LOG_BYTE_SIZE];

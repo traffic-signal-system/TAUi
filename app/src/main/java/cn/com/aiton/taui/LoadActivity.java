@@ -68,6 +68,24 @@ public class LoadActivity extends Activity {
         setContentView(R.layout.activity_load);
     }
 
+
+    public void deleteTsc(View view){
+        FinalDb db = FinalDb.create(this,AndroidTscDefine.DBNAME);
+        db.deleteAll(TscNode.class);
+        db.deleteAll(GbtChannel.class);
+        db.deleteAll(GbtCollision.class);
+        db.deleteAll(GbtDetector.class);
+        db.deleteAll(GbtLampCheck.class);
+        db.deleteAll(GbtEventLog.class);
+        db.deleteAll(GbtModule.class);
+        db.deleteAll(GbtOverlap.class);
+        db.deleteAll(GbtTimePattern.class);
+        db.deleteAll(GbtPhase.class);
+        db.deleteAll(GbtDirec.class);
+        db.deleteAll(GbtSchedule.class);
+        db.deleteAll(GbtStagePattern.class);
+        db.deleteAll(GbtTimeBase.class);
+    }
     public void loadTsc(View view){
         EditText etname = (EditText)findViewById(R.id.txtName);
         EditText etipaddress = (EditText)findViewById(R.id.txtIPAddress);
@@ -84,20 +102,6 @@ public class LoadActivity extends Activity {
         node.setProtocolType(1);
         node.setVersion("1.0");
 
-        db.deleteAll(TscNode.class);
-        db.deleteAll(GbtChannel.class);
-        db.deleteAll(GbtCollision.class);
-        db.deleteAll(GbtDetector.class);
-        db.deleteAll(GbtLampCheck.class);
-        db.deleteAll(GbtEventLog.class);
-        db.deleteAll(GbtModule.class);
-        db.deleteAll(GbtOverlap.class);
-        db.deleteAll(GbtTimePattern.class);
-        db.deleteAll(GbtPhase.class);
-        db.deleteAll(GbtDirec.class);
-        db.deleteAll(GbtSchedule.class);
-        db.deleteAll(GbtStagePattern.class);
-        db.deleteAll(GbtTimeBase.class);
 
         List<TscNode> tscNodes = db.findAllByWhere(TscNode.class,"ipAddress ='"+node.getIpAddress()+"'");
         if(tscNodes.size()==1){

@@ -33,7 +33,7 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "GbtTimeBase")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.PLAN_BYTE_SIZE];
@@ -70,7 +70,7 @@ public class TimeBaseServiceImpl implements TimeBaseService {
     public Message setTimeBaseByCalendar(List<GbtTimeBase> gbtTimeBaseList, TscNode node) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_PLAN_RESPONSE, (byte) GbtDefine.PLAN_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_PLAN_RESPONSE, (byte) gbtTimeBaseList.size());
             Iterator<GbtTimeBase> gbtTimeBaseIterator = gbtTimeBaseList.iterator();
             while(gbtTimeBaseIterator.hasNext()){
                 GbtTimeBase gbtTimeBase = gbtTimeBaseIterator.next();
@@ -113,7 +113,7 @@ public class TimeBaseServiceImpl implements TimeBaseService {
     public Message setTimeBaseByWeekend(List<GbtTimeBase> gbtTimeBases, TscNode node) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_PLAN_RESPONSE, (byte) GbtDefine.PLAN_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_PLAN_RESPONSE, (byte) gbtTimeBases.size());
             Iterator<GbtTimeBase> gbtTimeBaseIterator = gbtTimeBases.iterator();
             while(gbtTimeBaseIterator.hasNext()){
                 GbtTimeBase gbtTimeBase = gbtTimeBaseIterator.next();

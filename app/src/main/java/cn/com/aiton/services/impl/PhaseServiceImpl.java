@@ -26,8 +26,7 @@ public class PhaseServiceImpl implements PhaseService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
            // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
            // System.out.println("服务端回应数据：" + info);
-
-            if(!CheckGbt.check(bytes, "Phase")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.PHASE_BYTE_SIZE];
@@ -62,7 +61,7 @@ public class PhaseServiceImpl implements PhaseService {
         Message message = new Message();
         try{
             //byte[] hex = new byte[GbtDefine.PHASE_BYTE_SIZE*GbtDefine.PHASE_RESULT_LEN +GbtDefine.SET_PHASE_RESPONSE.length + 1];
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_PHASE_RESPONSE, (byte) GbtDefine.PHASE_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_PHASE_RESPONSE, (byte) gbtPhases.size());
             Iterator<GbtPhase> gbtPhaseIterator = gbtPhases.iterator();
             while(gbtPhaseIterator.hasNext()){
                 GbtPhase gbtPhase = gbtPhaseIterator.next();

@@ -33,10 +33,9 @@ public class ScheduleServiceImpl implements ScheduleService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "GbtSchedule")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
-            //
             byte[] objectArray = new byte[GbtDefine.SCHEDULE_EVENT_RESULT_LEN * GbtDefine.SCHEDULE_RESULT_LEN * GbtDefine.SCHEDULE_BYTE_SIZE];
             System.arraycopy(bytes,5,objectArray,0,objectArray.length);
             byte[][] scheduleArrayResult = ByteUtils.oneArrayToTwoArray(objectArray, GbtDefine.SCHEDULE_RESULT_LEN * GbtDefine.SCHEDULE_EVENT_RESULT_LEN, GbtDefine.SCHEDULE_BYTE_SIZE);
@@ -71,7 +70,7 @@ public class ScheduleServiceImpl implements ScheduleService {
     public Message setSchedule(TscNode node, List<GbtSchedule> gbtSchedules) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_SCHEDULE_RESPONSE, (byte) GbtDefine.COLLISION_RESULT_LENGTH);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_SCHEDULE_RESPONSE, (byte) gbtSchedules.size());
             Iterator<GbtSchedule> gbtScheduleIterator = gbtSchedules.iterator();
             while(gbtScheduleIterator.hasNext()){
                 GbtSchedule gbtSchedule = gbtScheduleIterator.next();

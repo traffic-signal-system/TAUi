@@ -19,8 +19,8 @@
             >
 
             <ImageView
-                android:layout_width="480dp"
-                android:layout_height="480dp"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
                 android:src="@drawable/back20130627" />
 
             <LinearLayout
@@ -49,15 +49,7 @@
                     android:layout_height="wrap_content"
                     android:text="" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -68,25 +60,25 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:onClick="westLeft"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:id="@+id/westLeft3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:onClick="westLeft"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:id="@+id/westLeft2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:onClick="westLeft"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:id="@+id/westLeft1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:onClick="westLeft"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     </LinearLayout>
 
             <LinearLayout
@@ -98,25 +90,25 @@
                     android:layout_width="20dp"
                     android:onClick="westStriaght4"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
                 <ImageView
                     android:id="@+id/westStriaght3"
                     android:layout_width="20dp"
                     android:onClick="westStriaght3"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
                 <ImageView
                     android:id="@+id/westStriaght2"
                     android:layout_width="20dp"
                     android:onClick="westStriaght2"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
                 <ImageView
                     android:id="@+id/westStriaght1"
                     android:layout_width="20dp"
                     android:onClick="westStriaght1"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
 </LinearLayout>
 
 
@@ -129,25 +121,25 @@
                     android:id="@+id/westRight4"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
                 <ImageView
                     android:onClick="westRight3"
                     android:id="@+id/westRight3"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
                 <ImageView
                     android:onClick="westRight2"
                     android:id="@+id/westRight2"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
                 <ImageView
                     android:onClick="westRight1"
                     android:id="@+id/westRight1"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/detectorline" />
+                    android:src="@drawable/detectorlinee" />
             </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -157,28 +149,28 @@
                         android:id="@+id/westOther4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
                     <ImageView
                         android:onClick="westOther3"
                         android:id="@+id/westOther3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
                     <ImageView
                         android:onClick="westOther2"
                         android:id="@+id/westOther2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
                     <ImageView
                         android:onClick="westOther1"
                         android:id="@+id/westOther1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
                 </LinearLayout>
 
@@ -197,25 +189,25 @@
                         android:id="@+id/eastOther1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastOther2"
                         android:id="@+id/eastOther2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastOther3"
                         android:id="@+id/eastOther3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastOther4"
                         android:id="@+id/eastOther4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
 
                 </LinearLayout>
@@ -227,25 +219,25 @@
                         android:id="@+id/eastRight1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastRight2"
                         android:id="@+id/eastRight2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastRight3"
                         android:id="@+id/eastRight3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastRight4"
                         android:id="@+id/eastRight4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -255,25 +247,25 @@
                         android:id="@+id/eastStriaght1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastStriaght2"
                         android:id="@+id/eastStriaght2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastStriaght3"
                         android:id="@+id/eastStriaght3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastStriaght4"
                         android:id="@+id/eastStriaght4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -284,40 +276,31 @@
                         android:id="@+id/eastLeft1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastLeft2"
                         android:id="@+id/eastLeft2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
                     <ImageView
                         android:onClick="eastLeft3"
                         android:id="@+id/eastLeft3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:onClick="eastLeft4"
                         android:id="@+id/eastLeft4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/detectorline" />
+                        android:src="@drawable/detectorlinee" />
 
 
                 </LinearLayout>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -472,7 +455,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="                          " />
+                    android:text="                   " />
 
 
             </LinearLayout>
@@ -486,32 +469,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="                            " />
+                    android:text="                    " />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" " />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -643,9 +604,6 @@
         </FrameLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -663,6 +621,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="编号："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="ID"/>
 
                 </LinearLayout>
@@ -673,12 +635,91 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="type"/>
+                    android:text="类型："/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="car"/>
+                    android:text="战术"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="战略"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="感应"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请求"/>
+
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="             "/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机动车"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自行车"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公交车"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="行人"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参数："/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车型"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="占有率"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排队"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="速度"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关键"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"/>
+               </LinearLayout>
             </LinearLayout>
     </LinearLayout>
+
+
 </LinearLayout>

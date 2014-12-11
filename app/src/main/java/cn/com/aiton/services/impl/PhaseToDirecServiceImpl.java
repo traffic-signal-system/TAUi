@@ -1,5 +1,7 @@
 package cn.com.aiton.services.impl;
 
+import net.tsz.afinal.utils.Utils;
+
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.ArrayList;
@@ -34,7 +36,7 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "Channel")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.PHASE_DIREC_BYTE_SIZE];
@@ -65,7 +67,7 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
     public Message setPhaseToDirec(List<GbtDirec> gbtDirecs,TscNode node) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_PHASE_DIREC_RESPONSE, (byte) GbtDefine.PHASE_DIREC_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_PHASE_DIREC_RESPONSE, (byte)gbtDirecs.size());
             Iterator<GbtDirec> gbtDirecIterator = gbtDirecs.iterator();
             while(gbtDirecIterator.hasNext()){
                 GbtDirec gbtDirec = gbtDirecIterator.next();
@@ -76,9 +78,10 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //yte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
+            message = CheckGbt.check(bytes);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

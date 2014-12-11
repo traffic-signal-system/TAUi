@@ -407,7 +407,7 @@ public class LampCheckServiceImpl implements LampCheckService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_LAMP_CHECK);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            if(!CheckGbt.check(bytes, "LampCheck")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.LAMP_CHECK_BYTE_SIZE];

@@ -31,7 +31,7 @@ public class PatternServiceImpl implements PatternService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             //System.out.println("服务端回应数据：" + info);
-            if(!CheckGbt.check(bytes, "GbtTimePattern")){
+            if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
             byte[] objectArray = new byte[bytes[3] * GbtDefine.PATTERN_BYTE_SIZE];
@@ -64,7 +64,7 @@ public class PatternServiceImpl implements PatternService {
     public Message setTimePattern(TscNode node, List<GbtTimePattern> gbtTimePatterns) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_PATTERN_RESPONSE, (byte) GbtDefine.PATTERN_RESULT_LEN);
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_PATTERN_RESPONSE, (byte) gbtTimePatterns.size());
             Iterator<GbtTimePattern> gbtTimePatternIterator = gbtTimePatterns.iterator();
             while(gbtTimePatternIterator.hasNext()){
                 GbtTimePattern gbtTimePattern = gbtTimePatternIterator.next();

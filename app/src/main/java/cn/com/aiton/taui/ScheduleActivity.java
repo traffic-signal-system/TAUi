@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import net.tsz.afinal.FinalDb;
 
@@ -36,7 +37,7 @@ import cn.com.aiton.utils.AndroidTscDefine;
 
 
 public class ScheduleActivity extends Activity {
-    private List<Map<String, Object>> mData;
+    private List<Map<String, String>> mData;
     private ListView listView;
     public final static int SUCCESS = 1;
     public final static int FAILURE = 0;
@@ -49,11 +50,12 @@ public class ScheduleActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.v("MyListView4-click", (String) mData.get(position).get("title"));
-
+                Log.v("MyListView4-click", (String) mData.get(position).get("eventId")+"    --    "+ (String) mData.get(position).get("scheduleId"));
+               // Toast.makeText(this,"fff",Toast.LENGTH_LONG).show();
             }
         });
-
+        Thread t2 = new Thread(runnable);
+        t2.start();
 
     }
 android.os.Handler handler = new android.os.Handler(){
@@ -83,13 +85,13 @@ android.os.Handler handler = new android.os.Handler(){
             handler.sendMessage(msg);
         }
     };
-    private List<Map<String, Object>> getData() {
+    private List<Map<String, String>> getData() {
         Context ctx = ScheduleActivity.this;
         SharedPreferences sp = ctx.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
         TscNode node = AndroidTscDefine.spToTscNode(sp);
         FinalDb db = FinalDb.create(this,AndroidTscDefine.DBNAME);
         List<GbtSchedule> gbtSchedules = db.findAllByWhere(GbtSchedule.class,"deviceId = '"+node.getId()+"'");
-        List<Map<String,Object>> maps = AndroidTscDefine.listScheduleToListMap(gbtSchedules);
+        List<Map<String,String>> maps = AndroidTscDefine.listScheduleToListMap(gbtSchedules);
 //        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 //
 //        Map<String, Object> map = new HashMap<String, Object>();
@@ -137,6 +139,7 @@ android.os.Handler handler = new android.os.Handler(){
 
     public final class ViewHolder{
         public ImageView img;
+        public TextView scheduleId;
         public TextView eventId;
         public TextView beginHour;
         public TextView beginMinute;
@@ -182,6 +185,7 @@ android.os.Handler handler = new android.os.Handler(){
 
                 convertView = mInflater.inflate(R.layout.lv_schedule, null);
                 holder.img = (ImageView)convertView.findViewById(R.id.img);
+                holder.scheduleId = (TextView)convertView.findViewById(R.id.scheduleId);
                 holder.eventId = (TextView)convertView.findViewById(R.id.eventId);
                 holder.beginHour = (TextView)convertView.findViewById(R.id.beginHour);
                 holder.beginMinute = (TextView)convertView.findViewById(R.id.beginMinute);
@@ -196,7 +200,7 @@ android.os.Handler handler = new android.os.Handler(){
             }
 
 
-           // holder.img.setBackgroundResource((Integer)mData.get(position).get("img"));
+            holder.scheduleId.setText((String)mData.get(position).get("scheduleId"));
             holder.eventId.setText((String)mData.get(position).get("eventId"));
             holder.beginHour.setText((String)mData.get(position).get("beginHour"));
             holder.beginMinute.setText((String)mData.get(position).get("beginMinute"));
