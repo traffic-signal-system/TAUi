@@ -6,11 +6,11 @@ import java.util.Date;
 @Table(name = "GbtTrafficStatistics")
 public class GbtTrafficStatistics {
 
-    private Long id;
+    private int id;
 
-	private long deviceId;
+	private int deviceId;
 
-	private byte detectorId;
+	private int detectorId;
 
     private Date recordTime;
 
@@ -22,27 +22,27 @@ public class GbtTrafficStatistics {
 
     private int minOccupancy;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public long getDeviceId() {
+    public int getDeviceId() {
         return deviceId;
     }
 
-    public void setDeviceId(long deviceId) {
+    public void setDeviceId(int deviceId) {
         this.deviceId = deviceId;
     }
 
-    public byte getDetectorId() {
+    public int getDetectorId() {
         return detectorId;
     }
 
-    public void setDetectorId(byte detectorId) {
+    public void setDetectorId(int detectorId) {
         this.detectorId = detectorId;
     }
 

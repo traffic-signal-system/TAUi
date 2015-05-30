@@ -19,8 +19,8 @@
             >
 
             <ImageView
-                android:layout_width="360dp"
-                android:layout_height="360dp"
+                android:layout_width="600dp"
+                android:layout_height="600dp"
                 android:src="@drawable/back20130627" />
 
             <LinearLayout
@@ -59,25 +59,25 @@
                         android:id="@+id/westLeft4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:onClick="westLeft"
+                        android:onClick="westLeft4"
                         android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:id="@+id/westLeft3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:onClick="westLeft"
+                        android:onClick="westLeft3"
                         android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:id="@+id/westLeft2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:onClick="westLeft"
+                        android:onClick="westLeft2"
                         android:src="@drawable/detectorlinee" />
                     <ImageView
                         android:id="@+id/westLeft1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:onClick="westLeft"
+                        android:onClick="westLeft1"
                         android:src="@drawable/detectorlinee" />
                     </LinearLayout>
 
@@ -625,7 +625,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID"/>
+                    android:text="1"/>
 
                 </LinearLayout>
             <LinearLayout
@@ -714,6 +714,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
+                    android:onClick="saveDetecotr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="保存"/>

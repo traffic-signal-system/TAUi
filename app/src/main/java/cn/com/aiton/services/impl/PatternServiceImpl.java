@@ -68,17 +68,17 @@ public class PatternServiceImpl implements PatternService {
             Iterator<GbtTimePattern> gbtTimePatternIterator = gbtTimePatterns.iterator();
             while(gbtTimePatternIterator.hasNext()){
                 GbtTimePattern gbtTimePattern = gbtTimePatternIterator.next();
-                hex = ArrayUtils.add(hex, gbtTimePattern.getTimePatternId());
-                hex = ArrayUtils.add(hex,gbtTimePattern.getCycleTime());
-                hex = ArrayUtils.add(hex,gbtTimePattern.getOffset());
-                hex = ArrayUtils.add(hex,gbtTimePattern.getCoordinatePhase());
-                hex = ArrayUtils.add(hex,gbtTimePattern.getStagePatternId());
+                hex = ArrayUtils.add(hex, (byte)gbtTimePattern.getTimePatternId());
+                hex = ArrayUtils.add(hex,(byte)gbtTimePattern.getCycleTime());
+                hex = ArrayUtils.add(hex,(byte)gbtTimePattern.getOffset());
+                hex = ArrayUtils.add(hex,(byte)gbtTimePattern.getCoordinatePhase());
+                hex = ArrayUtils.add(hex,(byte)gbtTimePattern.getStagePatternId());
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+          //  System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

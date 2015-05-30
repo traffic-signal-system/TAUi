@@ -10,13 +10,13 @@ public class CountDown {
 
     private int deviceId;
 
-    private byte countDownId;
+    private int countDownId;
 
-    private long phase;
+    private int phase;
 
     private int overlapPhase;
 
-    private byte mode;
+    private int mode;
 
     public int getId() {
         return id;
@@ -34,19 +34,19 @@ public class CountDown {
         this.deviceId = deviceId;
     }
 
-    public byte getCountDownId() {
+    public int getCountDownId() {
         return countDownId;
     }
 
-    public void setCountDownId(byte countDownId) {
+    public void setCountDownId(int countDownId) {
         this.countDownId = countDownId;
     }
 
-    public long getPhase() {
+    public int getPhase() {
         return phase;
     }
 
-    public void setPhase(long phase) {
+    public void setPhase(int phase) {
         this.phase = phase;
     }
 
@@ -58,11 +58,11 @@ public class CountDown {
         this.overlapPhase = overlapPhase;
     }
 
-    public byte getMode() {
+    public int getMode() {
         return mode;
     }
 
-    public void setMode(byte mode) {
+    public void setMode(int mode) {
         this.mode = mode;
     }
 }

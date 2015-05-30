@@ -1,6 +1,7 @@
 package cn.com.aiton.utils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import cn.com.aiton.domain.ExtReportState;
@@ -43,6 +44,7 @@ public class ExtReportUtils {
             int rs = (ui >> i) & 0x01;
             listLamp.add(rs);
         }
+        Collections.reverse(listLamp);
         return listLamp;
     }
 

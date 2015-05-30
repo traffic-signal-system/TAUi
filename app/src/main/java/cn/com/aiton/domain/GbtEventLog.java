@@ -12,7 +12,7 @@ public class GbtEventLog {
 
     private int logId;
 
-    private byte eventType;
+    private int eventType;
 
     private long happenTime;
 
@@ -46,11 +46,11 @@ public class GbtEventLog {
         this.logId = logId;
     }
 
-    public byte getEventType() {
+    public int getEventType() {
         return eventType;
     }
 
-    public void setEventType(byte eventType) {
+    public void setEventType(int eventType) {
         this.eventType = eventType;
     }
 

@@ -6,9 +6,9 @@ import net.tsz.afinal.annotation.sqlite.Table;
 @Table(name = "NtcipPort1Table")
 public class NtcipPort1Table {
 
-    private Long id;
+    private int id;
 
-    private Long deviceId;
+    private int deviceId;
 
     private int port1Number;
 
@@ -20,19 +20,19 @@ public class NtcipPort1Table {
 
     private int port1FaultFrame;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getDeviceId() {
+    public int getDeviceId() {
         return deviceId;
     }
 
-    public void setDeviceId(Long deviceId) {
+    public void setDeviceId(int deviceId) {
         this.deviceId = deviceId;
     }
 

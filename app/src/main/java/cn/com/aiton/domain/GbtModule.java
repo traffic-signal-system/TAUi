@@ -10,7 +10,7 @@ public class GbtModule {
 
 	private int deviceId;
 
-	private byte moduleId;
+	private int moduleId;
 
 	private String deviceNode;
 
@@ -20,7 +20,7 @@ public class GbtModule {
 
 	private String version;
 
-	private byte type;
+	private int type;
 
     public int getId() {
         return id;
@@ -38,11 +38,11 @@ public class GbtModule {
         this.deviceId = deviceId;
     }
 
-    public byte getModuleId() {
+    public int getModuleId() {
         return moduleId;
     }
 
-    public void setModuleId(byte moduleId) {
+    public void setModuleId(int moduleId) {
         this.moduleId = moduleId;
     }
 
@@ -78,11 +78,11 @@ public class GbtModule {
         this.version = version;
     }
 
-    public byte getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(byte type) {
+    public void setType(int type) {
         this.type = type;
     }
 }

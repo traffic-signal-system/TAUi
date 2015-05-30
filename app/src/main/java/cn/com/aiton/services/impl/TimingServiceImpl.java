@@ -35,9 +35,9 @@ public class TimingServiceImpl implements Timing {
             hex[6] = bytes[0];
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] result = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] result = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] result = ByteUtils.stringToByteArrayByISO(info);
+            ///System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

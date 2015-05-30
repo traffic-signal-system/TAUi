@@ -78,10 +78,10 @@ public class ByteUtils {
      */
     public static int byteToInt(byte[] b) {
         int s = 0;
-        int s0 = b[0] & 0xff;// 最低位
-        int s1 = b[1] & 0xff;
-        int s2 = b[2] & 0xff;
-        int s3 = b[3] & 0xff;
+        int s0 = b[3] & 0xff;// 最低位
+        int s1 = b[2] & 0xff;
+        int s2 = b[1] & 0xff;
+        int s3 = b[0] & 0xff;
         s3 <<= 24;
         s2 <<= 16;
         s1 <<= 8;

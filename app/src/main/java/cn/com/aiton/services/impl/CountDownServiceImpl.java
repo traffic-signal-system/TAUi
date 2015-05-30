@@ -22,9 +22,9 @@ public class CountDownServiceImpl implements CountDownService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_CNTDOWNDEV);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
 
         }catch (Exception ex){
             ex.printStackTrace();

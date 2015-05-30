@@ -74,21 +74,21 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
             Iterator<GbtOverlap> gbtOverlapIterator = gbtOverlaps.iterator();
             while(gbtOverlapIterator.hasNext()){
                 GbtOverlap gbtChannel = gbtOverlapIterator.next();
-                hex = ArrayUtils.add(hex,gbtChannel.getOverlapId());
-                hex = ArrayUtils.add(hex,gbtChannel.getOverlapType());
-                hex = ArrayUtils.add(hex,gbtChannel.getIncludePhaseCount());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getOverlapId());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getOverlapType());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getIncludePhaseCount());
                 hex = ArrayUtils.addAll(hex, OverlapPhaseUtils.stringToByteArray(gbtChannel.getIncludePhase()));
-                hex = ArrayUtils.add(hex,gbtChannel.getAmendPhaseCount());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getAmendPhaseCount());
                 hex = ArrayUtils.addAll(hex, OverlapPhaseUtils.stringToByteArray(gbtChannel.getAmendPhase()));
-                hex = ArrayUtils.add(hex,gbtChannel.getTailGreen());
-                hex = ArrayUtils.add(hex,gbtChannel.getTailYellow());
-                hex = ArrayUtils.add(hex,gbtChannel.getTailRed());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getTailGreen());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getTailYellow());
+                hex = ArrayUtils.add(hex,(byte)gbtChannel.getTailRed());
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

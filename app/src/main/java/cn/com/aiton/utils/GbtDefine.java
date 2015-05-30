@@ -345,6 +345,7 @@ public class GbtDefine {
     public static byte[] SET_LAMP_CHECK_RESPONSE = { SET_REQUEST_RESPONSE, LAMP_CHECK, 0x00 };
     public static byte[] SET_LAMP_CHECK_NO_RESPONE = { SET_REQUEST_NO_RESPONSE, LAMP_CHECK, 0x00 };
     public static int LAMP_CHECK_BYTE_SIZE = 2;
+    public static byte LAMP_CHECK_LEN = 0x60;
 
     public static byte LAMP_BLOCK_CHECK_COLLISION = (byte)0xe3;
     public static byte[] SET_LAMP_BLOCK_CHECK_COLLISION = { SET_REQUEST_RESPONSE, LAMP_BLOCK_CHECK_COLLISION, 0x00, 0x03 };

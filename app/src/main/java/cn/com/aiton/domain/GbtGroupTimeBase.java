@@ -10,15 +10,15 @@ public class GbtGroupTimeBase {
 
 	private int groupId;
 
-	private byte timeBaseId;
+	private int timeBaseId;
 
 	private int month;
 
-	private short week;
+	private int week;
 
 	private long day;
 
-	private byte scheduleId;
+	private int scheduleId;
 
     public int getId() {
         return id;
@@ -36,11 +36,11 @@ public class GbtGroupTimeBase {
         this.groupId = groupId;
     }
 
-    public byte getTimeBaseId() {
+    public int getTimeBaseId() {
         return timeBaseId;
     }
 
-    public void setTimeBaseId(byte timeBaseId) {
+    public void setTimeBaseId(int timeBaseId) {
         this.timeBaseId = timeBaseId;
     }
 
@@ -52,11 +52,11 @@ public class GbtGroupTimeBase {
         this.month = month;
     }
 
-    public short getWeek() {
+    public int getWeek() {
         return week;
     }
 
-    public void setWeek(short week) {
+    public void setWeek(int week) {
         this.week = week;
     }
 
@@ -68,11 +68,11 @@ public class GbtGroupTimeBase {
         this.day = day;
     }
 
-    public byte getScheduleId() {
+    public int getScheduleId() {
         return scheduleId;
     }
 
-    public void setScheduleId(byte scheduleId) {
+    public void setScheduleId(int scheduleId) {
         this.scheduleId = scheduleId;
     }
 }

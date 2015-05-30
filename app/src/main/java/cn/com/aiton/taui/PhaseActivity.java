@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
@@ -26,6 +28,8 @@ public class PhaseActivity extends ActivityGroup {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_phase);
         context = this;
         manager = getLocalActivityManager();
@@ -34,8 +38,8 @@ public class PhaseActivity extends ActivityGroup {
 
         container.removeAllViews();
         container.addView(manager.startActivity(
-                "PAGE_0",
-                new Intent(context, BasetimeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                "PAGE_1",
+                new Intent(context, ManaulActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
                 .getDecorView());
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

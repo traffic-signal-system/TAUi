@@ -28,20 +28,20 @@
             android:paddingBottom="6dp"
             android:paddingTop="6dp">
 
-            <RadioButton
-                android:id="@+id/main_tab_basetime"
-                style="@style/MMTabButton1"
-                android:layout_weight="1.0"
-                android:checked="true"
-                android:text="时基" />
+
 
             <RadioButton
                 android:id="@+id/main_tab_manual"
                 style="@style/MMTabButton1"
                 android:layout_weight="1.0"
-
+                android:checked="true"
                 android:text="手控" />
+            <RadioButton
+                android:id="@+id/main_tab_basetime"
+                style="@style/MMTabButton1"
+                android:layout_weight="1.0"
 
+                android:text="时基" />
             <RadioButton
                 android:id="@+id/main_tab_phase"
                 style="@style/MMTabButton1"

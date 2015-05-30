@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
@@ -45,6 +46,7 @@ public class ScheduleActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         setContentView(R.layout.activity_schedule);
         listView = (ListView)findViewById(R.id.list);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -123,9 +125,9 @@ android.os.Handler handler = new android.os.Handler(){
      * listview中点击按键弹出对话框
      */
     public void showInfo(){
-        new AlertDialog.Builder(this)
-                .setTitle("我的listview")
-                .setMessage("介绍...")
+        new AlertDialog.Builder(this.getParent())
+                .setTitle("提示")
+                .setMessage("功能未开放，请联系厂家！")
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

@@ -13,9 +13,9 @@ public class Vip {
 
 	private int validity;
 
-	private byte direc;
+	private int direc;
 
-	private byte control;
+	private int control;
 
 	private Date startTime;
 
@@ -43,19 +43,19 @@ public class Vip {
         this.validity = validity;
     }
 
-    public byte getDirec() {
+    public int getDirec() {
         return direc;
     }
 
-    public void setDirec(byte direc) {
+    public void setDirec(int direc) {
         this.direc = direc;
     }
 
-    public byte getControl() {
+    public int getControl() {
         return control;
     }
 
-    public void setControl(byte control) {
+    public void setControl(int control) {
         this.control = control;
     }
 

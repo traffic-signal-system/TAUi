@@ -8,8 +8,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import net.tsz.afinal.FinalActivity;
 import net.tsz.afinal.FinalDb;
@@ -20,6 +23,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -30,6 +34,7 @@ import cn.com.aiton.domain.GbtChannel;
 import cn.com.aiton.domain.GbtDirec;
 import cn.com.aiton.domain.TscNode;
 import cn.com.aiton.utils.AndroidTscDefine;
+import cn.com.aiton.utils.ByteUtils;
 import cn.com.aiton.utils.ExtReportUtils;
 import cn.com.aiton.utils.GbtDefine;
 import cn.com.aiton.utils.TscDbUtils;
@@ -42,28 +47,43 @@ public class ManaulActivity extends FinalActivity {
 
     TscNode node;
 
-
     List<GbtChannel> gbtChannelList;
     List<GbtDirec> gbtDirecList;
     ImageView northLeft ;
     ImageView northStriaght;
     ImageView northRight;
     ImageView northOther;
+    ImageView northNone1;
+    ImageView northNone2;
+    ImageView northPedestrain1;
+    ImageView northPedestrain2;
 
     ImageView eastLeft;
     ImageView eastStriaght;
     ImageView eastRight;
     ImageView eastOther;
+    ImageView eastNone1;
+    ImageView eastNone2;
+    ImageView eastPedestrain1;
+    ImageView eastPedestrain2;
 
     ImageView southLeft;
     ImageView southStriaght;
     ImageView southRight ;
     ImageView southOther;
+    ImageView southNone1;
+    ImageView southNone2;
+    ImageView southPedestrain1;
+    ImageView southPedestrain2;
 
     ImageView westLeft ;
     ImageView westStriaght;
     ImageView westRight;
     ImageView westOther;
+    ImageView westNone1;
+    ImageView westNone2;
+    ImageView westPedestrain1;
+    ImageView westPedestrain2;
     private Thread thread;
 
     public void updateRed(GbtDirec gbtDirec){
@@ -79,6 +99,18 @@ public class ManaulActivity extends FinalActivity {
         if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
             northOther.setImageResource(R.drawable.redone);
         }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            northPedestrain1.setImageResource(R.drawable.redone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            northPedestrain2.setImageResource(R.drawable.redone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            northNone1.setImageResource(R.drawable.redone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            northNone2.setImageResource(R.drawable.redone);
+        }
         if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
             eastLeft.setImageResource(R.drawable.redone);
         }
@@ -90,6 +122,18 @@ public class ManaulActivity extends FinalActivity {
         }
         if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
             eastOther.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            eastPedestrain1.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            eastPedestrain2.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            eastNone1.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            eastNone2.setImageResource(R.drawable.redone);
         }
         if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
             southLeft.setImageResource(R.drawable.redone);
@@ -103,6 +147,18 @@ public class ManaulActivity extends FinalActivity {
         if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
             southOther.setImageResource(R.drawable.redone);
         }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            southPedestrain1.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            southPedestrain2.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            southNone1.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            southNone2.setImageResource(R.drawable.redone);
+        }
         if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
             westLeft.setImageResource(R.drawable.redone);
         }
@@ -114,6 +170,18 @@ public class ManaulActivity extends FinalActivity {
         }
         if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
             westOther.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            westPedestrain1.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            westPedestrain2.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            westNone1.setImageResource(R.drawable.redone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+            westNone2.setImageResource(R.drawable.redone);
         }
     }
 
@@ -130,6 +198,18 @@ public class ManaulActivity extends FinalActivity {
         if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
             northOther.setImageResource(R.drawable.greenone);
         }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            northPedestrain1.setImageResource(R.drawable.greenone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            northPedestrain2.setImageResource(R.drawable.greenone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            northNone1.setImageResource(R.drawable.greenone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            northNone2.setImageResource(R.drawable.greenone);
+        }
         if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
             eastLeft.setImageResource(R.drawable.greenone);
         }
@@ -141,6 +221,18 @@ public class ManaulActivity extends FinalActivity {
         }
         if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
             eastOther.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            eastPedestrain1.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            eastPedestrain2.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            eastNone1.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            eastNone2.setImageResource(R.drawable.greenone);
         }
         if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
             southLeft.setImageResource(R.drawable.greenone);
@@ -154,6 +246,18 @@ public class ManaulActivity extends FinalActivity {
         if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
             southOther.setImageResource(R.drawable.greenone);
         }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            southPedestrain1.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            southPedestrain2.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            southNone1.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            southNone2.setImageResource(R.drawable.greenone);
+        }
         if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
             westLeft.setImageResource(R.drawable.greenone);
         }
@@ -165,6 +269,18 @@ public class ManaulActivity extends FinalActivity {
         }
         if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
             westOther.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            westPedestrain1.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            westPedestrain2.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            westNone1.setImageResource(R.drawable.greenone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+            westNone1.setImageResource(R.drawable.greenone);
         }
     }
 
@@ -181,6 +297,19 @@ public class ManaulActivity extends FinalActivity {
         if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
             northOther.setImageResource(R.drawable.yellowone);
         }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            northPedestrain1.setImageResource(R.drawable.yellowone);
+        }
+
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            northPedestrain2.setImageResource(R.drawable.yellowone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            northNone1.setImageResource(R.drawable.yellowone);
+        }
+        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            northNone2.setImageResource(R.drawable.yellowone);
+        }
         if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
             eastLeft.setImageResource(R.drawable.yellowone);
         }
@@ -192,6 +321,18 @@ public class ManaulActivity extends FinalActivity {
         }
         if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
             eastOther.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            eastPedestrain1.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            eastPedestrain2.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            eastNone1.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            eastNone2.setImageResource(R.drawable.yellowone);
         }
         if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
             southLeft.setImageResource(R.drawable.yellowone);
@@ -205,6 +346,18 @@ public class ManaulActivity extends FinalActivity {
         if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
             southOther.setImageResource(R.drawable.yellowone);
         }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            southPedestrain1.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            southPedestrain2.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            southNone1.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            southNone2.setImageResource(R.drawable.yellowone);
+        }
         if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
             westLeft.setImageResource(R.drawable.yellowone);
         }
@@ -216,6 +369,18 @@ public class ManaulActivity extends FinalActivity {
         }
         if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
             westOther.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            westPedestrain1.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            westPedestrain2.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            westNone1.setImageResource(R.drawable.yellowone);
+        }
+        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+            westNone2.setImageResource(R.drawable.yellowone);
         }
     }
     private Handler mhandler = new Handler() {
@@ -229,8 +394,11 @@ public class ManaulActivity extends FinalActivity {
                     String countdown = String.valueOf(ers.getStageTotalTime() - ers.getStageRunTime());
                     tv.setText(countdown);
                     List<Integer> listChannelGreen = ers.getListChannelGreenStatus();
+                 //   Collections.reverse(listChannelGreen);
                     List<Integer> listChannelRed = ers.getListChannelRedStatus();
+                 //   Collections.reverse(listChannelRed);
                     List<Integer> listChannelYellow = ers.getListChannelYellowStatus();
+                  //  Collections.reverse(listChannelYellow);
                     for(int i=0;i<listChannelGreen.size();i++){
                         for(int j=0;j<gbtChannelList.size();j++){
                             GbtChannel gbtchannel = gbtChannelList.get(j);
@@ -363,7 +531,7 @@ public class ManaulActivity extends FinalActivity {
                     msg.what = SUCCESS;
 
                     byte[] bytes = ucs.receiveByte(node.getIpAddress(),node.getPort());
-                    System.out.println("bytes : "+bytes[0]+" "+bytes[1]+" "+bytes[2]+" "+bytes[3]+" "+bytes[4]+" "+bytes[5]+" "+bytes[6]+" "+bytes[7]+" "+bytes[8]);
+                    System.out.println("bytes : "+Integer.toHexString(bytes[0])+" "+Integer.toHexString(bytes[1])+" "+Integer.toHexString(bytes[2])+" "+Integer.toHexString(bytes[3])+" "+Integer.toHexString(bytes[4])+" "+Integer.toHexString(bytes[5])+" "+Integer.toHexString(bytes[6])+" "+Integer.toHexString(bytes[7])+" "+Integer.toHexString(bytes[8])+" "+Integer.toHexString(bytes[9])+" "+Integer.toHexString(bytes[10])+" "+Integer.toHexString(bytes[11])+" "+Integer.toHexString(bytes[12])+" "+Integer.toHexString(bytes[13])+" "+Integer.toHexString(bytes[14])+" "+Integer.toHexString(bytes[15])+" "+Integer.toHexString(bytes[16])+" "+Integer.toHexString(bytes[17])+" "+Integer.toHexString(bytes[18])+" "+Integer.toHexString(bytes[19])+" "+Integer.toHexString(bytes[20])+" "+Integer.toHexString(bytes[21])+" "+Integer.toHexString(bytes[22])+" "+Integer.toHexString(bytes[23])+" "+ Integer.toHexString(bytes[24])+" "+ Integer.toHexString(bytes[25])+" "+ Integer.toHexString(bytes[26])+" "+ Integer.toHexString(bytes[27])+" "+ Integer.toHexString(bytes[28]));
                     Bundle bundle = new Bundle();
                     ExtReportState ers = ExtReportUtils.byte2ReportState(bytes);
 
@@ -374,6 +542,7 @@ public class ManaulActivity extends FinalActivity {
                     //Thread.sleep(1000);
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
+                   // Toast.makeText(ManaulActivity.this,"信号机成功回复当前方案信息！",Toast.LENGTH_LONG).show();
                     e.printStackTrace();
                 }
             }
@@ -424,36 +593,63 @@ public class ManaulActivity extends FinalActivity {
 
     };
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_manaul);
+    public void initViews(){
         northLeft = (ImageView)findViewById(R.id.northLeft);
         northStriaght = (ImageView)findViewById(R.id.northStriaght);
         northRight = (ImageView)findViewById(R.id.northRight);
         northOther = (ImageView)findViewById(R.id.northOther);
-
+        northNone1 = (ImageView)findViewById(R.id.northNone1);
+        northNone2 = (ImageView)findViewById(R.id.northNone2);
+        northPedestrain1 = (ImageView)findViewById(R.id.northPedestrain1);
+        northPedestrain2 = (ImageView)findViewById(R.id.northPedestrain2);
         eastLeft = (ImageView)findViewById(R.id.eastLeft);
         eastStriaght = (ImageView)findViewById(R.id.eastStriaght);
         eastRight = (ImageView)findViewById(R.id.eastRight);
         eastOther = (ImageView)findViewById(R.id.eastOther);
-
+        eastNone1 = (ImageView)findViewById(R.id.eastNone1);
+        eastNone2 = (ImageView)findViewById(R.id.eastNone2);
+        eastPedestrain1 = (ImageView)findViewById(R.id.eastPedestrain1);
+        eastPedestrain2 = (ImageView)findViewById(R.id.eastPedestrain2);
         southLeft = (ImageView)findViewById(R.id.southLeft);
         southStriaght = (ImageView)findViewById(R.id.southStriaght);
         southRight = (ImageView)findViewById(R.id.southRight);
         southOther = (ImageView)findViewById(R.id.southOther);
-
+        southNone1 = (ImageView)findViewById(R.id.southNone1);
+        southNone2 = (ImageView)findViewById(R.id.southNone2);
+        southPedestrain1 = (ImageView)findViewById(R.id.southPedestrain1);
+        southPedestrain2 = (ImageView)findViewById(R.id.southPedestrain2);
         westLeft = (ImageView)findViewById(R.id.westLeft);
         westStriaght = (ImageView)findViewById(R.id.westStriaght);
         westRight = (ImageView)findViewById(R.id.westRight);
         westOther = (ImageView)findViewById(R.id.westOther);
+        westNone1  = (ImageView)findViewById(R.id.westNone1);
+        westNone2 = (ImageView)findViewById(R.id.westNone2);
+        westPedestrain1 = (ImageView)findViewById(R.id.westPedestrain1);
+        westPedestrain2 = (ImageView)findViewById(R.id.westPedestrain2);
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
+        setContentView(R.layout.activity_manaul);
+        initViews();
         Context ctx = ManaulActivity.this;
         SharedPreferences sp = ctx.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
         node = AndroidTscDefine.spToTscNode(sp);
         thread = new Thread(runnable);
         thread.start();
+
+        RadioGroup rg_control = (RadioGroup)findViewById(R.id.rg_control);
+        rg_control.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                if (radioId == R.id.rb_munual){
+
+                }
+            }
+        });
     }
 
     @Override

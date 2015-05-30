@@ -121,4 +121,6 @@ public interface LampCheckService {
      * @return
      */
     public List<GbtLampCheck> getLampCheck(TscNode node);
+
+    public Message setLampCheck(List<GbtLampCheck> gbtLampChecks,TscNode node);
 }

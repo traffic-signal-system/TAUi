@@ -9,7 +9,7 @@ public class GbtCollision {
 
 	private int deviceId;
 
-	private byte phaseId;
+	private int phaseId;
 
 	private int flag;
 
@@ -29,11 +29,12 @@ public class GbtCollision {
         this.deviceId = deviceId;
     }
 
-    public byte getPhaseId() {
+
+    public int getPhaseId() {
         return phaseId;
     }
 
-    public void setPhaseId(byte phaseId) {
+    public void setPhaseId(int phaseId) {
         this.phaseId = phaseId;
     }
 

@@ -10,21 +10,21 @@ public class GbtDetector {
 
 	private int deviceId;
 
-	private byte detectorId;
+	private int detectorId;
 
-	private byte phaseId;
+	private int phaseId;
 
-	private byte detectorType;
+	private int detectorType;
 
-	private byte direc;
+	private int direc;
 
-	private byte requestEffectTime;
+	private int requestEffectTime;
 
-	private byte detectorOption;
+	private int detectorOption;
 
 	private short saturationVolume;
 
-	private byte saturationOccupancy;
+	private int saturationOccupancy;
 
     public int getId() {
         return id;
@@ -42,51 +42,51 @@ public class GbtDetector {
         this.deviceId = deviceId;
     }
 
-    public byte getDetectorId() {
+    public int getDetectorId() {
         return detectorId;
     }
 
-    public void setDetectorId(byte detectorId) {
+    public void setDetectorId(int detectorId) {
         this.detectorId = detectorId;
     }
 
-    public byte getPhaseId() {
+    public int getPhaseId() {
         return phaseId;
     }
 
-    public void setPhaseId(byte phaseId) {
+    public void setPhaseId(int phaseId) {
         this.phaseId = phaseId;
     }
 
-    public byte getDetectorType() {
+    public int getDetectorType() {
         return detectorType;
     }
 
-    public void setDetectorType(byte detectorType) {
+    public void setDetectorType(int detectorType) {
         this.detectorType = detectorType;
     }
 
-    public byte getDirec() {
+    public int getDirec() {
         return direc;
     }
 
-    public void setDirec(byte direc) {
+    public void setDirec(int direc) {
         this.direc = direc;
     }
 
-    public byte getRequestEffectTime() {
+    public int getRequestEffectTime() {
         return requestEffectTime;
     }
 
-    public void setRequestEffectTime(byte requestEffectTime) {
+    public void setRequestEffectTime(int requestEffectTime) {
         this.requestEffectTime = requestEffectTime;
     }
 
-    public byte getDetectorOption() {
+    public int getDetectorOption() {
         return detectorOption;
     }
 
-    public void setDetectorOption(byte detectorOption) {
+    public void setDetectorOption(int detectorOption) {
         this.detectorOption = detectorOption;
     }
 
@@ -98,11 +98,11 @@ public class GbtDetector {
         this.saturationVolume = saturationVolume;
     }
 
-    public byte getSaturationOccupancy() {
+    public int getSaturationOccupancy() {
         return saturationOccupancy;
     }
 
-    public void setSaturationOccupancy(byte saturationOccupancy) {
+    public void setSaturationOccupancy(int saturationOccupancy) {
         this.saturationOccupancy = saturationOccupancy;
     }
 }

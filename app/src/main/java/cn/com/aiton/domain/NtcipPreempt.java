@@ -6,29 +6,29 @@ import net.tsz.afinal.annotation.sqlite.Table;
 @Table(name = "NtcipPreempt")
 public class NtcipPreempt {
 
-    private Long id;
+    private int id;
 
-    private Long deviceId;
+    private int deviceId;
 
     private int maxPreempts;
 
-    private Long preemptTable;
+    private long preemptTable;
 
-    private Long preemptControlTable;
+    private long preemptControlTable;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getDeviceId() {
+    public int getDeviceId() {
         return deviceId;
     }
 
-    public void setDeviceId(Long deviceId) {
+    public void setDeviceId(int deviceId) {
         this.deviceId = deviceId;
     }
 
@@ -40,19 +40,19 @@ public class NtcipPreempt {
         this.maxPreempts = maxPreempts;
     }
 
-    public Long getPreemptTable() {
+    public long getPreemptTable() {
         return preemptTable;
     }
 
-    public void setPreemptTable(Long preemptTable) {
+    public void setPreemptTable(long preemptTable) {
         this.preemptTable = preemptTable;
     }
 
-    public Long getPreemptControlTable() {
+    public long getPreemptControlTable() {
         return preemptControlTable;
     }
 
-    public void setPreemptControlTable(Long preemptControlTable) {
+    public void setPreemptControlTable(long preemptControlTable) {
         this.preemptControlTable = preemptControlTable;
     }
 }

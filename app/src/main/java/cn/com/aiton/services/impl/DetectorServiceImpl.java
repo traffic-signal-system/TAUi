@@ -406,7 +406,7 @@ public class DetectorServiceImpl implements DetectorService {
             while(gbtDetectorIterator.hasNext()){
                 GbtDetector gbtDetector = gbtDetectorIterator.next();
                 byte[] saturationVolume = ByteUtils.shortToByte(gbtDetector.getSaturationVolume());
-                byte[] objectArray = {gbtDetector.getDetectorId(),gbtDetector.getPhaseId(),gbtDetector.getDetectorType(),gbtDetector.getDirec(),gbtDetector.getRequestEffectTime(),gbtDetector.getDetectorOption(),saturationVolume[1],saturationVolume[0],gbtDetector.getSaturationOccupancy()};
+                byte[] objectArray = {(byte)gbtDetector.getDetectorId(),(byte)gbtDetector.getPhaseId(),(byte)gbtDetector.getDetectorType(),(byte)gbtDetector.getDirec(),(byte)gbtDetector.getRequestEffectTime(),(byte)gbtDetector.getDetectorOption(),saturationVolume[1],saturationVolume[0],(byte)gbtDetector.getSaturationOccupancy()};
                 hex = ArrayUtils.addAll(hex,objectArray);
             }
             UdpClientSocket client = new UdpClientSocket();

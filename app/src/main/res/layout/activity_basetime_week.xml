@@ -8,17 +8,36 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="编号     "
-            android:textSize="40dp"/>
-        <NumberPicker
-            android:layout_width="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
             android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时基编号"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_week_basetime_id" />
+        </LinearLayout>
 
-        </NumberPicker>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时段编号"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_week_schedule" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -92,22 +111,12 @@
 
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:layout_weight="1" />
-
-
-    </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
         <Button
+            android:onClick="btWeekSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/submit"
@@ -115,6 +124,7 @@
             android:id="@+id/btnSubmit"/>
 
         <Button
+            android:onClick="btWeekRead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/read"

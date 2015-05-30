@@ -28,9 +28,9 @@ public class LogEventServiceImpl implements LogEventService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_EVENT_LOG);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
             if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }
@@ -45,7 +45,7 @@ public class LogEventServiceImpl implements LogEventService {
                 gbtEventLog.setEventType(eventLogResult[i][1]);
                 gbtEventLog.setHappenTime((eventLogResult[i][2] << 24)+(eventLogResult[i][3] << 16) + (eventLogResult[i][4] << 8) + (eventLogResult[i][5]));
                 gbtEventLog.setEventValue((eventLogResult[i][6] << 24) + (eventLogResult[i][7] << 16) + (eventLogResult[i][8] << 8) +(eventLogResult[i][9]));
-                gbtEventLog.setEventLogDesc(EventLogUtils.eventDescToString(gbtEventLog.getEventValue(), gbtEventLog.getEventType()));
+                gbtEventLog.setEventLogDesc(EventLogUtils.eventDescToString(gbtEventLog.getEventValue(), (byte)gbtEventLog.getEventType()));
                 gbtEventLog.setEventTime(DateTimeUtils.utcToLocalTimeString(gbtEventLog.getHappenTime()));
                 gbtEventLogs.add(gbtEventLog);
             }

@@ -19,6 +19,7 @@
     <string name="manual_east">东</string>
     <string name="manual_south">南</string>
     <string name="deleteTsc">删除信号机</string>
+    <string name="save">保存</string>
     <string name="phase_config_save">保存到信号机</string>
     <string name="manual_west">西</string>
     <string name="title_activity_phase_config">相位配置</string>

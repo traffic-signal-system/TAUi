@@ -74,11 +74,11 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             Iterator<GbtTimeBase> gbtTimeBaseIterator = gbtTimeBaseList.iterator();
             while(gbtTimeBaseIterator.hasNext()){
                 GbtTimeBase gbtTimeBase = gbtTimeBaseIterator.next();
-                byte timeBaseId =gbtTimeBase.getTimeBaseId();
+                byte timeBaseId =(byte)gbtTimeBase.getTimeBaseId();
                 byte[] monthFlag = ByteUtils.shortToByte(gbtTimeBase.getMonth());
-                byte weekFlag = gbtTimeBase.getWeek();
+                byte weekFlag = (byte)gbtTimeBase.getWeek();
                 byte[] dayFlag = ByteUtils.intToByte(gbtTimeBase.getDay());
-                byte scheduleId = gbtTimeBase.getScheduleId();
+                byte scheduleId = (byte)gbtTimeBase.getScheduleId();
                 hex = ArrayUtils.add(hex,timeBaseId);
                 hex = ArrayUtils.addAll(hex,monthFlag);
                 hex = ArrayUtils.add(hex,weekFlag);
@@ -89,9 +89,9 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           //System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();
@@ -117,11 +117,11 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             Iterator<GbtTimeBase> gbtTimeBaseIterator = gbtTimeBases.iterator();
             while(gbtTimeBaseIterator.hasNext()){
                 GbtTimeBase gbtTimeBase = gbtTimeBaseIterator.next();
-                byte timeBaseId =gbtTimeBase.getTimeBaseId();
+                byte timeBaseId =(byte)gbtTimeBase.getTimeBaseId();
                 byte[] monthFlag = ByteUtils.shortToByte(gbtTimeBase.getMonth());
-                byte weekFlag = gbtTimeBase.getWeek();
+                byte weekFlag = (byte)gbtTimeBase.getWeek();
                 byte[] dayFlag = ByteUtils.intToByte(gbtTimeBase.getDay());
-                byte scheduleId = gbtTimeBase.getScheduleId();
+                byte scheduleId = (byte)gbtTimeBase.getScheduleId();
                 hex = ArrayUtils.add(hex,timeBaseId);
                 hex = ArrayUtils.addAll(hex,monthFlag);
                 hex = ArrayUtils.add(hex,weekFlag);
@@ -132,9 +132,9 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

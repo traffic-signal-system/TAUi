@@ -10,15 +10,15 @@ public class GbtTimePattern {
 
 	private int deviceId;
 
-	private byte timePatternId;
+	private int timePatternId;
 
-	private byte cycleTime;
+	private int cycleTime;
 
-	private byte offset;
+	private int offset;
 
-	private byte coordinatePhase;
+	private int coordinatePhase;
 
-	private byte stagePatternId;
+	private int stagePatternId;
 
     public int getId() {
         return id;
@@ -36,43 +36,43 @@ public class GbtTimePattern {
         this.deviceId = deviceId;
     }
 
-    public byte getTimePatternId() {
+    public int getTimePatternId() {
         return timePatternId;
     }
 
-    public void setTimePatternId(byte timePatternId) {
+    public void setTimePatternId(int timePatternId) {
         this.timePatternId = timePatternId;
     }
 
-    public byte getCycleTime() {
+    public int getCycleTime() {
         return cycleTime;
     }
 
-    public void setCycleTime(byte cycleTime) {
+    public void setCycleTime(int cycleTime) {
         this.cycleTime = cycleTime;
     }
 
-    public byte getOffset() {
+    public int getOffset() {
         return offset;
     }
 
-    public void setOffset(byte offset) {
+    public void setOffset(int offset) {
         this.offset = offset;
     }
 
-    public byte getCoordinatePhase() {
+    public int getCoordinatePhase() {
         return coordinatePhase;
     }
 
-    public void setCoordinatePhase(byte coordinatePhase) {
+    public void setCoordinatePhase(int coordinatePhase) {
         this.coordinatePhase = coordinatePhase;
     }
 
-    public byte getStagePatternId() {
+    public int getStagePatternId() {
         return stagePatternId;
     }
 
-    public void setStagePatternId(byte stagePatternId) {
+    public void setStagePatternId(int stagePatternId) {
         this.stagePatternId = stagePatternId;
     }
 }

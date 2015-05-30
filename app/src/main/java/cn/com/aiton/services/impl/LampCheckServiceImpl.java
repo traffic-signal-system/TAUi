@@ -1,6 +1,10 @@
 package cn.com.aiton.services.impl;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import cn.com.aiton.domain.GbtLampCheck;
@@ -29,13 +33,45 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_ONE_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
         return msg;
+    }
+
+    @Override
+    public Message setLampCheck(List<GbtLampCheck> gbtLampChecks,TscNode node) {
+        Iterator<GbtLampCheck> gbtLampCheckIterator = gbtLampChecks.iterator();
+        //byte[] bytes = new byte[GbtDefine.LAMP_CHECK_LEN+GbtDefine.SET_LAMP_CHECK_RESPONSE.length+1];
+        byte[] bytes = ArrayUtils.add(GbtDefine.SET_LAMP_CHECK_RESPONSE, GbtDefine.LAMP_CHECK_LEN);
+        Message message = new Message();
+        message.setObj("LampCheck");
+        while (gbtLampCheckIterator.hasNext()){
+            GbtLampCheck gbtLampCheck = gbtLampCheckIterator.next();
+            byte lampId =(byte)(gbtLampCheck.getLampId());
+            bytes = ArrayUtils.add(bytes,lampId);
+            byte lampFlag = (byte)gbtLampCheck.getLampFlag();
+            bytes = ArrayUtils.add(bytes,lampFlag);
+        }
+        try{
+            UdpClientSocket clientSocket = new UdpClientSocket();
+            clientSocket.send(node.getIpAddress(),node.getPort(),bytes);
+            byte[] result = clientSocket.receiveByte(node.getIpAddress(), node.getPort());
+            if(result[1]==bytes[1]){
+                message.setMsg("保存灯泡检测数据成功！");
+                message.setBoo(true);
+            }else{
+                message.setMsg("保存灯泡检测数据失败！");
+                message.setBoo(false);
+            }
+        }catch (Exception exce){
+            exce.printStackTrace();
+        }
+
+        return null;
     }
 
     /**
@@ -50,9 +86,10 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_TWO_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //if (bytes)
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -71,9 +108,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_THREE_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -92,9 +129,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_FOUR_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -113,9 +150,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_FIVE_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -134,9 +171,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_SIX_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -155,9 +192,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_SEVEN_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -176,9 +213,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_EIGHT_NO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -217,9 +254,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_ONE_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+          //  System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -238,9 +275,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_TWO_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+          //  byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+          //  System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -259,9 +296,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_THREE_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -280,9 +317,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_FOUR_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -301,9 +338,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_FIVE_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -322,9 +359,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_SIX_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -343,9 +380,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_SEVEN_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -364,9 +401,9 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.SET_LAMP_BLOCK_CHECK_COLLISION_EIGHT_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            //System.out.println("服务端回应数据：" + info);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -393,6 +430,8 @@ public class LampCheckServiceImpl implements LampCheckService {
         return messages;
     }
 
+
+
     /**
      * 得到灯控板1的绿冲突检测数据
      *
@@ -405,8 +444,8 @@ public class LampCheckServiceImpl implements LampCheckService {
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_LAMP_CHECK);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
             if(!CheckGbt.check(bytes).isBoo()){
                 return null;
             }

@@ -109,19 +109,19 @@ public class StagePatternServiceImpl implements StagePatternService {
             Iterator<GbtStagePattern> gbtStagePatternIterator = gbtStagePatterns.iterator();
             while(gbtStagePatternIterator.hasNext()){
                 GbtStagePattern gbtStagePattern = gbtStagePatternIterator.next();
-                hex = ArrayUtils.add(hex,gbtStagePattern.getStagePatternId());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getStageId());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getStagePatternId());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getStageId());
                 hex = ArrayUtils.addAll(hex, ByteUtils.shortToByte((short)gbtStagePattern.getAllowPhase()));
-                hex = ArrayUtils.add(hex,gbtStagePattern.getGreenTime());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getYellowTime());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getRedTime());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getOption());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getGreenTime());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getYellowTime());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getRedTime());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getOption());
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+          //  System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();
@@ -138,24 +138,24 @@ public class StagePatternServiceImpl implements StagePatternService {
     public Message setStagePatternBy32Phase(TscNode node, List<GbtStagePattern> gbtStagePatterns) {
         Message message = new Message();
         try{
-            byte[] hex = ArrayUtils.add(GbtDefine.SET_STAGEPATTERN_RESPONSE, (byte) gbtStagePatterns.size());
+            byte[] hex = ArrayUtils.add(GbtDefine.SET_STAGEPATTERN_RESPONSE, (byte) GbtDefine.STAGEPATTERN_RESULT_LEN);
             hex = ArrayUtils.add(hex,(byte)(GbtDefine.STAGE_RESULT_LEN));
             Iterator<GbtStagePattern> gbtStagePatternIterator = gbtStagePatterns.iterator();
             while(gbtStagePatternIterator.hasNext()){
                 GbtStagePattern gbtStagePattern = gbtStagePatternIterator.next();
-                hex = ArrayUtils.add(hex,gbtStagePattern.getStagePatternId());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getStageId());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getStagePatternId());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getStageId());
                 hex = ArrayUtils.addAll(hex, ByteUtils.intToByte(gbtStagePattern.getAllowPhase()));
-                hex = ArrayUtils.add(hex,gbtStagePattern.getGreenTime());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getYellowTime());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getRedTime());
-                hex = ArrayUtils.add(hex,gbtStagePattern.getOption());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getGreenTime());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getYellowTime());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getRedTime());
+                hex = ArrayUtils.add(hex,(byte)gbtStagePattern.getOption());
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("服务端回应数据：" + info);
+            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+            //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+           // System.out.println("服务端回应数据：" + info);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

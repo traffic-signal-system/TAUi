@@ -10,19 +10,19 @@ public class GbtStagePattern {
 
 	private int deviceId;
 
-	private byte stagePatternId;
+	private int stagePatternId;
 
-	private byte stageId;
+	private int stageId;
 
 	private int allowPhase;
 
-	private byte greenTime;
+	private int greenTime;
 
-	private byte yellowTime;
+	private int yellowTime;
 
-	private byte redTime;
+	private int redTime;
 
-	private byte option;
+	private int option;
 
     public int getId() {
         return id;
@@ -40,19 +40,19 @@ public class GbtStagePattern {
         this.deviceId = deviceId;
     }
 
-    public byte getStagePatternId() {
+    public int getStagePatternId() {
         return stagePatternId;
     }
 
-    public void setStagePatternId(byte stagePatternId) {
+    public void setStagePatternId(int stagePatternId) {
         this.stagePatternId = stagePatternId;
     }
 
-    public byte getStageId() {
+    public int getStageId() {
         return stageId;
     }
 
-    public void setStageId(byte stageId) {
+    public void setStageId(int stageId) {
         this.stageId = stageId;
     }
 
@@ -64,35 +64,35 @@ public class GbtStagePattern {
         this.allowPhase = allowPhase;
     }
 
-    public byte getGreenTime() {
+    public int getGreenTime() {
         return greenTime;
     }
 
-    public void setGreenTime(byte greenTime) {
+    public void setGreenTime(int greenTime) {
         this.greenTime = greenTime;
     }
 
-    public byte getYellowTime() {
+    public int getYellowTime() {
         return yellowTime;
     }
 
-    public void setYellowTime(byte yellowTime) {
+    public void setYellowTime(int yellowTime) {
         this.yellowTime = yellowTime;
     }
 
-    public byte getRedTime() {
+    public int getRedTime() {
         return redTime;
     }
 
-    public void setRedTime(byte redTime) {
+    public void setRedTime(int redTime) {
         this.redTime = redTime;
     }
 
-    public byte getOption() {
+    public int getOption() {
         return option;
     }
 
-    public void setOption(byte option) {
+    public void setOption(int option) {
         this.option = option;
     }
 }

@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
@@ -106,6 +107,7 @@ public class PhaseConfigActivity extends FinalActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         setContentView(R.layout.activity_phase_config);
 
         FinalDb db = AndroidTscDefine.getFinalDb(PhaseConfigActivity.this);

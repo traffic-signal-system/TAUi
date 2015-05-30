@@ -10,17 +10,17 @@ public class GbtGroupSchedule {
 
 	private int groupId;
 
-	private byte scheduleId;
+	private int scheduleId;
 
-	private byte eventId;
+	private int eventId;
 
-	private byte beginHour;
+	private int beginHour;
 
-	private byte beginMinute;
+	private int beginMinute;
 
-	private byte timePatternId;
+	private int timePatternId;
 
-	private byte controlMode;
+	private int controlMode;
 
     public int getId() {
         return id;
@@ -38,51 +38,51 @@ public class GbtGroupSchedule {
         this.groupId = groupId;
     }
 
-    public byte getScheduleId() {
+    public int getScheduleId() {
         return scheduleId;
     }
 
-    public void setScheduleId(byte scheduleId) {
+    public void setScheduleId(int scheduleId) {
         this.scheduleId = scheduleId;
     }
 
-    public byte getEventId() {
+    public int getEventId() {
         return eventId;
     }
 
-    public void setEventId(byte eventId) {
+    public void setEventId(int eventId) {
         this.eventId = eventId;
     }
 
-    public byte getBeginHour() {
+    public int getBeginHour() {
         return beginHour;
     }
 
-    public void setBeginHour(byte beginHour) {
+    public void setBeginHour(int beginHour) {
         this.beginHour = beginHour;
     }
 
-    public byte getBeginMinute() {
+    public int getBeginMinute() {
         return beginMinute;
     }
 
-    public void setBeginMinute(byte beginMinute) {
+    public void setBeginMinute(int beginMinute) {
         this.beginMinute = beginMinute;
     }
 
-    public byte getTimePatternId() {
+    public int getTimePatternId() {
         return timePatternId;
     }
 
-    public void setTimePatternId(byte timePatternId) {
+    public void setTimePatternId(int timePatternId) {
         this.timePatternId = timePatternId;
     }
 
-    public byte getControlMode() {
+    public int getControlMode() {
         return controlMode;
     }
 
-    public void setControlMode(byte controlMode) {
+    public void setControlMode(int controlMode) {
         this.controlMode = controlMode;
     }
 }

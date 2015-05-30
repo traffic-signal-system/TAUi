@@ -10,23 +10,23 @@ public class GbtOverlap {
 
 	private int deviceId;
 
-	private byte overlapId;
+	private int overlapId;
 
-	private byte overlapType;
+	private int overlapType;
 
-	private byte includePhaseCount;
+	private int includePhaseCount;
 
 	private String includePhase;
 
-	private byte amendPhaseCount;
+	private int amendPhaseCount;
 
 	private String amendPhase;
 
-    private byte tailGreen;
+    private int tailGreen;
 
-    private byte tailYellow;
+    private int tailYellow;
 
-    private byte tailRed;
+    private int tailRed;
 
     public int getId() {
         return id;
@@ -44,27 +44,27 @@ public class GbtOverlap {
         this.deviceId = deviceId;
     }
 
-    public byte getOverlapId() {
+    public int getOverlapId() {
         return overlapId;
     }
 
-    public void setOverlapId(byte overlapId) {
+    public void setOverlapId(int overlapId) {
         this.overlapId = overlapId;
     }
 
-    public byte getOverlapType() {
+    public int getOverlapType() {
         return overlapType;
     }
 
-    public void setOverlapType(byte overlapType) {
+    public void setOverlapType(int overlapType) {
         this.overlapType = overlapType;
     }
 
-    public byte getIncludePhaseCount() {
+    public int getIncludePhaseCount() {
         return includePhaseCount;
     }
 
-    public void setIncludePhaseCount(byte includePhaseCount) {
+    public void setIncludePhaseCount(int includePhaseCount) {
         this.includePhaseCount = includePhaseCount;
     }
 
@@ -76,11 +76,11 @@ public class GbtOverlap {
         this.includePhase = includePhase;
     }
 
-    public byte getAmendPhaseCount() {
+    public int getAmendPhaseCount() {
         return amendPhaseCount;
     }
 
-    public void setAmendPhaseCount(byte amendPhaseCount) {
+    public void setAmendPhaseCount(int amendPhaseCount) {
         this.amendPhaseCount = amendPhaseCount;
     }
 
@@ -92,27 +92,27 @@ public class GbtOverlap {
         this.amendPhase = amendPhase;
     }
 
-    public byte getTailGreen() {
+    public int getTailGreen() {
         return tailGreen;
     }
 
-    public void setTailGreen(byte tailGreen) {
+    public void setTailGreen(int tailGreen) {
         this.tailGreen = tailGreen;
     }
 
-    public byte getTailYellow() {
+    public int getTailYellow() {
         return tailYellow;
     }
 
-    public void setTailYellow(byte tailYellow) {
+    public void setTailYellow(int tailYellow) {
         this.tailYellow = tailYellow;
     }
 
-    public byte getTailRed() {
+    public int getTailRed() {
         return tailRed;
     }
 
-    public void setTailRed(byte tailRed) {
+    public void setTailRed(int tailRed) {
         this.tailRed = tailRed;
     }
 }
