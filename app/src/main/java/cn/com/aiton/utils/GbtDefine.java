@@ -323,6 +323,24 @@ public class GbtDefine {
     public static byte[] REPORT_TSC_STATUS_CANCEL = { SET_REQUEST_RESPONSE, (byte)0xF7, 0x00, 0x01, (byte)0xF8, 0x00, 0x00 };
     //切入手动控制
     public static byte[] CTRL_MUNUAL = { SET_REQUEST_RESPONSE, (byte)0xB7, 0x00, 0x0A };
+    //切换自动控制
+    public static byte[] CTRL_SELF = { SET_REQUEST_RESPONSE, (byte)0xB6, 0x00, 0x00 };
+    //下一步，如果最后一个字节为1-255的，显示指定步伐
+    public static byte[] CTRL_NEXTSTEP_STATUS = { SET_REQUEST_RESPONSE, (byte)0xBA, 0x00, 0x00 };
+    //下一步，如果最后一个字节为1-255的，跳步到指定步伐
+    public static byte[] CTRL_NEXTSTEP = { SET_REQUEST_RESPONSE, STEP_COMMAND, 0x00, 0x00 };
+    //下一相位
+    public static byte[] CTRL_NEXTPHASE = { SET_REQUEST_RESPONSE, (byte)0xf2, 0x00, 0x01,0x00 };
+    //下一方向
+    public static byte[] CTRL_NEXTDIREC = { SET_REQUEST_RESPONSE, (byte)0xf2, 0x00, 0x02, 0x00 };
+    //北方向
+    public static byte[] CTRL_NORTH = { SET_REQUEST_RESPONSE,(byte) 0xf2, 0x00, 0x03, 0x01 };
+    //东方向
+    public static byte[] CTRL_EAST = { SET_REQUEST_RESPONSE,(byte) 0xf2, 0x00, 0x03, 0x02 };
+    //南方向
+    public static byte[] CTRL_SOUTH = { SET_REQUEST_RESPONSE, (byte)0xf2, 0x00, 0x03, 0x03 };
+    //西方向
+    public static byte[] CTRL_WEST = { SET_REQUEST_RESPONSE,(byte) 0xf2, 0x00, 0x03, 0x04 };
     //校时
     public static byte[] TSC_DEV_TIMING = { SET_REQUEST_RESPONSE, (byte)0xf6, 0x01 };
     //生成序列号
@@ -331,7 +349,17 @@ public class GbtDefine {
     public static byte[] MODULE_EVERYONE_STATUS = { GET_REQUEST, (byte)0xf9, 0x00 };
     //控制模块相关信息读取，如电压，温度
     public static byte[] GET_CONTROLLER_STATUS = { GET_REQUEST, (byte)0xf5, 0x00 };
+    public static byte OPTION = (byte)0xf6;
+    public static byte PSC_TSC = 0x03;
+    public static byte PSC = 0x01;   // 一次过街
+    public static byte TSC = 0x00;  //TSC模式
+    public static byte PSC_2 = 0x02; //二次过街
+    public static byte[] SET_PSC_1 = { SET_REQUEST_RESPONSE, OPTION, PSC_TSC, PSC, 0x01, 0x02, 0x00 };
+    public static byte[] SET_PSC_2 = { SET_REQUEST_RESPONSE, OPTION, PSC_TSC, PSC_2, 0x01, 0x02, 0x03 };
+    public static byte[] SET_TSC = { SET_REQUEST_RESPONSE, OPTION, PSC_TSC, TSC, 0x00, 0x00, 0x00 };
 
+    public static byte[] SET_PSC_1_GREEN_TIME = { SET_REQUEST_RESPONSE, (byte)0xc1, (byte)0x84, 0x01, 0x02, 0x14 };
+    public static byte[] SET_PSC_2_GREEN_TIME = { SET_REQUEST_RESPONSE, (byte)0xc1, (byte)0x84, 0x01, 0x03, 0x14 };
     // 方向相关的参数
 
     public static byte PHASE_DIREC = (byte)0xfa;

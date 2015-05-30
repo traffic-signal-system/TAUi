@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -33,6 +34,8 @@ import cn.com.aiton.domain.ExtReportState;
 import cn.com.aiton.domain.GbtChannel;
 import cn.com.aiton.domain.GbtDirec;
 import cn.com.aiton.domain.TscNode;
+import cn.com.aiton.services.MunualControlService;
+import cn.com.aiton.services.impl.MunualControlServiceImpl;
 import cn.com.aiton.utils.AndroidTscDefine;
 import cn.com.aiton.utils.ByteUtils;
 import cn.com.aiton.utils.ExtReportUtils;
@@ -45,6 +48,7 @@ public class ManaulActivity extends FinalActivity {
     public final static int SUCCESS = 1;
     public final static int FAILURE = 0;
 
+    private MunualControlService mcs = null;
     TscNode node;
 
     List<GbtChannel> gbtChannelList;
@@ -592,7 +596,6 @@ public class ManaulActivity extends FinalActivity {
 
 
     };
-
     public void initViews(){
         northLeft = (ImageView)findViewById(R.id.northLeft);
         northStriaght = (ImageView)findViewById(R.id.northStriaght);
@@ -639,13 +642,27 @@ public class ManaulActivity extends FinalActivity {
         node = AndroidTscDefine.spToTscNode(sp);
         thread = new Thread(runnable);
         thread.start();
-
+        mcs = new MunualControlServiceImpl();
         RadioGroup rg_control = (RadioGroup)findViewById(R.id.rg_control);
         rg_control.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 int radioId = radioGroup.getCheckedRadioButtonId();
                 if (radioId == R.id.rb_munual){
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mcs.switchMunual(node);
+                            }
+                        }).start();
+
+                }else if(radioId == R.id.rb_self){
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            mcs.switchSelf(node);
+                        }
+                    }).start();
 
                 }
             }
@@ -669,5 +686,86 @@ public class ManaulActivity extends FinalActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    cn.com.aiton.domain.Message msg;
+    public void btnNextStep(View view){
+
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                msg = mcs.switchNextStep(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void btnNextPhase(View view){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                msg = mcs.switchNextPhase(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void btnNextDirec(View view){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                msg = mcs.switchNextDirec(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void btnNorth(View view){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                msg = mcs.switchNorth(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void btnEast(View view){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                msg = mcs.switchEast(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void btnSouth(View view){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                msg = mcs.switchSouth(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void btnWest(View view){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                msg = mcs.switchWest(node);
+            }
+        }).start();
+        if(msg == null || !msg.isBoo()){
+            Toast.makeText(this,"下一步操作失败！",Toast.LENGTH_LONG).show();
+        }
     }
 }
