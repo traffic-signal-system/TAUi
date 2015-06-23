@@ -91,300 +91,313 @@ public class ManaulActivity extends FinalActivity {
     private Thread thread;
 
     public void updateRed(GbtDirec gbtDirec){
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-            northLeft.setImageResource(R.drawable.redone);
+        switch (gbtDirec.getDirecId()){
+            case GbtDefine.I_NORTH_LEFT:
+                northLeft.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_STRAIGHT:
+                northStriaght.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_RIGHT:
+                northRight.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_OTHER:
+                northOther.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_NONE1:
+                northNone1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_NONE2:
+                northNone2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_PEDESTRAIN_ONE:
+                northPedestrain1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_NORTH_PEDESTRAIN_TWO:
+                northPedestrain2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_LEFT:
+                eastLeft.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_STRAIGHT:
+                eastStriaght.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_RIGHT:
+                eastRight.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_OTHER:
+                eastOther.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_PEDESTRAIN_ONE:
+                eastPedestrain1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_PEDESTRAIN_TWO:
+                eastPedestrain2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_NONE1:
+                eastNone1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_EAST_NONE2:
+                eastNone2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_LEFT:
+                southLeft.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_STRAIGHT:
+                southStriaght.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_RIGHT:
+                southRight.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_OTHER:
+                southOther.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_PEDESTRAIN_ONE:
+                southPedestrain1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_PEDESTRAIN_TWO:
+                southPedestrain2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_NONE1:
+                southNone1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_SOUTH_NONE2:
+                southNone2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_LEFT:
+                westLeft.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_STRAIGHT:
+                westStriaght.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_RIGHT:
+                westRight.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_OTHER:
+                westOther.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_PEDESTRAIN_ONE:
+                westPedestrain1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_PEDESTRAIN_TWO:
+                westPedestrain2.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_NONE1:
+                westNone1.setImageResource(R.drawable.redone);
+                break;
+            case GbtDefine.I_WEST_NONE2:
+                westNone2.setImageResource(R.drawable.redone);
+                break;
+            default:
+                break;
         }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-            northStriaght.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-            northRight.setImageResource(R.drawable.redone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-            northOther.setImageResource(R.drawable.redone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-            northPedestrain1.setImageResource(R.drawable.redone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-            northPedestrain2.setImageResource(R.drawable.redone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-            northNone1.setImageResource(R.drawable.redone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-            northNone2.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-            eastLeft.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-            eastStriaght.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-            eastRight.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-            eastOther.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-            eastPedestrain1.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-            eastPedestrain2.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-            eastNone1.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-            eastNone2.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-            southLeft.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-            southStriaght.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-            southRight.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-            southOther.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-            southPedestrain1.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-            southPedestrain2.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-            southNone1.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-            southNone2.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-            westLeft.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-            westStriaght.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-            westRight.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
-            westOther.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-            westPedestrain1.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-            westPedestrain2.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-            westNone1.setImageResource(R.drawable.redone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
-            westNone2.setImageResource(R.drawable.redone);
-        }
+
     }
 
-    public void upateGreen(GbtDirec gbtDirec){
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-            northLeft.setImageResource(R.drawable.greenone);
+    public void updateGreen(GbtDirec gbtDirec){
+        switch (gbtDirec.getDirecId()){
+            case GbtDefine.I_NORTH_LEFT:
+                northLeft.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_STRAIGHT:
+                northStriaght.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_RIGHT:
+                northRight.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_OTHER:
+                northOther.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_NONE1:
+                northNone1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_NONE2:
+                northNone2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_PEDESTRAIN_ONE:
+                northPedestrain1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_NORTH_PEDESTRAIN_TWO:
+                northPedestrain2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_LEFT:
+                eastLeft.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_STRAIGHT:
+                eastStriaght.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_RIGHT:
+                eastRight.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_OTHER:
+                eastOther.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_PEDESTRAIN_ONE:
+                eastPedestrain1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_PEDESTRAIN_TWO:
+                eastPedestrain2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_NONE1:
+                eastNone1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_EAST_NONE2:
+                eastNone2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_LEFT:
+                southLeft.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_STRAIGHT:
+                southStriaght.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_RIGHT:
+                southRight.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_OTHER:
+                southOther.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_PEDESTRAIN_ONE:
+                southPedestrain1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_PEDESTRAIN_TWO:
+                southPedestrain2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_NONE1:
+                southNone1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_SOUTH_NONE2:
+                southNone2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_LEFT:
+                westLeft.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_STRAIGHT:
+                westStriaght.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_RIGHT:
+                westRight.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_OTHER:
+                westOther.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_PEDESTRAIN_ONE:
+                westPedestrain1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_PEDESTRAIN_TWO:
+                westPedestrain2.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_NONE1:
+                westNone1.setImageResource(R.drawable.greenone);
+                break;
+            case GbtDefine.I_WEST_NONE2:
+                westNone2.setImageResource(R.drawable.greenone);
+                break;
+            default:
+                break;
         }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-            northStriaght.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-            northRight.setImageResource(R.drawable.greenone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-            northOther.setImageResource(R.drawable.greenone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-            northPedestrain1.setImageResource(R.drawable.greenone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-            northPedestrain2.setImageResource(R.drawable.greenone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-            northNone1.setImageResource(R.drawable.greenone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-            northNone2.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-            eastLeft.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-            eastStriaght.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-            eastRight.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-            eastOther.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-            eastPedestrain1.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-            eastPedestrain2.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-            eastNone1.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-            eastNone2.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-            southLeft.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-            southStriaght.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-            southRight.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-            southOther.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-            southPedestrain1.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-            southPedestrain2.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-            southNone1.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-            southNone2.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-            westLeft.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-            westStriaght.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-            westRight.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
-            westOther.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-            westPedestrain1.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-            westPedestrain2.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-            westNone1.setImageResource(R.drawable.greenone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
-            westNone1.setImageResource(R.drawable.greenone);
-        }
+
     }
 
     public void updateYellow(GbtDirec gbtDirec){
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-            northLeft.setImageResource(R.drawable.yellowone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-            northStriaght.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-            northRight.setImageResource(R.drawable.yellowone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-            northOther.setImageResource(R.drawable.yellowone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-            northPedestrain1.setImageResource(R.drawable.yellowone);
-        }
-
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-            northPedestrain2.setImageResource(R.drawable.yellowone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-            northNone1.setImageResource(R.drawable.yellowone);
-        }
-        if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-            northNone2.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-            eastLeft.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-            eastStriaght.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-            eastRight.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-            eastOther.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-            eastPedestrain1.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-            eastPedestrain2.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-            eastNone1.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-            eastNone2.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-            southLeft.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-            southStriaght.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-            southRight.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-            southOther.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-            southPedestrain1.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-            southPedestrain2.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-            southNone1.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-            southNone2.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-            westLeft.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-            westStriaght.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-            westRight.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
-            westOther.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-            westPedestrain1.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-            westPedestrain2.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-            westNone1.setImageResource(R.drawable.yellowone);
-        }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
-            westNone2.setImageResource(R.drawable.yellowone);
+        switch (gbtDirec.getDirecId()){
+            case GbtDefine.I_NORTH_LEFT:
+                northLeft.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_STRAIGHT:
+                northStriaght.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_RIGHT:
+                northRight.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_OTHER:
+                northOther.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_NONE1:
+                northNone1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_NONE2:
+                northNone2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_PEDESTRAIN_ONE:
+                northPedestrain1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_NORTH_PEDESTRAIN_TWO:
+                northPedestrain2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_LEFT:
+                eastLeft.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_STRAIGHT:
+                eastStriaght.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_RIGHT:
+                eastRight.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_OTHER:
+                eastOther.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_PEDESTRAIN_ONE:
+                eastPedestrain1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_PEDESTRAIN_TWO:
+                eastPedestrain2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_NONE1:
+                eastNone1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_EAST_NONE2:
+                eastNone2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_LEFT:
+                southLeft.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_STRAIGHT:
+                southStriaght.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_RIGHT:
+                southRight.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_OTHER:
+                southOther.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_PEDESTRAIN_ONE:
+                southPedestrain1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_PEDESTRAIN_TWO:
+                southPedestrain2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_NONE1:
+                southNone1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_SOUTH_NONE2:
+                southNone2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_LEFT:
+                westLeft.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_STRAIGHT:
+                westStriaght.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_RIGHT:
+                westRight.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_OTHER:
+                westOther.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_PEDESTRAIN_ONE:
+                westPedestrain1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_PEDESTRAIN_TWO:
+                westPedestrain2.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_NONE1:
+                westNone1.setImageResource(R.drawable.yellowone);
+                break;
+            case GbtDefine.I_WEST_NONE2:
+                westNone2.setImageResource(R.drawable.yellowone);
+                break;
+            default:
+                break;
         }
     }
     private Handler mhandler = new Handler() {
@@ -403,6 +416,50 @@ public class ManaulActivity extends FinalActivity {
                  //   Collections.reverse(listChannelRed);
                     List<Integer> listChannelYellow = ers.getListChannelYellowStatus();
                   //  Collections.reverse(listChannelYellow);
+                    System.out.println(listChannelRed);
+                    System.out.println(listChannelYellow);
+
+                    System.out.println(listChannelGreen);
+                    for(int i=0;i<listChannelGreen.size();i++){
+                        for(int j=0;j<gbtChannelList.size();j++){
+                            GbtChannel gbtchannel = gbtChannelList.get(j);
+                            if((i+1)==gbtchannel.getChannelId()) {
+                                for (int k = 0; k < gbtDirecList.size(); k++) {
+                                    GbtDirec direc = gbtDirecList.get(k);
+                                    if(direc.getPhaseId()!=0 ){
+                                        if(direc.getPhaseId() == gbtchannel.getControlSource() && gbtchannel.getControlType() != 0x04){
+                                            if(listChannelRed.get(i) == 1){
+                                                updateLampColor(direc, GbtDefine.LAMP_RED);
+                                                break;
+                                            }else if (listChannelYellow.get(i) == 1){
+                                                updateLampColor(direc, GbtDefine.LAMP_YELLOW);
+                                                break;
+                                            }else if (listChannelGreen.get(i) == 1){
+                                                updateLampColor(direc, GbtDefine.LAMP_GREEN);
+                                                break;
+                                            }
+                                        }
+                                    }else{
+                                        if(direc.getOverlapId() !=0){
+                                            if(direc.getOverlapId()== gbtchannel.getControlSource() && gbtchannel.getControlType() == 0x04){
+                                                if(listChannelRed.get(i) == 1){
+                                                    updateLampColor(direc, GbtDefine.LAMP_RED);
+                                                    break;
+                                                }else if (listChannelYellow.get(i) == 1){
+                                                    updateLampColor(direc, GbtDefine.LAMP_YELLOW);
+                                                    break;
+                                                }else if (listChannelGreen.get(i) == 1){
+                                                    updateLampColor(direc, GbtDefine.LAMP_GREEN);
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+/*
                     for(int i=0;i<listChannelGreen.size();i++){
                         for(int j=0;j<gbtChannelList.size();j++){
                             GbtChannel gbtchannel = gbtChannelList.get(j);
@@ -460,7 +517,8 @@ public class ManaulActivity extends FinalActivity {
                     }
 
                 }
-
+*/
+                    /*
                 for(int x=0;x<listChannelYellow.size();x++) {
                     for(int y=0;y<gbtChannelList.size();y++){
                         GbtChannel gbtchannel =gbtChannelList.get(y);
@@ -490,7 +548,7 @@ public class ManaulActivity extends FinalActivity {
 
                 }
 
-
+*/
                     break;
                 case FAILURE:
 
@@ -501,6 +559,23 @@ public class ManaulActivity extends FinalActivity {
             super.handleMessage(msg);
         }
     };
+
+    private void updateLampColor(GbtDirec direc, byte lampRed) {
+        if(direc == null){
+            return;
+        }
+        //byte direcbyte = (byte)direc.getDirecId();
+        if(lampRed == GbtDefine.LAMP_RED){
+            updateRed(direc);
+        }else if(lampRed == GbtDefine.LAMP_YELLOW){
+            updateYellow(direc);
+        }else if(lampRed == GbtDefine.LAMP_GREEN){
+            updateGreen(direc);
+        }else {
+            return;
+        }
+    }
+
     Runnable runnable = new Runnable() {
         private Random random = new Random();
         private String uuid = UUID.randomUUID().toString();
@@ -597,38 +672,38 @@ public class ManaulActivity extends FinalActivity {
 
     };
     public void initViews(){
-        northLeft = (ImageView)findViewById(R.id.northLeft);
-        northStriaght = (ImageView)findViewById(R.id.northStriaght);
-        northRight = (ImageView)findViewById(R.id.northRight);
-        northOther = (ImageView)findViewById(R.id.northOther);
-        northNone1 = (ImageView)findViewById(R.id.northNone1);
-        northNone2 = (ImageView)findViewById(R.id.northNone2);
-        northPedestrain1 = (ImageView)findViewById(R.id.northPedestrain1);
-        northPedestrain2 = (ImageView)findViewById(R.id.northPedestrain2);
-        eastLeft = (ImageView)findViewById(R.id.eastLeft);
-        eastStriaght = (ImageView)findViewById(R.id.eastStriaght);
-        eastRight = (ImageView)findViewById(R.id.eastRight);
-        eastOther = (ImageView)findViewById(R.id.eastOther);
-        eastNone1 = (ImageView)findViewById(R.id.eastNone1);
-        eastNone2 = (ImageView)findViewById(R.id.eastNone2);
-        eastPedestrain1 = (ImageView)findViewById(R.id.eastPedestrain1);
-        eastPedestrain2 = (ImageView)findViewById(R.id.eastPedestrain2);
-        southLeft = (ImageView)findViewById(R.id.southLeft);
-        southStriaght = (ImageView)findViewById(R.id.southStriaght);
-        southRight = (ImageView)findViewById(R.id.southRight);
-        southOther = (ImageView)findViewById(R.id.southOther);
-        southNone1 = (ImageView)findViewById(R.id.southNone1);
-        southNone2 = (ImageView)findViewById(R.id.southNone2);
-        southPedestrain1 = (ImageView)findViewById(R.id.southPedestrain1);
-        southPedestrain2 = (ImageView)findViewById(R.id.southPedestrain2);
-        westLeft = (ImageView)findViewById(R.id.westLeft);
-        westStriaght = (ImageView)findViewById(R.id.westStriaght);
-        westRight = (ImageView)findViewById(R.id.westRight);
-        westOther = (ImageView)findViewById(R.id.westOther);
-        westNone1  = (ImageView)findViewById(R.id.westNone1);
-        westNone2 = (ImageView)findViewById(R.id.westNone2);
-        westPedestrain1 = (ImageView)findViewById(R.id.westPedestrain1);
-        westPedestrain2 = (ImageView)findViewById(R.id.westPedestrain2);
+        northLeft = (ImageView)findViewById(R.id.m_northLeft);
+        northStriaght = (ImageView)findViewById(R.id.m_northStriaght);
+        northRight = (ImageView)findViewById(R.id.m_northRight);
+        northOther = (ImageView)findViewById(R.id.m_northOther);
+        northNone1 = (ImageView)findViewById(R.id.m_northNone1);
+        northNone2 = (ImageView)findViewById(R.id.m_northNone2);
+        northPedestrain1 = (ImageView)findViewById(R.id.m_northPedestrain1);
+        northPedestrain2 = (ImageView)findViewById(R.id.m_northPedestrain2);
+        eastLeft = (ImageView)findViewById(R.id.m_eastLeft);
+        eastStriaght = (ImageView)findViewById(R.id.m_eastStriaght);
+        eastRight = (ImageView)findViewById(R.id.m_eastRight);
+        eastOther = (ImageView)findViewById(R.id.m_eastOther);
+        eastNone1 = (ImageView)findViewById(R.id.m_eastNone1);
+        eastNone2 = (ImageView)findViewById(R.id.m_eastNone2);
+        eastPedestrain1 = (ImageView)findViewById(R.id.m_eastPedestrain1);
+        eastPedestrain2 = (ImageView)findViewById(R.id.m_eastPedestrain2);
+        southLeft = (ImageView)findViewById(R.id.m_southLeft);
+        southStriaght = (ImageView)findViewById(R.id.m_southStriaght);
+        southRight = (ImageView)findViewById(R.id.m_southRight);
+        southOther = (ImageView)findViewById(R.id.m_southOther);
+        southNone1 = (ImageView)findViewById(R.id.m_southNone1);
+        southNone2 = (ImageView)findViewById(R.id.m_southNone2);
+        southPedestrain1 = (ImageView)findViewById(R.id.m_southPedestrain1);
+        southPedestrain2 = (ImageView)findViewById(R.id.m_southPedestrain2);
+        westLeft = (ImageView)findViewById(R.id.m_westLeft);
+        westStriaght = (ImageView)findViewById(R.id.m_westStriaght);
+        westRight = (ImageView)findViewById(R.id.m_westRight);
+        westOther = (ImageView)findViewById(R.id.m_westOther);
+        westNone1  = (ImageView)findViewById(R.id.m_westNone1);
+        westNone2 = (ImageView)findViewById(R.id.m_westNone2);
+        westPedestrain1 = (ImageView)findViewById(R.id.m_westPedestrain1);
+        westPedestrain2 = (ImageView)findViewById(R.id.m_westPedestrain2);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

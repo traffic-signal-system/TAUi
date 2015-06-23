@@ -28,11 +28,12 @@ public class ExtReportUtils {
         ers.setCurrentStage(bytes[8]);
         ers.setStageTotalTime(bytes[9]);
         ers.setStageRunTime(bytes[10]);
-        ers.setListChannelRedStatus(reportStatusLamp(new byte[]{bytes[11],bytes[12],bytes[13],bytes[14]}));
-        ers.setListChannelYellowStatus(reportStatusLamp(new byte[]{bytes[15],bytes[16],bytes[17],bytes[18]}));
-        ers.setListChannelGreenStatus(reportStatusLamp(new byte[]{bytes[19],bytes[20],bytes[21],bytes[22]}));
-        ers.setListChannelFlashStatus(reportStatusLamp(new byte[]{bytes[23],bytes[24],bytes[25],bytes[26]}));
+        ers.setListChannelRedStatus(reportStatusLamp(new byte[]{bytes[14],bytes[13],bytes[12],bytes[11]}));
+        ers.setListChannelYellowStatus(reportStatusLamp(new byte[]{bytes[18],bytes[17],bytes[16],bytes[15]}));
+        ers.setListChannelGreenStatus(reportStatusLamp(new byte[]{bytes[22],bytes[21],bytes[20],bytes[19]}));
+        ers.setListChannelFlashStatus(reportStatusLamp(new byte[]{bytes[26],bytes[25],bytes[24],bytes[23]}));
         ers.setCycleTime(bytes[27]);
+        ers.setBasetime(bytes[28]);
         return ers;
     }
 
@@ -44,7 +45,7 @@ public class ExtReportUtils {
             int rs = (ui >> i) & 0x01;
             listLamp.add(rs);
         }
-        Collections.reverse(listLamp);
+       // Collections.reverse(listLamp);
         return listLamp;
     }
 

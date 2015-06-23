@@ -45,10 +45,10 @@ public class ChannelServiceImpl implements ChannelService {
             for (int i = 0; i < bytes[3]; i++) {
                 GbtChannel gbtChannel = new GbtChannel();
                 gbtChannel.setDeviceId(node.getId());
-                gbtChannel.setChannelId(channelArrayResult[i][0]);
-                gbtChannel.setControlSource(channelArrayResult[i][1]);
-                gbtChannel.setAutoFlashControl(channelArrayResult[i][2]);
-                gbtChannel.setControlType(channelArrayResult[i][3]);
+                gbtChannel.setChannelId(ByteUtils.bytesUInt(channelArrayResult[i][0]));
+                gbtChannel.setControlSource(ByteUtils.bytesUInt(channelArrayResult[i][1]));
+                gbtChannel.setAutoFlashControl(ByteUtils.bytesUInt(channelArrayResult[i][2]));
+                gbtChannel.setControlType(ByteUtils.bytesUInt(channelArrayResult[i][3]));
                 gbtChannels.add(gbtChannel);
             }
         } catch (Exception ex) {

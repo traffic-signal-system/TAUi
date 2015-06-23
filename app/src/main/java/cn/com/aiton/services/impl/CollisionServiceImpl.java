@@ -66,7 +66,7 @@ public class CollisionServiceImpl implements CollisionService {
             for(int i=0; i< bytes[3] ;i++){
                 GbtCollision gbtCollision = new GbtCollision();
                 gbtCollision.setDeviceId(node.getId());
-                gbtCollision.setPhaseId(collisionArrayResult[i][0]);
+                gbtCollision.setPhaseId(ByteUtils.bytesUInt(collisionArrayResult[i][0]));
                 byte[] flag = new byte[]{collisionArrayResult[i][1] ,collisionArrayResult[i][2],collisionArrayResult[i][3],collisionArrayResult[i][4]};
                 gbtCollision.setFlag(ByteUtils.byteToInt(flag));
                 gbtCollisions.add(gbtCollision);

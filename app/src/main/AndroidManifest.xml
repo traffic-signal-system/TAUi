@@ -24,54 +24,67 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.PhaseActivity"
             android:label="@string/title_activity_phase" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.PhaseConfigActivity"
             android:label="@string/title_activity_phase_config" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.BasetimeActivity"
             android:label="@string/title_activity_basetime" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.CollisionActivity"
             android:label="@string/title_activity_collision" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.StageActivity"
             android:label="@string/title_activity_stage" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.DetectorActivity"
             android:label="@string/title_activity_detector" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.LampCheckActivity"
             android:label="@string/title_activity_lamp_check" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.BasetimeMonthActivity"
             android:label="@string/title_activity_basetime_month" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.BasetimeWeekActivity"
             android:label="@string/title_activity_basetime_week" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.BasetimeDayActivity"
             android:label="@string/title_activity_basetime_day" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.ManaulActivity"
             android:label="@string/title_activity_manaul" >
         </activity>
         <activity
             android:name="cn.com.aiton.taui.ScheduleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_schedule" >
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="cn.com.aiton.taui.LoadActivity"
             android:label="@string/title_activity_load" >
         </activity>

@@ -42,14 +42,14 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             for(int i=0; i< bytes[3] ;i++){
                 GbtTimeBase gbtTimeBase = new GbtTimeBase();
                 gbtTimeBase.setDeviceId(node.getId());
-                gbtTimeBase.setTimeBaseId(timeBaseArrayResult[i][0]);
+                gbtTimeBase.setTimeBaseId(ByteUtils.bytesUInt(timeBaseArrayResult[i][0]));
                 byte[] flag = new byte[]{timeBaseArrayResult[i][1] ,timeBaseArrayResult[i][2]};
                 gbtTimeBase.setMonth(ByteUtils.byteToShort(flag));
 
-                gbtTimeBase.setWeek(timeBaseArrayResult[i][3]);
+                gbtTimeBase.setWeek(ByteUtils.bytesUInt(timeBaseArrayResult[i][3]));
                 byte[] dayFlag = new byte[]{timeBaseArrayResult[i][4],timeBaseArrayResult[i][5],timeBaseArrayResult[i][6],timeBaseArrayResult[i][7]};
                 gbtTimeBase.setDay(ByteUtils.byteToInt(dayFlag));
-                gbtTimeBase.setScheduleId(timeBaseArrayResult[i][8]);
+                gbtTimeBase.setScheduleId(ByteUtils.bytesUInt(timeBaseArrayResult[i][8]));
                 gbtTimeBases.add(gbtTimeBase);
             }
         }catch (Exception ex){

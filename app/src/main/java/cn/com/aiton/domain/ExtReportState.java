@@ -24,6 +24,16 @@ public class ExtReportState implements Serializable{
     private  List<Integer> listChannelFlashStatus;
     private  int cycleTime;
     private  Boolean resportTscStatusFlag = false;
+	private int basetime;
+
+	public int getBasetime() {
+		return basetime;
+	}
+
+	public void setBasetime(int basetime) {
+		this.basetime = basetime;
+	}
+
 	public String getWorkModel() {
 		return workModel;
 	}

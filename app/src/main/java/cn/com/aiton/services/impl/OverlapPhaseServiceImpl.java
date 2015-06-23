@@ -42,15 +42,15 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
             for(int i=0; i< bytes[3] ;i++){
                 GbtOverlap gbtOverlap = new GbtOverlap();
                 gbtOverlap.setDeviceId(node.getId());
-                gbtOverlap.setOverlapId(overlapArrayResult[i][0]);
-                gbtOverlap.setOverlapType(overlapArrayResult[i][1]);
-                gbtOverlap.setIncludePhaseCount(overlapArrayResult[i][2]);
+                gbtOverlap.setOverlapId(ByteUtils.bytesUInt(overlapArrayResult[i][0]));
+                gbtOverlap.setOverlapType(ByteUtils.bytesUInt(overlapArrayResult[i][1]));
+                gbtOverlap.setIncludePhaseCount(ByteUtils.bytesUInt(overlapArrayResult[i][2]));
                 gbtOverlap.setIncludePhase(new String(overlapArrayResult[i][3]+","+overlapArrayResult[i][4]+","+overlapArrayResult[i][5]+","+overlapArrayResult[i][6]+","+overlapArrayResult[i][7]+","+overlapArrayResult[i][8]+","+overlapArrayResult[i][9]+","+overlapArrayResult[i][10]+","+overlapArrayResult[i][11]+","+overlapArrayResult[i][12]+","+overlapArrayResult[i][13]+","+overlapArrayResult[i][14]+","+overlapArrayResult[i][15]+","+overlapArrayResult[i][16]+","+overlapArrayResult[i][17]+","+overlapArrayResult[i][18]));
-                gbtOverlap.setAmendPhaseCount(overlapArrayResult[i][19]);
+                gbtOverlap.setAmendPhaseCount(ByteUtils.bytesUInt(overlapArrayResult[i][19]));
                 gbtOverlap.setAmendPhase(new String(overlapArrayResult[i][20] + "," + overlapArrayResult[i][21] + "," + overlapArrayResult[i][22] + "," + overlapArrayResult[i][23] + "," + overlapArrayResult[i][24] + "," + overlapArrayResult[i][25] + "," + overlapArrayResult[i][26] + "," + overlapArrayResult[i][27] + "," + overlapArrayResult[i][28] + "," + overlapArrayResult[i][29] + "," + overlapArrayResult[i][30] + "," + overlapArrayResult[i][31] + "," + overlapArrayResult[i][32] + "," + overlapArrayResult[i][33] + "," + overlapArrayResult[i][34] + "," + overlapArrayResult[i][35]));
-                gbtOverlap.setTailGreen(overlapArrayResult[i][36]);
-                gbtOverlap.setTailYellow(overlapArrayResult[i][37]);
-                gbtOverlap.setTailRed(overlapArrayResult[i][38]);
+                gbtOverlap.setTailGreen(ByteUtils.bytesUInt(overlapArrayResult[i][36]));
+                gbtOverlap.setTailYellow(ByteUtils.bytesUInt(overlapArrayResult[i][37]));
+                gbtOverlap.setTailRed(ByteUtils.bytesUInt(overlapArrayResult[i][38]));
                 gbtOverlaps.add(gbtOverlap);
             }
         }catch (Exception ex){

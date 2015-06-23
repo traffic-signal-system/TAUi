@@ -90,6 +90,15 @@ public class ByteUtils {
     }
 
     /**
+     * 将Byte数组转成无符号整型
+     * @param b
+     * @return
+     */
+    public static int bytesUInt(byte b){
+        return b&0xff;
+    }
+
+    /**
      * 注释：short到字节数组的转换！
      *
      * @param number

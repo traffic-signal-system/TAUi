@@ -2305,2051 +2305,2051 @@ public class CollisionActivity extends Activity {
      */
     private void setSmallGreenOne(GbtDirec gbtDirec,GbtStagePattern gbtStagePattern){
         if(gbtStagePattern.getStageId() ==1) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision1_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision1_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision1_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision1_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision1_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision1_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision1_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision1_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision1_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision1_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision1_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision1_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision1_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision1_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision1_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision1_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision1_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision1_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision1_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision1_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision1_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision1_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision1_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision1_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision1_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision1_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision1_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision1_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision1_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision1_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision1_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==2) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision2_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision2_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision2_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision2_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision2_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision2_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision2_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision2_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision2_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision2_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision2_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision2_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision2_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision2_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision2_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision2_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision2_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision2_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision2_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision2_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision2_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision2_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision2_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision2_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision2_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision2_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision2_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision2_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision2_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision2_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision2_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==3) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision3_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision3_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision3_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision3_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision3_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision3_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision3_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision3_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision3_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision3_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision3_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision3_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision3_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision3_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision3_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision3_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision3_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision3_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision3_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision3_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision3_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision3_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision3_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision3_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision3_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision3_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision3_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision3_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision3_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision3_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision3_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==4) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision4_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision4_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision4_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision4_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision4_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision4_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision4_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision4_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision4_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision4_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision4_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision4_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision4_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision4_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision4_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision4_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision4_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision4_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision4_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision4_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision4_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision4_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision4_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision4_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision4_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision4_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision4_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision4_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision4_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision4_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision4_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==5) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision5_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision5_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision5_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision5_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision5_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision5_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision5_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision5_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision5_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision5_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision5_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision5_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision5_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision5_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision5_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision5_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision5_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision5_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision5_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision5_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision5_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision5_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision5_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision5_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision5_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision5_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision5_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision5_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision5_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision5_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision5_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==6) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision6_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision6_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision6_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision6_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision6_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision6_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision6_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision6_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision6_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision6_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision6_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision6_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision6_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision6_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision6_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision6_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision6_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision6_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision6_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision6_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision6_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision6_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision6_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision6_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision6_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision6_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision6_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision6_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision6_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision6_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision6_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==7) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision7_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision7_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision7_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision7_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision7_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision7_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision7_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision7_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision7_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision7_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision7_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision7_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision7_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision7_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision7_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision7_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision7_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision7_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision7_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision7_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision7_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision7_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision7_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision7_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision7_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision7_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision7_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision7_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision7_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision7_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision7_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==8) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision8_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision8_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision8_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision8_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision8_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision8_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision8_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision8_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision8_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision8_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision8_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision8_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision8_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision8_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision8_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision8_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision8_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision8_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision8_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision8_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision8_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision8_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision8_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision8_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision8_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision8_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision8_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision8_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision8_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision8_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision8_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==9) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision9_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision9_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision9_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision9_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision9_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision9_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision9_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision9_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision9_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision9_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision9_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision9_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision9_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision9_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision9_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision9_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision9_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision9_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision9_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision9_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision9_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision9_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision9_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision9_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision9_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision9_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision9_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision9_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision9_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision9_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision9_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==10) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision10_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision10_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision10_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision10_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision10_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision10_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision10_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision10_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision10_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision10_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision10_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision10_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision10_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision10_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision10_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision10_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision10_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision10_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision10_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision10_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision10_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision10_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision10_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision10_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision10_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision10_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision10_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision10_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision10_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision10_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision10_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==11) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision11_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision11_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision11_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision11_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision11_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision11_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision11_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision11_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision11_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision11_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision11_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision11_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision11_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision11_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision11_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision11_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision11_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision11_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision11_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision11_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision11_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision11_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision11_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision11_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision11_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision11_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision11_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision11_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision11_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision11_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision11_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==12) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision12_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision12_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision12_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision12_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision12_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision12_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision12_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision12_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision12_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision12_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision12_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision12_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision12_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision12_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision12_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision12_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision12_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision12_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision12_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision12_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision12_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision12_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision12_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision12_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision12_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision12_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision12_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision12_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision12_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision12_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision12_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==13) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision13_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision13_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision13_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision13_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision13_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision13_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision13_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision13_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision13_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision13_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision13_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision13_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision13_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision13_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision13_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision13_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision13_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision13_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision13_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision13_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision13_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision13_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision13_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision13_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision13_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision13_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision13_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision13_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision13_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision13_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision13_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==14) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision14_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision14_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision14_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision14_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision14_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision14_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision14_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision14_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision14_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision14_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision14_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision14_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision14_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision14_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision14_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision14_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision14_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision14_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision14_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision14_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision14_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision14_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision14_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision14_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision14_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision14_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision14_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision14_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision14_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision14_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision14_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==15) {
-            if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
                 setGreenOne(collision15_small_northLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
                 setGreenOne(collision15_small_northStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
                 setGreenOne(collision15_small_northRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
                 setGreenOne(collision15_small_northOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
                 setGreenOne(collision15_small_northPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
                 setGreenOne(collision15_small_northPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
                 setGreenOne(collision15_small_northNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
                 setGreenOne(collision15_small_northNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
                 setGreenOne(collision15_small_eastLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
                 setGreenOne(collision15_small_eastStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
                 setGreenOne(collision15_small_eastRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
                 setGreenOne(collision15_small_eastOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
                 setGreenOne(collision15_small_eastPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
                 setGreenOne(collision15_small_eastPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
                 setGreenOne(collision15_small_eastNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
                 setGreenOne(collision15_small_eastNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
                 setGreenOne(collision15_small_southLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
                 setGreenOne(collision15_small_southStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
                 setGreenOne(collision15_small_southRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
                 setGreenOne(collision15_small_southOther);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
                 setGreenOne(collision15_small_southPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
                 setGreenOne(collision15_small_southPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
                 setGreenOne(collision15_small_southNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
                 setGreenOne(collision15_small_southNone2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
                 setGreenOne(collision15_small_westLeft);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
                 setGreenOne(collision15_small_westStriaght);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
                 setGreenOne(collision15_small_westRight);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
                 setGreenOne(collision15_small_westPedestrain1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
                 setGreenOne(collision15_small_westPedestrain2);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
                 setGreenOne(collision15_small_westNone1);
-            }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision15_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==16) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision16_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision16_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision16_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision16_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision16_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision16_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision16_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision16_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision16_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision16_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision16_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision16_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision16_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision16_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision16_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision16_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision16_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision16_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision16_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision16_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision16_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision16_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision16_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision16_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision16_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision16_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision16_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision16_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision16_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision16_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision16_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==17) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision17_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision17_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision17_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision17_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision17_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision17_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision17_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision17_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision17_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision17_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision17_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision17_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision17_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision17_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision17_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision17_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision17_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision17_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision17_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision17_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision17_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision17_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision17_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision17_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision17_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision17_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision17_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision17_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision17_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision17_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision17_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==18) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision18_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision18_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision18_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision18_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision18_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision18_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision18_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision18_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision18_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision18_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision18_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision18_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision18_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision18_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision18_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision18_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision18_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision18_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision18_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision18_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision18_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision18_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision18_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision18_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision18_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision18_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision18_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision18_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision18_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision18_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision18_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==19) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision19_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision19_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision19_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision19_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision19_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision19_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision19_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision19_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision19_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision19_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision19_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision19_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision19_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision19_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision19_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision19_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision19_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision19_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision19_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision19_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision19_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision19_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision19_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision19_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision19_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision19_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision19_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision19_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision19_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision19_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision19_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==20) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision20_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision20_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision20_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision20_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision20_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision20_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision20_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision20_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision20_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision20_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision20_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision20_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision20_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision20_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision20_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision20_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision20_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision20_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision20_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision20_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision20_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision20_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision20_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision20_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision20_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision20_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision20_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision20_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision20_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision20_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision20_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==21) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision21_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision21_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision21_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision21_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision21_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision21_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision21_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision21_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision21_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision21_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision21_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision21_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision21_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision21_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision21_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision21_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision21_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision21_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision21_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision21_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision21_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision21_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision21_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision21_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision21_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision21_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision21_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision21_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision21_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision21_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision21_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==22) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision22_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision22_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision22_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision22_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision22_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision22_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision22_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision22_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision22_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision22_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision22_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision22_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision22_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision22_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision22_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision22_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision22_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision22_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision22_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision22_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision22_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision22_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision22_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision22_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision22_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision22_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision22_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision22_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision22_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision22_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision22_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==23) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision23_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision23_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision23_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision23_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision23_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision23_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision23_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision23_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision23_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision23_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision23_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision23_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision23_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision23_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision23_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision23_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision23_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision23_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision23_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision23_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision23_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision23_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision23_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision23_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision23_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision23_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision23_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision23_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision23_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision23_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision23_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==24) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision24_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision24_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision24_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision24_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision24_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision24_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision24_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision24_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision24_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision24_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision24_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision24_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision24_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision24_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision24_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision24_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision24_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision24_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision24_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision24_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision24_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision24_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision24_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision24_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision24_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision24_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision24_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision24_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision24_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision24_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision24_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==25) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision25_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision25_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision25_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision25_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision25_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision25_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision25_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision25_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision25_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision25_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision25_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision25_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision25_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision25_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision25_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision25_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision25_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision25_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision25_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision25_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision25_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision25_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision25_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision25_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision25_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision25_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision25_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision25_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision25_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision25_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision25_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==26) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision26_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision26_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision26_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision26_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision26_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision26_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision26_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision26_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision26_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision26_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision26_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision26_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision26_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision26_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision26_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision26_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision26_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision26_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision26_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision26_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision26_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision26_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision26_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision26_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision26_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision26_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision26_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision26_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision26_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision26_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision26_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==27) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision27_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision27_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision27_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision27_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision27_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision27_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision27_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision27_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision27_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision27_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision27_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision27_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision27_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision27_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision27_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision27_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision27_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision27_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision27_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision27_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision27_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision27_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision27_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision27_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision27_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision27_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision27_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision27_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision27_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision27_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision27_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==28) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision28_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision28_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision28_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision28_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision28_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision28_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision28_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision28_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision28_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision28_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision28_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision28_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision28_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision28_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision28_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision28_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision28_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision28_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision28_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision28_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision28_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision28_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision28_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision28_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision28_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision28_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision28_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision28_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision28_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision28_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision28_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==29) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision29_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision29_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision29_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision29_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision29_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision29_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision29_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision29_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision29_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision29_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision29_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision29_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision29_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision29_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision29_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision29_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision29_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision29_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision29_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision29_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision29_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision29_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision29_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision29_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision29_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision29_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision29_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision29_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision29_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision29_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision29_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==30) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision30_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision30_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision30_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision30_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision30_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision30_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision30_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision30_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision30_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision30_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision30_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision30_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision30_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision30_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision30_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision30_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision30_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision30_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision30_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision30_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision30_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision30_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision30_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision30_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision30_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision30_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision30_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision30_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision30_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision30_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision30_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==31) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision31_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision31_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision31_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision31_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision31_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision31_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision31_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision31_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision31_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision31_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision31_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision31_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision31_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision31_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision31_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision31_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision31_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision31_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision31_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision31_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision31_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision31_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision31_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision31_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision31_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision31_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision31_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision31_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision31_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision31_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision31_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==32) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(collision32_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(collision32_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(collision32_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(collision32_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision32_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision32_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(collision32_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(collision32_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(collision32_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(collision32_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(collision32_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(collision32_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(collision32_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(collision32_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(collision32_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(collision32_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(collision32_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(collision32_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(collision32_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(collision32_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(collision32_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(collision32_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(collision32_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(collision32_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(collision32_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(collision32_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(collision32_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(collision32_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(collision32_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(collision32_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(collision32_small_westNone2);
             }
         }

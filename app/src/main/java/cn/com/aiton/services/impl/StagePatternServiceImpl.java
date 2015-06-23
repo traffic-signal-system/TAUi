@@ -41,14 +41,14 @@ public class StagePatternServiceImpl implements StagePatternService {
             for(int i=0; i<GbtDefine.STAGE_RESULT_LEN * GbtDefine.STAGEPATTERN_RESULT_LEN ;i++){
                 GbtStagePattern gbtStagePattern = new GbtStagePattern();
                 gbtStagePattern.setDeviceId(node.getId());
-                gbtStagePattern.setStagePatternId(stagePatternArrayResult[i][0]);
-                gbtStagePattern.setStageId(stagePatternArrayResult[i][1]);
+                gbtStagePattern.setStagePatternId(ByteUtils.bytesUInt(stagePatternArrayResult[i][0]));
+                gbtStagePattern.setStageId(ByteUtils.bytesUInt(stagePatternArrayResult[i][1]));
                 byte[] allowPhase = {stagePatternArrayResult[i][2],stagePatternArrayResult[i][3],stagePatternArrayResult[i][4],stagePatternArrayResult[i][5]};
                 gbtStagePattern.setAllowPhase(ByteUtils.byteToInt(allowPhase));
-                gbtStagePattern.setGreenTime(stagePatternArrayResult[i][6]);
-                gbtStagePattern.setYellowTime(stagePatternArrayResult[i][7]);
-                gbtStagePattern.setRedTime(stagePatternArrayResult[i][8]);
-                gbtStagePattern.setOption(stagePatternArrayResult[i][9]);
+                gbtStagePattern.setGreenTime(ByteUtils.bytesUInt(stagePatternArrayResult[i][6]));
+                gbtStagePattern.setYellowTime(ByteUtils.bytesUInt(stagePatternArrayResult[i][7]));
+                gbtStagePattern.setRedTime(ByteUtils.bytesUInt(stagePatternArrayResult[i][8]));
+                gbtStagePattern.setOption(ByteUtils.bytesUInt(stagePatternArrayResult[i][9]));
                 gbtStagePatterns.add(gbtStagePattern);
             }
         }catch (Exception ex){

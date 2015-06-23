@@ -41,8 +41,8 @@ public class LogEventServiceImpl implements LogEventService {
             for(int i=0; i<bytes[6]; i++){
                 gbtEventLog = new GbtEventLog();
                 gbtEventLog.setDeviceId(node.getId());
-                gbtEventLog.setLogId(eventLogResult[i][0]);
-                gbtEventLog.setEventType(eventLogResult[i][1]);
+                gbtEventLog.setLogId(ByteUtils.bytesUInt(eventLogResult[i][0]));
+                gbtEventLog.setEventType(ByteUtils.bytesUInt(eventLogResult[i][1]));
                 gbtEventLog.setHappenTime((eventLogResult[i][2] << 24)+(eventLogResult[i][3] << 16) + (eventLogResult[i][4] << 8) + (eventLogResult[i][5]));
                 gbtEventLog.setEventValue((eventLogResult[i][6] << 24) + (eventLogResult[i][7] << 16) + (eventLogResult[i][8] << 8) +(eventLogResult[i][9]));
                 gbtEventLog.setEventLogDesc(EventLogUtils.eventDescToString(gbtEventLog.getEventValue(), (byte)gbtEventLog.getEventType()));

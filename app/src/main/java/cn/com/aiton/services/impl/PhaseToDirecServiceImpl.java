@@ -45,10 +45,10 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
             for(int i=0; i< bytes[3] ;i++){
                 GbtDirec gbtDirec = new GbtDirec();
                 gbtDirec.setDeviceId(node.getId());
-                gbtDirec.setDirecId(direcArrayResult[i][0]);
-                gbtDirec.setPhaseId(direcArrayResult[i][1]);
-                gbtDirec.setOverlapId(direcArrayResult[i][2]);
-                gbtDirec.setRoadCount(direcArrayResult[i][3]);
+                gbtDirec.setDirecId(ByteUtils.bytesUInt(direcArrayResult[i][0]));
+                gbtDirec.setPhaseId(ByteUtils.bytesUInt(direcArrayResult[i][1]));
+                gbtDirec.setOverlapId(ByteUtils.bytesUInt(direcArrayResult[i][2]));
+                gbtDirec.setRoadCount(ByteUtils.bytesUInt(direcArrayResult[i][3]));
                 gbtDirecs.add(gbtDirec);
             }
         }catch (Exception ex){

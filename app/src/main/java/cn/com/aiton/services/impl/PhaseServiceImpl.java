@@ -35,18 +35,18 @@ public class PhaseServiceImpl implements PhaseService {
             for(int i=0;i<bytes[3];i++){
                 GbtPhase gbtPhase = new GbtPhase();
                 gbtPhase.setDeviceId(node.getId());
-                gbtPhase.setPhaseId(phaseArrayResult[i][0]);
-                gbtPhase.setPedestrainGreen(phaseArrayResult[i][1]);
-                gbtPhase.setPedestrainClear(phaseArrayResult[i][2]);
-                gbtPhase.setMinGreen(phaseArrayResult[i][3]);
-                gbtPhase.setGreenDelayUnit(phaseArrayResult[i][4]);
-                gbtPhase.setMaxGreen1(phaseArrayResult[i][5]);
-                gbtPhase.setMaxGreen2(phaseArrayResult[i][6]);
-                gbtPhase.setFixGreen(phaseArrayResult[i][7]);
-                gbtPhase.setGreenFlash(phaseArrayResult[i][8]);
-                gbtPhase.setPhaseType(phaseArrayResult[i][9]);
-                gbtPhase.setPhaseOption(phaseArrayResult[i][10]);
-                gbtPhase.setExtend(phaseArrayResult[i][11]);
+                gbtPhase.setPhaseId(ByteUtils.bytesUInt(phaseArrayResult[i][0]));
+                gbtPhase.setPedestrainGreen(ByteUtils.bytesUInt(phaseArrayResult[i][1]));
+                gbtPhase.setPedestrainClear(ByteUtils.bytesUInt(phaseArrayResult[i][2]));
+                gbtPhase.setMinGreen(ByteUtils.bytesUInt(phaseArrayResult[i][3]));
+                gbtPhase.setGreenDelayUnit(ByteUtils.bytesUInt(phaseArrayResult[i][4]));
+                gbtPhase.setMaxGreen1(ByteUtils.bytesUInt(phaseArrayResult[i][5]));
+                gbtPhase.setMaxGreen2(ByteUtils.bytesUInt(phaseArrayResult[i][6]));
+                gbtPhase.setFixGreen(ByteUtils.bytesUInt(phaseArrayResult[i][7]));
+                gbtPhase.setGreenFlash(ByteUtils.bytesUInt(phaseArrayResult[i][8]));
+                gbtPhase.setPhaseType(ByteUtils.bytesUInt(phaseArrayResult[i][9]));
+                gbtPhase.setPhaseOption(ByteUtils.bytesUInt(phaseArrayResult[i][10]));
+                gbtPhase.setExtend(ByteUtils.bytesUInt(phaseArrayResult[i][11]));
 
                 gbtPhases.add(gbtPhase);
             }

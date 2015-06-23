@@ -30,7 +30,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/offone"
-                android:id="@+id/westPedestrain1" />
+                android:id="@+id/m_westPedestrain1" />
 
         </LinearLayout>
             <LinearLayout
@@ -44,7 +44,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/westPedestrain2" />
+                    android:id="@+id/m_westPedestrain2" />
 
             </LinearLayout>
             <LinearLayout
@@ -58,7 +58,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/southPedestrain1" />
+                    android:id="@+id/m_southPedestrain1" />
 
             </LinearLayout>
             <LinearLayout
@@ -72,7 +72,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/southPedestrain2" />
+                    android:id="@+id/m_southPedestrain2" />
 
             </LinearLayout>
             <LinearLayout
@@ -86,7 +86,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/eastPedestrain1" />
+                    android:id="@+id/m_eastPedestrain1" />
 
             </LinearLayout>
             <LinearLayout
@@ -100,7 +100,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/eastPedestrain2" />
+                    android:id="@+id/m_eastPedestrain2" />
 
             </LinearLayout>
             <LinearLayout
@@ -114,7 +114,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/northPedestrain2" />
+                    android:id="@+id/m_northPedestrain2" />
 
             </LinearLayout>
             <LinearLayout
@@ -128,7 +128,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/northPedestrain1" />
+                    android:id="@+id/m_northPedestrain1" />
 
             </LinearLayout>
             <TextView
@@ -150,11 +150,10 @@
                 android:layout_marginTop="10dp"
                 >
                 <ImageView
-                    android:onClick="westNone1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/westNone1" />
+                    android:id="@+id/m_westNone1" />
                 <TextView
                     android:id="@+id/tv_westnone1"
                     android:layout_width="wrap_content"
@@ -171,11 +170,10 @@
                 android:layout_marginTop="10dp" >
 
                 <ImageView
-                    android:onClick="westNone2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/westNone2"/>
+                    android:id="@+id/m_westNone2"/>
                 <TextView
                     android:id="@+id/tv_westnone2"
                     android:layout_width="wrap_content"
@@ -200,11 +198,10 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp">
                 <ImageView
-                    android:onClick="northNone2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/northNone2" />
+                    android:id="@+id/m_northNone2" />
                 <TextView
                     android:id="@+id/tv_northnone2"
                     android:layout_width="wrap_content"
@@ -220,11 +217,10 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="10dp">
                 <ImageView
-                    android:onClick="northNone1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/northNone1" />
+                    android:id="@+id/m_northNone1" />
                 <TextView
                     android:id="@+id/tv_northnone1"
                     android:layout_width="wrap_content"
@@ -249,11 +245,10 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp">
                 <ImageView
-                    android:onClick="eastNone1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/eastNone1" />
+                    android:id="@+id/m_eastNone1" />
                 <TextView
                     android:id="@+id/tv_eastnone1"
                     android:layout_width="wrap_content"
@@ -269,11 +264,10 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginBottom="10dp">
                 <ImageView
-                    android:onClick="eastNone2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/eastNone2" />
+                    android:id="@+id/m_eastNone2" />
                 <TextView
                     android:id="@+id/tv_eastnone2"
                     android:layout_width="wrap_content"
@@ -298,11 +292,10 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginBottom="10dp" >
                 <ImageView
-                    android:onClick="southNone2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/southNone2"/>
+                    android:id="@+id/m_southNone2"/>
                 <TextView
                     android:id="@+id/tv_southnone2"
                     android:layout_width="wrap_content"
@@ -319,11 +312,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp">
                 <ImageView
-                    android:onClick="southNone1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/offone"
-                    android:id="@+id/southNone1" />
+                    android:id="@+id/m_southNone1" />
                 <TextView
                     android:id="@+id/tv_southnone1"
                     android:layout_width="wrap_content"
@@ -345,26 +337,26 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/westLeft"
+                    android:id="@+id/m_westLeft"
                     android:src="@drawable/offone"
                     />
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/westStriaght"
+                    android:id="@+id/m_westStriaght"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/westRight"
+                    android:id="@+id/m_westRight"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/westOther"
+                    android:id="@+id/m_westOther"
                     android:src="@drawable/offone"
                     />
             </LinearLayout>
@@ -380,26 +372,26 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/eastOther"
+                    android:id="@+id/m_eastOther"
                     android:src="@drawable/offone"
                     />
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/eastRight"
+                    android:id="@+id/m_eastRight"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/eastStriaght"
+                    android:id="@+id/m_eastStriaght"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/eastLeft"
+                    android:id="@+id/m_eastLeft"
                     android:src="@drawable/offone"
                     />
 
@@ -416,26 +408,26 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/northOther"
+                    android:id="@+id/m_northOther"
                     android:src="@drawable/offone"
                     />
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/northRight"
+                    android:id="@+id/m_northRight"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/northStriaght"
+                    android:id="@+id/m_northStriaght"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/northLeft"
+                    android:id="@+id/m_northLeft"
                     android:src="@drawable/offone"
                     />
 
@@ -454,26 +446,26 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/southLeft"
+                    android:id="@+id/m_southLeft"
                     android:src="@drawable/offone"
                     />
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/southStriaght"
+                    android:id="@+id/m_southStriaght"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/southRight"
+                    android:id="@+id/m_southRight"
                     android:src="@drawable/offone"
                     />
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:id="@+id/southOther"
+                    android:id="@+id/m_southOther"
                     android:src="@drawable/offone"
                     />
 

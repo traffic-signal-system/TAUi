@@ -16,7 +16,9 @@ public class GbtDefine {
     public static String SELECTED_PHASE_OVERLAP_TYPE = "Phase_OverlapPhase";
     public static String SELECTED_PHASE_OVERLAP_TYPE_PHASE = "Type_Phase";
     public static String SELECTED_PHASE_OVERLAP_TYPE_OVERLAPPHASE = "Type_OverlapPhase";
-
+    public static byte LAMP_RED = 0x0;
+    public static byte LAMP_YELLOW = 0x1;
+    public static byte LAMP_GREEN = 0x2;
     /// <summary>
     /// 心跳相关配置常数
     /// </summary>
@@ -418,94 +420,82 @@ public class GbtDefine {
     public static int PHASE_RESULT_LEN = 32;
     ////方向和转向定义
     //北
-    public static final  byte NORTH_TURN_AROUND = 0x00;  //调头
+    public static final  byte NORTH_NONE1 = 0x00;  //调头
+    public static final int I_NORTH_NONE1 = 0;
     public static final  byte NORTH_LEFT = 0x01;
+    public static final int I_NORTH_LEFT = 1;
     public static final byte NORTH_STRAIGHT = 0x02;
+    public static final int I_NORTH_STRAIGHT = 2;
     public static  final byte NORTH_LEFT_STRAIGHT = 0x03;
     public static final  byte NORTH_RIGHT = 0x04;
+    public static final  int I_NORTH_RIGHT = 4;
     public static final  byte NORTH_OTHER = 0x05;
+    public static final  int I_NORTH_OTHER = 5;
     public static  final byte NORTH_RIGHT_STRAIGHT = 0x06;
-    public static  final byte NORTH_LEFT_STRAIGHT_RIGHT = 0x07;
-
+    public static  final byte NORTH_NONE2 = 0x07;
+    public static  final int I_NORTH_NONE2 = 7;
+    public static final  int I_NORTH_PEDESTRAIN_ONE = 8;
+    public static final  int I_NORTH_PEDESTRAIN_TWO = 24;
     public static final  byte NORTH_PEDESTRAIN_ONE = 0x08;
     public static final  byte NORTH_PEDESTRAIN_TWO = 0x18;
-    //东北
-    public static final  byte EAST_NORTH_TURN_AROUND = 0x20;  //调头
-    public static final  byte EAST_NORTH_LEFT = 0x21;
-    public static final  byte EAST_NORTH_STRAIGHT = 0x22;
-    public static final  byte EAST_NORTH_LEFT_STRAIGHT = 0x23;
-    public static final  byte EAST_NORTH_RIGHT = 0x24;
-    public static final  byte EAST_NORTH_OTHER = 0x25;
-    public static final  byte EAST_NORTH_RIGHT_STRAIGHT = 0x26;
-    public static final  byte EAST_NORTH_LEFT_STRAIGHT_RIGHT = 0x27;
-    public static final  byte EAST_NORTH_PEDESTRAIN_ONE = 0x28;
-    public static final  byte EAST_NORTH_PEDESTRAIN_TWO = 0x38;
     //东
-    public static final  byte EAST_TURN_AROUND = 0x40;  //调头
+    public static final  byte EAST_NONE1 = 0x40;  //调头
+    public static final  int I_EAST_NONE1 = 64;  //调头
     public static final  byte EAST_LEFT = 0x41;
+    public static final  int I_EAST_LEFT = 65;
     public static final  byte EAST_STRAIGHT = 0x42;
+    public static final  int I_EAST_STRAIGHT = 66;
     public static final  byte EAST_LEFT_STRAIGHT = 0x43;
     public static final  byte EAST_RIGHT = 0x44;
+    public static final  int  I_EAST_RIGHT = 68;
     public static final  byte EAST_OTHER = 0x45;
+    public static final  int I_EAST_OTHER = 69;
     public static final  byte EAST_RIGHT_STRAIGHT = 0x46;
-    public static final  byte EAST_LEFT_STRAIGHT_RIGHT = 0x47;
+    public static final  byte EAST_NONE2 = 0x47;
     public static final  byte EAST_PEDESTRAIN_ONE = 0x48;
     public static  final byte EAST_PEDESTRAIN_TWO = 0x58;
+    public static final  int I_EAST_NONE2 = 71;
+    public static final  int I_EAST_PEDESTRAIN_ONE = 72;
+    public static  final int I_EAST_PEDESTRAIN_TWO = 88;
     //东南
-    public static final  byte EAST_SOUTH_TURN_AROUND = 0x60;  //调头
-    public static final  byte EAST_SOUTH_LEFT = 0x61;
-    public static  final byte EAST_SOUTH_STRAIGHT = 0x62;
-    public static final  byte EAST_SOUTH_LEFT_STRAIGHT = 0x63;
-    public static final  byte EAST_SOUTH_RIGHT = 0x64;
-    public static final  byte EAST_SOUTH_OTHER = 0x65;
-    public static final  byte EAST_SOUTH_RIGHT_STRAIGHT = 0x66;
-    public static final  byte EAST_SOUTH_LEFT_STRAIGHT_RIGHT = 0x67;
-    public static final  byte EAST_SOUTH_PEDESTRAIN_ONE = 0x68;
-    public static final  byte EAST_SOUTH_PEDESTRAIN_TWO = 0x78;
     //南
-    public static final  byte SOUTH_TURN_AROUND = (byte)0x80;  //调头
+    public static final  byte SOUTH_NONE1 = (byte)0x80;  //调头
+    public static final  int I_SOUTH_NONE1 = 128;  //调头
     public static final  byte SOUTH_LEFT = (byte)0x81;
     public static final  byte SOUTH_STRAIGHT = (byte)0x82;
+    public static final  int I_SOUTH_LEFT = 129;
+    public static final  int I_SOUTH_STRAIGHT = 130;
     public static final  byte SOUTH_LEFT_STRAIGHT = (byte)0x83;
     public static final  byte SOUTH_RIGHT = (byte)0x84;
     public static final  byte SOUTH_OTHER = (byte)0x85;
+    public static final  int I_SOUTH_RIGHT = 132;
+    public static final  int I_SOUTH_OTHER = 133;
     public static final  byte SOUTH_RIGHT_STRAIGHT = (byte)0x86;
-    public static  final byte SOUTH_LEFT_STRAIGHT_RIGHT = (byte)0x87;
+    public static  final byte SOUTH_NONE2 = (byte)0x87;
     public static final  byte SOUTH_PEDESTRAIN_ONE = (byte)0x88;
     public static final  byte SOUTH_PEDESTRAIN_TWO = (byte)0x98;
-    //西南
-    public static  final byte WEST_SOUTH_TURN_AROUND = (byte)0xa0;  //调头
-    public static  final byte WEST_SOUTH_LEFT = (byte)0xa1;
-    public static  final byte WEST_SOUTH_STRAIGHT = (byte)0xa2;
-    public static  final byte WEST_SOUTH_LEFT_STRAIGHT =(byte) 0xa3;
-    public static final  byte WEST_SOUTH_RIGHT = (byte)0xa4;
-    public static  final byte WEST_SOUTH_OTHER = (byte)0xa5;
-    public static final  byte WEST_SOUTH_RIGHT_STRAIGHT = (byte)0xa6;
-    public static final  byte WEST_SOUTH_LEFT_STRAIGHT_RIGHT =(byte) 0xa7;
-    public static final  byte WEST_SOUTH_PEDESTRAIN_ONE = (byte)0xa8;
-    public static final  byte WEST_SOUTH_PEDESTRAIN_TWO = (byte)0xb8;
+    public static  final int I_SOUTH_NONE2 = 135;
+    public static final  int I_SOUTH_PEDESTRAIN_ONE = 136;
+    public static final  int I_SOUTH_PEDESTRAIN_TWO = 152;
     //西方
-    public static final  byte WEST_TURN_AROUND =(byte) 0xc0;  //调头
+    public static final  byte WEST_NONE1 =(byte) 0xc0;  //调头
     public static final  byte WEST_LEFT = (byte)0xc1;
     public static  final byte WEST_STRAIGHT = (byte)0xc2;
+    public static final  int I_WEST_NONE1 =192;  //调头
+    public static final  int I_WEST_LEFT = 193;
+    public static  final int I_WEST_STRAIGHT = 194;
     public static  final byte WEST_LEFT_STRAIGHT = (byte)0xc3;
     public static  final byte WEST_RIGHT = (byte)0xc4;
     public static  final byte WEST_OTHER =(byte) 0xc5;
+    public static  final int I_WEST_RIGHT = 196;
+    public static  final int I_WEST_OTHER =197;
     public static  final byte WEST_RIGHT_STRAIGHT = (byte)0xc6;
-    public static  final byte WEST_LEFT_STRAIGHT_RIGHT =(byte) 0xc7;
+    public static  final byte WEST_NONE2 =(byte) 0xc7;
     public static  final byte WEST_PEDESTRAIN_ONE =(byte) 0xc8;
     public static final  byte WEST_PEDESTRAIN_TWO = (byte)0xd8;
-    //西北
-    public static  final byte WEST_NORTH_TURN_AROUND = (byte)0xe0;  //调头
-    public static  final byte WEST_NORTH_LEFT =(byte) 0xe1;
-    public static final  byte WEST_NORTH_STRAIGHT =(byte) 0xe2;
-    public static  final byte WEST_NORTH_LEFT_STRAIGHT =(byte) 0xe3;
-    public static final  byte WEST_NORTH_RIGHT =(byte) 0xe4;
-    public static final  byte WEST_NORTH_OTHER = (byte)0xe5;
-    public static  final byte WEST_NORTH_RIGHT_STRAIGHT = (byte)0xe6;
-    public static  final byte WEST_NORTH_LEFT_STRAIGHT_RIGHT =(byte) 0xe7;
-    public static  final byte WEST_NORTH_PEDESTRAIN_ONE =(byte) 0xe8;
-    public static final  byte WEST_NORTH_PEDESTRAIN_TWO = (byte)0xf8;
+    public static  final int I_WEST_NONE2 =199;
+    public static  final int I_WEST_PEDESTRAIN_ONE =200;
+    public static final  int I_WEST_PEDESTRAIN_TWO = 216;
 
     // 相位冲突设置过程中的定义
     public static int COLLISION_1_PHASE = 0x1;

@@ -42,14 +42,14 @@ public class ScheduleServiceImpl implements ScheduleService {
             for(int i=0; i< GbtDefine.SCHEDULE_EVENT_RESULT_LEN * GbtDefine.SCHEDULE_RESULT_LEN ;i++){
                 GbtSchedule gbtSchedule = new GbtSchedule();
                 gbtSchedule.setDeviceId(node.getId());
-                gbtSchedule.setScheduleId(scheduleArrayResult[i][0]);
-                gbtSchedule.setEventId(scheduleArrayResult[i][1]);
-                gbtSchedule.setBeginHour(scheduleArrayResult[i][2]);
-                gbtSchedule.setBeginMinute(scheduleArrayResult[i][3]);
-                gbtSchedule.setControlMode(scheduleArrayResult[i][4]);
-                gbtSchedule.setTimePatternId(scheduleArrayResult[i][5]);
-                gbtSchedule.setAuxOut(scheduleArrayResult[i][6]);
-                gbtSchedule.setSpecialOut(scheduleArrayResult[i][7]);
+                gbtSchedule.setScheduleId(ByteUtils.bytesUInt(scheduleArrayResult[i][0]));
+                gbtSchedule.setEventId(ByteUtils.bytesUInt(scheduleArrayResult[i][1]));
+                gbtSchedule.setBeginHour(ByteUtils.bytesUInt(scheduleArrayResult[i][2]));
+                gbtSchedule.setBeginMinute(ByteUtils.bytesUInt(scheduleArrayResult[i][3]));
+                gbtSchedule.setControlMode(ByteUtils.bytesUInt(scheduleArrayResult[i][4]));
+                gbtSchedule.setTimePatternId(ByteUtils.bytesUInt(scheduleArrayResult[i][5]));
+                gbtSchedule.setAuxOut(ByteUtils.bytesUInt(scheduleArrayResult[i][6]));
+                gbtSchedule.setSpecialOut(ByteUtils.bytesUInt(scheduleArrayResult[i][7]));
 
                 gbtSchedules.add(gbtSchedule);
             }

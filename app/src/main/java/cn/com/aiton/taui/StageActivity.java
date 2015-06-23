@@ -1348,1029 +1348,1030 @@ public class StageActivity extends Activity {
     private void setGreenOne(ImageView imageView){
         imageView.setImageResource(R.drawable.greenone);
     }
+
     private void setSmallGreenOne(GbtDirec gbtDirec,GbtStagePattern gbtStagePattern){
         if(gbtStagePattern.getStageId() ==1) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(stage1_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(stage1_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(stage1_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(stage1_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(stage1_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(stage1_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(stage1_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(stage1_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(stage1_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(stage1_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(stage1_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(stage1_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(stage1_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(stage1_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(stage1_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(stage1_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(stage1_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(stage1_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(stage1_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(stage1_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(stage1_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(stage1_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(stage1_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(stage1_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(stage1_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(stage1_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(stage1_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(stage1_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(stage1_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(stage1_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(stage1_small_westNone2);
             }
         }else if(gbtStagePattern.getStageId() ==2) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage2_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage2_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage2_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage2_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage2_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage2_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage2_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage2_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage2_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage2_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage2_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage2_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage2_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage2_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage2_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage2_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage2_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage2_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage2_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage2_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage2_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage2_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage2_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage2_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage2_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage2_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage2_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage2_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage2_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage2_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage2_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage2_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage2_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage2_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage2_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage2_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage2_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage2_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage2_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage2_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage2_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage2_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage2_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage2_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage2_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage2_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage2_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage2_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage2_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage2_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage2_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage2_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage2_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage2_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage2_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage2_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage2_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage2_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage2_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage2_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage2_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage2_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==3) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage3_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage3_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage3_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage3_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage3_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage3_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage3_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage3_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage3_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage3_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage3_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage3_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage3_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage3_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage3_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage3_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage3_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage3_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage3_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage3_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage3_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage3_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage3_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage3_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage3_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage3_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage3_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage3_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage3_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage3_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage3_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage3_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage3_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage3_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage3_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage3_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage3_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage3_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage3_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage3_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage3_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage3_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage3_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage3_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage3_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage3_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage3_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage3_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage3_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage3_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage3_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage3_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage3_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage3_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage3_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage3_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage3_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage3_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage3_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage3_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage3_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage3_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==4) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage4_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage4_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage4_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage4_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage4_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage4_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage4_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage4_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage4_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage4_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage4_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage4_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage4_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage4_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage4_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage4_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage4_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage4_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage4_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage4_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage4_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage4_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage4_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage4_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage4_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage4_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage4_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage4_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage4_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage4_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage4_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage4_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage4_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage4_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage4_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage4_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage4_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage4_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage4_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage4_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage4_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage4_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage4_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage4_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage4_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage4_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage4_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage4_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage4_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage4_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage4_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage4_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage4_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage4_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage4_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage4_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage4_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage4_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage4_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage4_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage4_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage4_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==5) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage5_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage5_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage5_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage5_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage5_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage5_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage5_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage5_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage5_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage5_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage5_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage5_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage5_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage5_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage5_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage5_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage5_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage5_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage5_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage5_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage5_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage5_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage5_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage5_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage5_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage5_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage5_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage5_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage5_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage5_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage5_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage5_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage5_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage5_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage5_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage5_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage5_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage5_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage5_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage5_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage5_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage5_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage5_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage5_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage5_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage5_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage5_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage5_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage5_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage5_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage5_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage5_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage5_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage5_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage5_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage5_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage5_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage5_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage5_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage5_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage5_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage5_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==6) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage6_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage6_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage6_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage6_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage6_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage6_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage6_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage6_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage6_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage6_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage6_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage6_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage6_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage6_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage6_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage6_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage6_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage6_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage6_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage6_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage6_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage6_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage6_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage6_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage6_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage6_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage6_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage6_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage6_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage6_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage6_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage6_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage6_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage6_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage6_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage6_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage6_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage6_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage6_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage6_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage6_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage6_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage6_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage6_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage6_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage6_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage6_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage6_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage6_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage6_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage6_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage6_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage6_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage6_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage6_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage6_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage6_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage6_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage6_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage6_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage6_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage6_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==7) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage7_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage7_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage7_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage7_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage7_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage7_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage7_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage7_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage7_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage7_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage7_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage7_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage7_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage7_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage7_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage7_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage7_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage7_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage7_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage7_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage7_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage7_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage7_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage7_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage7_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage7_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage7_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage7_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage7_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage7_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage7_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage7_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage7_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage7_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage7_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage7_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage7_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage7_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage7_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage7_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage7_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage7_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage7_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage7_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage7_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage7_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage7_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage7_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage7_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage7_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage7_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage7_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage7_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage7_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage7_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage7_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage7_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage7_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage7_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage7_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage7_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage7_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==8) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage8_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage8_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage8_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage8_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage8_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage8_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage8_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage8_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage8_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage8_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage8_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage8_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage8_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage8_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage8_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage8_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage8_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage8_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage8_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage8_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage8_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage8_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage8_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage8_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage8_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage8_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage8_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage8_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage8_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage8_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage8_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage8_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage8_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage8_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage8_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage8_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage8_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage8_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage8_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage8_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage8_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage8_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage8_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage8_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage8_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage8_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage8_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage8_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage8_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage8_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage8_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage8_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage8_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage8_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage8_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage8_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage8_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage8_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage8_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage8_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage8_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage8_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==9) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage9_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage9_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage9_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage9_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage9_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage9_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage9_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage9_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage9_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage9_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage9_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage9_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage9_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage9_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage9_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage9_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage9_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage9_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage9_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage9_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage9_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage9_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage9_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage9_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage9_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage9_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage9_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage9_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage9_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage9_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage9_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage9_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage9_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage9_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage9_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage9_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage9_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage9_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage9_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage9_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage9_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage9_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage9_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage9_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage9_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage9_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage9_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage9_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage9_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage9_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage9_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage9_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage9_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage9_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage9_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage9_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage9_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage9_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage9_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage9_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage9_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage9_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==10) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage10_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage10_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage10_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage10_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage10_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage10_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage10_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage10_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage10_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage10_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage10_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage10_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage10_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage10_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage10_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage10_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage10_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage10_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage10_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage10_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage10_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage10_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage10_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage10_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage10_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage10_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage10_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage10_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage10_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage10_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage10_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage10_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage10_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage10_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage10_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage10_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage10_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage10_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage10_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage10_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage10_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage10_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage10_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage10_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage10_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage10_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage10_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage10_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage10_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage10_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage10_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage10_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage10_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage10_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage10_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage10_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage10_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage10_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage10_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage10_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage10_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage10_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==11) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage11_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage11_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage11_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage11_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage11_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage11_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage11_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage11_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage11_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage11_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage11_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage11_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage11_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage11_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage11_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage11_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage11_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage11_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage11_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage11_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage11_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage11_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage11_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage11_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage11_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage11_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage11_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage11_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage11_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage11_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage11_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage11_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage11_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage11_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage11_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage11_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage11_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage11_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage11_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage11_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage11_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage11_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage11_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage11_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage11_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage11_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage11_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage11_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage11_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage11_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage11_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage11_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage11_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage11_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage11_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage11_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage11_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage11_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage11_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage11_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage11_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage11_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==12) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage12_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage12_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage12_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage12_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage12_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage12_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage12_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage12_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage12_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage12_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage12_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage12_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage12_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage12_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage12_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage12_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage12_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage12_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage12_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage12_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage12_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage12_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage12_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage12_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage12_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage12_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage12_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage12_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage12_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage12_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage12_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage12_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage12_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage12_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage12_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage12_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage12_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage12_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage12_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage12_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage12_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage12_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage12_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage12_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage12_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage12_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage12_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage12_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage12_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage12_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage12_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage12_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage12_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage12_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage12_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage12_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage12_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage12_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage12_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage12_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage12_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage12_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==13) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage13_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage13_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage13_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage13_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage13_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage13_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage13_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage13_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage13_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage13_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage13_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage13_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage13_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage13_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage13_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage13_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage13_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage13_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage13_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage13_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage13_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage13_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage13_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage13_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage13_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage13_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage13_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage13_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage13_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage13_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage13_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage13_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage13_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage13_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage13_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage13_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage13_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage13_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage13_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage13_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage13_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage13_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage13_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage13_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage13_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage13_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage13_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage13_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage13_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage13_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage13_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage13_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage13_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage13_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage13_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage13_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage13_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage13_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage13_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage13_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage13_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage13_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==14) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage14_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage14_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage14_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage14_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage14_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage14_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage14_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage14_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage14_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage14_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage14_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage14_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage14_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage14_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage14_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage14_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage14_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage14_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage14_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage14_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage14_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage14_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage14_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage14_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage14_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage14_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage14_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage14_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage14_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage14_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage14_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage14_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage14_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage14_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage14_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage14_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage14_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage14_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage14_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage14_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage14_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage14_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage14_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage14_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage14_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage14_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage14_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage14_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage14_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage14_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage14_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage14_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage14_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage14_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage14_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage14_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage14_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage14_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage14_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage14_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage14_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage14_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==15) {
-                if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
-                    setGreenOne(stage15_small_northLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
-                    setGreenOne(stage15_small_northStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
-                    setGreenOne(stage15_small_northRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
-                    setGreenOne(stage15_small_northOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage15_small_northPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage15_small_northPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
-                    setGreenOne(stage15_small_northNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage15_small_northNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
-                    setGreenOne(stage15_small_eastLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
-                    setGreenOne(stage15_small_eastStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
-                    setGreenOne(stage15_small_eastRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
-                    setGreenOne(stage15_small_eastOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
-                    setGreenOne(stage15_small_eastPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
-                    setGreenOne(stage15_small_eastPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
-                    setGreenOne(stage15_small_eastNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage15_small_eastNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
-                    setGreenOne(stage15_small_southLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
-                    setGreenOne(stage15_small_southStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
-                    setGreenOne(stage15_small_southRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
-                    setGreenOne(stage15_small_southOther);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
-                    setGreenOne(stage15_small_southPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
-                    setGreenOne(stage15_small_southPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
-                    setGreenOne(stage15_small_southNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
-                    setGreenOne(stage15_small_southNone2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
-                    setGreenOne(stage15_small_westLeft);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
-                    setGreenOne(stage15_small_westStriaght);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
-                    setGreenOne(stage15_small_westRight);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
-                    setGreenOne(stage15_small_westPedestrain1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
-                    setGreenOne(stage15_small_westPedestrain2);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
-                    setGreenOne(stage15_small_westNone1);
-                }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
-                    setGreenOne(stage15_small_westNone2);
-                }
+            if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
+                setGreenOne(stage15_small_northLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
+                setGreenOne(stage15_small_northStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
+                setGreenOne(stage15_small_northRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
+                setGreenOne(stage15_small_northOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
+                setGreenOne(stage15_small_northPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
+                setGreenOne(stage15_small_northPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
+                setGreenOne(stage15_small_northNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
+                setGreenOne(stage15_small_northNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
+                setGreenOne(stage15_small_eastLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
+                setGreenOne(stage15_small_eastStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
+                setGreenOne(stage15_small_eastRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
+                setGreenOne(stage15_small_eastOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
+                setGreenOne(stage15_small_eastPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
+                setGreenOne(stage15_small_eastPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
+                setGreenOne(stage15_small_eastNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
+                setGreenOne(stage15_small_eastNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
+                setGreenOne(stage15_small_southLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
+                setGreenOne(stage15_small_southStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
+                setGreenOne(stage15_small_southRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
+                setGreenOne(stage15_small_southOther);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
+                setGreenOne(stage15_small_southPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
+                setGreenOne(stage15_small_southPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
+                setGreenOne(stage15_small_southNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
+                setGreenOne(stage15_small_southNone2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
+                setGreenOne(stage15_small_westLeft);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
+                setGreenOne(stage15_small_westStriaght);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
+                setGreenOne(stage15_small_westRight);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
+                setGreenOne(stage15_small_westPedestrain1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
+                setGreenOne(stage15_small_westPedestrain2);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
+                setGreenOne(stage15_small_westNone1);
+            }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
+                setGreenOne(stage15_small_westNone2);
+            }
         }else if(gbtStagePattern.getStageId() ==16) {
-            if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT) {
+            if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
                 setGreenOne(stage16_small_northLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT) {
                 setGreenOne(stage16_small_northStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT) {
                 setGreenOne(stage16_small_northRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER) {
                 setGreenOne(stage16_small_northOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE) {
                 setGreenOne(stage16_small_northPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO) {
                 setGreenOne(stage16_small_northPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1) {
                 setGreenOne(stage16_small_northNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2) {
                 setGreenOne(stage16_small_northNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT) {
                 setGreenOne(stage16_small_eastLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT) {
                 setGreenOne(stage16_small_eastStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT) {
                 setGreenOne(stage16_small_eastRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER) {
                 setGreenOne(stage16_small_eastOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE) {
                 setGreenOne(stage16_small_eastPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO) {
                 setGreenOne(stage16_small_eastPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1) {
                 setGreenOne(stage16_small_eastNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2) {
                 setGreenOne(stage16_small_eastNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT) {
                 setGreenOne(stage16_small_southLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT) {
                 setGreenOne(stage16_small_southStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT) {
                 setGreenOne(stage16_small_southRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER) {
                 setGreenOne(stage16_small_southOther);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE) {
                 setGreenOne(stage16_small_southPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO) {
                 setGreenOne(stage16_small_southPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1) {
                 setGreenOne(stage16_small_southNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2) {
                 setGreenOne(stage16_small_southNone2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT) {
                 setGreenOne(stage16_small_westLeft);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT) {
                 setGreenOne(stage16_small_westStriaght);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT) {
                 setGreenOne(stage16_small_westRight);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE) {
                 setGreenOne(stage16_small_westPedestrain1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO) {
                 setGreenOne(stage16_small_westPedestrain2);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1) {
                 setGreenOne(stage16_small_westNone1);
-            } else if (gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+            } else if (gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
                 setGreenOne(stage16_small_westNone2);
             }
         }
@@ -2423,71 +2424,73 @@ public class StageActivity extends Activity {
             }
         }
     }
+
     private void setBigGreenOne(GbtDirec gbtDirec){
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
             setGreenOne(stage_northLeft);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
             setGreenOne(stage_northStraight);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
             setGreenOne(stage_northRight);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
             setGreenOne(stage_northOther);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             setGreenOne(stage_northPedestrain1);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             setGreenOne(stage_northPedestrain2);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
             setGreenOne(stage_north_turn_around);
-        }else if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
             setGreenOne(stage_north_left_straight_right);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
             setGreenOne(stage_eastLeft);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
             setGreenOne(stage_eastStriaght);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
             setGreenOne(stage_eastRight);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
             setGreenOne(stage_eastOther);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             setGreenOne(stage_eastPedestrain1);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             setGreenOne(stage_eastPedestrain2);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
             setGreenOne(stage_east_turn_around);
-        }else if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
             setGreenOne(stage_east_left_straight_right);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
             setGreenOne(stage_southLeft);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
             setGreenOne(stage_southStriaght);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
             setGreenOne(stage_southRight);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
             setGreenOne(stage_southOther);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             setGreenOne(stage_southPedestrain1);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             setGreenOne(stage_southPedestrain2);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
             setGreenOne(stage_south_turn_around);
-        }else if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
             setGreenOne(stage_south_left_straight_right);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
             setGreenOne(stage_westLeft);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
             setGreenOne(stage_westStriaght);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
             setGreenOne(stage_westRight);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             setGreenOne(stage_westPedestrain1);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             setGreenOne(stage_westPedestrain2);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
             setGreenOne(stage_west_turn_around);
-        }else if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT) {
+        }else if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2) {
             setGreenOne(stage_west_left_straight_right);
         }
     }
+
     private void small2BigMap(){
         //selected_id
         int stageid = np_stage_pattern_id.getValue();
@@ -2769,7 +2772,7 @@ public class StageActivity extends Activity {
      * 设置相位
      * @param direc
      */
-    private void setAllowPhaseByDirec(byte direc){
+    private void setAllowPhaseByDirec(int direc){
         Iterator<GbtStagePattern> gbtStagePatternIterator = gbtStagePatterns.iterator();
         Iterator<GbtDirec> gbtDirecIterator = gbtDirecs.iterator();
         while(gbtDirecIterator.hasNext()){
@@ -2822,7 +2825,7 @@ public class StageActivity extends Activity {
      * 将绿灯放行，设置成红灯
      * @param direc
      */
-    private void setNoAllowPhaseByDirec(byte direc){
+    private void setNoAllowPhaseByDirec(int direc){
         Iterator<GbtStagePattern> gbtStagePatternIterator = gbtStagePatterns.iterator();
         Iterator<GbtDirec> gbtDirecIterator = gbtDirecs.iterator();
         while(gbtDirecIterator.hasNext()){
@@ -2856,144 +2859,144 @@ public class StageActivity extends Activity {
     }
 
 
-    private void changeDirec2Red(byte direc){
-        if(direc == GbtDefine.NORTH_OTHER){
+    private void changeDirec2Red(int direc){
+        if(direc == GbtDefine.I_NORTH_OTHER){
             stage_northOther.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_LEFT){
+        }else if(direc == GbtDefine.I_NORTH_LEFT){
             stage_northLeft.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_NORTH_STRAIGHT){
             stage_northStraight.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_RIGHT){
             stage_northRight.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             stage_northPedestrain1.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             stage_northPedestrain2.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_NORTH_NONE1){
             stage_north_turn_around.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_NONE2){
             stage_north_left_straight_right.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_LEFT){
+        }else if(direc == GbtDefine.I_EAST_LEFT){
             stage_eastLeft.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_STRAIGHT){
+        }else if(direc == GbtDefine.I_EAST_STRAIGHT){
             stage_eastStriaght.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_RIGHT){
             stage_eastRight.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_OTHER){
+        }else if(direc == GbtDefine.I_EAST_OTHER){
             stage_eastOther.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             stage_eastPedestrain1.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             stage_eastPedestrain2.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_EAST_NONE1){
             stage_east_turn_around.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_NONE2){
             stage_east_left_straight_right.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_LEFT){
+        }else if(direc == GbtDefine.I_SOUTH_LEFT){
             stage_southLeft.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_STRAIGHT){
             stage_southStriaght.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_RIGHT){
             stage_southRight.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_OTHER){
+        }else if(direc == GbtDefine.I_SOUTH_OTHER){
             stage_southOther.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             stage_southPedestrain1.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             stage_southPedestrain2.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_SOUTH_NONE1){
             stage_south_turn_around.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_NONE2){
             stage_south_left_straight_right.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_LEFT){
+        }else if(direc == GbtDefine.I_WEST_LEFT){
             stage_westLeft.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_STRAIGHT){
+        }else if(direc == GbtDefine.I_WEST_STRAIGHT){
             stage_westStriaght.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_RIGHT){
             stage_westRight.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_OTHER){
+        }else if(direc == GbtDefine.I_WEST_OTHER){
             stage_westOther.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             stage_westPedestrain1.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             stage_westPedestrain2.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_WEST_NONE1){
             stage_west_turn_around.setImageResource(R.drawable.redone);
-        }else if(direc == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_NONE2){
             stage_west_left_straight_right.setImageResource(R.drawable.redone);
         }
     }
 
-    private void changeDirec2Green(byte direc){
-        if(direc == GbtDefine.NORTH_OTHER){
+    private void changeDirec2Green(int direc){
+        if(direc == GbtDefine.I_NORTH_OTHER){
             stage_northOther.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_LEFT){
+        }else if(direc == GbtDefine.I_NORTH_LEFT){
             stage_northLeft.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_NORTH_STRAIGHT){
             stage_northStraight.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_RIGHT){
             stage_northRight.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             stage_northPedestrain1.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             stage_northPedestrain2.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_NORTH_NONE1){
             stage_north_turn_around.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_NONE2){
             stage_north_left_straight_right.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_LEFT){
+        }else if(direc == GbtDefine.I_EAST_LEFT){
             stage_eastLeft.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_STRAIGHT){
+        }else if(direc == GbtDefine.I_EAST_STRAIGHT){
             stage_eastStriaght.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_RIGHT){
             stage_eastRight.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_OTHER){
+        }else if(direc == GbtDefine.I_EAST_OTHER){
             stage_eastOther.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             stage_eastPedestrain1.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             stage_eastPedestrain2.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_EAST_NONE1){
             stage_east_turn_around.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_NONE2){
             stage_east_left_straight_right.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_LEFT){
+        }else if(direc == GbtDefine.I_SOUTH_LEFT){
             stage_southLeft.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_STRAIGHT){
             stage_southStriaght.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_RIGHT){
             stage_southRight.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_OTHER){
+        }else if(direc == GbtDefine.I_SOUTH_OTHER){
             stage_southOther.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             stage_southPedestrain1.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             stage_southPedestrain2.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_SOUTH_NONE1){
             stage_south_turn_around.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_NONE2){
             stage_south_left_straight_right.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_LEFT){
+        }else if(direc == GbtDefine.I_WEST_LEFT){
             stage_westLeft.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_STRAIGHT){
+        }else if(direc == GbtDefine.I_WEST_STRAIGHT){
             stage_westStriaght.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_RIGHT){
             stage_westRight.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_OTHER){
+        }else if(direc == GbtDefine.I_WEST_OTHER){
             stage_westOther.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             stage_westPedestrain1.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             stage_westPedestrain2.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_WEST_NONE1){
             stage_west_turn_around.setImageResource(R.drawable.greenone);
-        }else if(direc == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_NONE2){
             stage_west_left_straight_right.setImageResource(R.drawable.greenone);
         }
     }
 
-    private void changeDirec2RedBySmall(byte direc){
-        if(direc == GbtDefine.NORTH_OTHER){
+    private void changeDirec2RedBySmall(int direc){
+        if(direc == GbtDefine.I_NORTH_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_northOther.setImageResource(R.drawable.redone);
@@ -3045,7 +3048,7 @@ public class StageActivity extends Activity {
                     break;
             }
 
-        }else if(direc == GbtDefine.NORTH_LEFT){
+        }else if(direc == GbtDefine.I_NORTH_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_northLeft.setImageResource(R.drawable.redone);
@@ -3096,7 +3099,7 @@ public class StageActivity extends Activity {
                     stage16_small_northLeft.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_NORTH_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_northStriaght.setImageResource(R.drawable.redone);
@@ -3147,7 +3150,7 @@ public class StageActivity extends Activity {
                     stage16_small_northStriaght.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_northRight.setImageResource(R.drawable.redone);
@@ -3198,7 +3201,7 @@ public class StageActivity extends Activity {
                     stage16_small_northRight.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_northPedestrain1.setImageResource(R.drawable.redone);
@@ -3249,7 +3252,7 @@ public class StageActivity extends Activity {
                     stage16_small_northPedestrain1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_northPedestrain2.setImageResource(R.drawable.redone);
@@ -3300,7 +3303,7 @@ public class StageActivity extends Activity {
                     stage16_small_northPedestrain2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_NORTH_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_northNone1.setImageResource(R.drawable.redone);
@@ -3351,7 +3354,7 @@ public class StageActivity extends Activity {
                     stage16_small_northNone1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_northNone2.setImageResource(R.drawable.redone);
@@ -3402,7 +3405,7 @@ public class StageActivity extends Activity {
                     stage16_small_northNone2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_LEFT){
+        }else if(direc == GbtDefine.I_EAST_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_eastLeft.setImageResource(R.drawable.redone);
@@ -3453,7 +3456,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastLeft.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_STRAIGHT){
+        }else if(direc == GbtDefine.I_EAST_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_eastStriaght.setImageResource(R.drawable.redone);
@@ -3504,7 +3507,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastStriaght.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_eastRight.setImageResource(R.drawable.redone);
@@ -3555,7 +3558,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastRight.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_OTHER){
+        }else if(direc == GbtDefine.I_EAST_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_eastOther.setImageResource(R.drawable.redone);
@@ -3606,7 +3609,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastOther.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_eastPedestrain1.setImageResource(R.drawable.redone);
@@ -3657,7 +3660,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastPedestrain1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_eastPedestrain2.setImageResource(R.drawable.redone);
@@ -3708,7 +3711,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastPedestrain2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_EAST_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_eastNone1.setImageResource(R.drawable.redone);
@@ -3759,7 +3762,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastNone1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_southNone2.setImageResource(R.drawable.redone);
@@ -3810,7 +3813,7 @@ public class StageActivity extends Activity {
                     stage16_small_southNone2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_LEFT){
+        }else if(direc == GbtDefine.I_SOUTH_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_southLeft.setImageResource(R.drawable.redone);
@@ -3861,7 +3864,7 @@ public class StageActivity extends Activity {
                     stage16_small_southLeft.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_southStriaght.setImageResource(R.drawable.redone);
@@ -3912,7 +3915,7 @@ public class StageActivity extends Activity {
                     stage16_small_southStriaght.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_southRight.setImageResource(R.drawable.redone);
@@ -3963,7 +3966,7 @@ public class StageActivity extends Activity {
                     stage16_small_southRight.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_OTHER){
+        }else if(direc == GbtDefine.I_SOUTH_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_southOther.setImageResource(R.drawable.redone);
@@ -4014,7 +4017,7 @@ public class StageActivity extends Activity {
                     stage16_small_southOther.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_southPedestrain1.setImageResource(R.drawable.redone);
@@ -4065,7 +4068,7 @@ public class StageActivity extends Activity {
                     stage16_small_southPedestrain1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_southPedestrain2.setImageResource(R.drawable.redone);
@@ -4116,7 +4119,7 @@ public class StageActivity extends Activity {
                     stage16_small_southPedestrain2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_SOUTH_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_southNone1.setImageResource(R.drawable.redone);
@@ -4167,7 +4170,7 @@ public class StageActivity extends Activity {
                     stage16_small_southNone1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_southNone2.setImageResource(R.drawable.redone);
@@ -4218,7 +4221,7 @@ public class StageActivity extends Activity {
                     stage16_small_southNone2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_LEFT){
+        }else if(direc == GbtDefine.I_WEST_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_westLeft.setImageResource(R.drawable.redone);
@@ -4269,7 +4272,7 @@ public class StageActivity extends Activity {
                     stage16_small_westLeft.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_STRAIGHT){
+        }else if(direc == GbtDefine.I_WEST_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_westStriaght.setImageResource(R.drawable.redone);
@@ -4320,7 +4323,7 @@ public class StageActivity extends Activity {
                     stage16_small_westStriaght.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_westRight.setImageResource(R.drawable.redone);
@@ -4371,7 +4374,7 @@ public class StageActivity extends Activity {
                     stage16_small_westRight.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_OTHER){
+        }else if(direc == GbtDefine.I_WEST_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_westOther.setImageResource(R.drawable.redone);
@@ -4422,7 +4425,7 @@ public class StageActivity extends Activity {
                     stage16_small_westOther.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_westPedestrain1.setImageResource(R.drawable.redone);
@@ -4473,7 +4476,7 @@ public class StageActivity extends Activity {
                     stage16_small_westPedestrain1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_westPedestrain2.setImageResource(R.drawable.redone);
@@ -4524,7 +4527,7 @@ public class StageActivity extends Activity {
                     stage16_small_westPedestrain2.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_WEST_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_westNone1.setImageResource(R.drawable.redone);
@@ -4575,7 +4578,7 @@ public class StageActivity extends Activity {
                     stage16_small_westNone1.setImageResource(R.drawable.redone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_westNone2.setImageResource(R.drawable.redone);
@@ -4629,8 +4632,8 @@ public class StageActivity extends Activity {
         }
     }
 
-    private void changeDirec2GreenBySmall(byte direc){
-        if(direc == GbtDefine.NORTH_OTHER){
+    private void changeDirec2GreenBySmall(int direc){
+        if(direc == GbtDefine.I_NORTH_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_northOther.setImageResource(R.drawable.greenone);
@@ -4682,7 +4685,7 @@ public class StageActivity extends Activity {
                     break;
             }
 
-        }else if(direc == GbtDefine.NORTH_LEFT){
+        }else if(direc == GbtDefine.I_NORTH_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_northLeft.setImageResource(R.drawable.greenone);
@@ -4733,7 +4736,7 @@ public class StageActivity extends Activity {
                     stage16_small_northLeft.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_NORTH_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_northStriaght.setImageResource(R.drawable.greenone);
@@ -4784,7 +4787,7 @@ public class StageActivity extends Activity {
                     stage16_small_northStriaght.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_northRight.setImageResource(R.drawable.greenone);
@@ -4835,7 +4838,7 @@ public class StageActivity extends Activity {
                     stage16_small_northRight.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_northPedestrain1.setImageResource(R.drawable.greenone);
@@ -4886,7 +4889,7 @@ public class StageActivity extends Activity {
                     stage16_small_northPedestrain1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_northPedestrain2.setImageResource(R.drawable.greenone);
@@ -4937,7 +4940,7 @@ public class StageActivity extends Activity {
                     stage16_small_northPedestrain2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_NORTH_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_northNone1.setImageResource(R.drawable.greenone);
@@ -4988,7 +4991,7 @@ public class StageActivity extends Activity {
                     stage16_small_northNone1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_NORTH_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_northNone2.setImageResource(R.drawable.greenone);
@@ -5039,7 +5042,7 @@ public class StageActivity extends Activity {
                     stage16_small_northNone2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_LEFT){
+        }else if(direc == GbtDefine.I_EAST_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_eastLeft.setImageResource(R.drawable.greenone);
@@ -5090,7 +5093,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastLeft.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_STRAIGHT){
+        }else if(direc == GbtDefine.I_EAST_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_eastStriaght.setImageResource(R.drawable.greenone);
@@ -5141,7 +5144,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastStriaght.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_eastRight.setImageResource(R.drawable.greenone);
@@ -5192,7 +5195,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastRight.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_OTHER){
+        }else if(direc == GbtDefine.I_EAST_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_eastOther.setImageResource(R.drawable.greenone);
@@ -5243,7 +5246,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastOther.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_eastPedestrain1.setImageResource(R.drawable.greenone);
@@ -5294,7 +5297,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastPedestrain1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_eastPedestrain2.setImageResource(R.drawable.greenone);
@@ -5345,7 +5348,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastPedestrain2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_EAST_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_eastNone1.setImageResource(R.drawable.greenone);
@@ -5396,7 +5399,7 @@ public class StageActivity extends Activity {
                     stage16_small_eastNone1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_EAST_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_southNone2.setImageResource(R.drawable.greenone);
@@ -5447,7 +5450,7 @@ public class StageActivity extends Activity {
                     stage16_small_southNone2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_LEFT){
+        }else if(direc == GbtDefine.I_SOUTH_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_southLeft.setImageResource(R.drawable.greenone);
@@ -5498,7 +5501,7 @@ public class StageActivity extends Activity {
                     stage16_small_southLeft.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_STRAIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_southStriaght.setImageResource(R.drawable.greenone);
@@ -5549,7 +5552,7 @@ public class StageActivity extends Activity {
                     stage16_small_southStriaght.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_southRight.setImageResource(R.drawable.greenone);
@@ -5600,7 +5603,7 @@ public class StageActivity extends Activity {
                     stage16_small_southRight.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_OTHER){
+        }else if(direc == GbtDefine.I_SOUTH_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_southOther.setImageResource(R.drawable.greenone);
@@ -5651,7 +5654,7 @@ public class StageActivity extends Activity {
                     stage16_small_southOther.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_southPedestrain1.setImageResource(R.drawable.greenone);
@@ -5702,7 +5705,7 @@ public class StageActivity extends Activity {
                     stage16_small_southPedestrain1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_southPedestrain2.setImageResource(R.drawable.greenone);
@@ -5753,7 +5756,7 @@ public class StageActivity extends Activity {
                     stage16_small_southPedestrain2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_TURN_AROUND){
+        }else if(direc == GbtDefine.I_SOUTH_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_southNone1.setImageResource(R.drawable.greenone);
@@ -5804,7 +5807,7 @@ public class StageActivity extends Activity {
                     stage16_small_southNone1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_SOUTH_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_southNone2.setImageResource(R.drawable.greenone);
@@ -5855,7 +5858,7 @@ public class StageActivity extends Activity {
                     stage16_small_southNone2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_LEFT){
+        }else if(direc == GbtDefine.I_WEST_LEFT){
             switch(selected_id){
                 case 1:
                     stage1_small_westLeft.setImageResource(R.drawable.greenone);
@@ -5906,7 +5909,7 @@ public class StageActivity extends Activity {
                     stage16_small_westLeft.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_STRAIGHT){
+        }else if(direc == GbtDefine.I_WEST_STRAIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_westStriaght.setImageResource(R.drawable.greenone);
@@ -5957,7 +5960,7 @@ public class StageActivity extends Activity {
                     stage16_small_westStriaght.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_RIGHT){
             switch(selected_id){
                 case 1:
                     stage1_small_westRight.setImageResource(R.drawable.greenone);
@@ -6008,7 +6011,7 @@ public class StageActivity extends Activity {
                     stage16_small_westRight.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_OTHER){
+        }else if(direc == GbtDefine.I_WEST_OTHER){
             switch(selected_id){
                 case 1:
                     stage1_small_westOther.setImageResource(R.drawable.greenone);
@@ -6059,7 +6062,7 @@ public class StageActivity extends Activity {
                     stage16_small_westOther.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_ONE){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             switch(selected_id){
                 case 1:
                     stage1_small_westPedestrain1.setImageResource(R.drawable.greenone);
@@ -6110,7 +6113,7 @@ public class StageActivity extends Activity {
                     stage16_small_westPedestrain1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_PEDESTRAIN_TWO){
+        }else if(direc == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             switch(selected_id){
                 case 1:
                     stage1_small_westPedestrain2.setImageResource(R.drawable.greenone);
@@ -6161,7 +6164,7 @@ public class StageActivity extends Activity {
                     stage16_small_westPedestrain2.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_TURN_AROUND){
+        }else if(direc == GbtDefine.I_WEST_NONE1){
             switch(selected_id){
                 case 1:
                     stage1_small_westNone1.setImageResource(R.drawable.greenone);
@@ -6212,7 +6215,7 @@ public class StageActivity extends Activity {
                     stage16_small_westNone1.setImageResource(R.drawable.greenone);
                     break;
             }
-        }else if(direc == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+        }else if(direc == GbtDefine.I_WEST_NONE2){
             switch(selected_id){
                 case 1:
                     stage1_small_westNone2.setImageResource(R.drawable.greenone);
@@ -6274,16 +6277,16 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向其它进行设置",Toast.LENGTH_SHORT).show();
         if(north_other){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_OTHER);
-            changeDirec2RedBySmall(GbtDefine.NORTH_OTHER);
-            changeDirec2Red(GbtDefine.NORTH_OTHER);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_OTHER);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_OTHER);
+            changeDirec2Red(GbtDefine.I_NORTH_OTHER);
             north_other = false;
 
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_OTHER);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_OTHER);
-            changeDirec2Green(GbtDefine.NORTH_OTHER);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_OTHER);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_OTHER);
+            changeDirec2Green(GbtDefine.I_NORTH_OTHER);
             north_other = true;
         }
 
@@ -6297,15 +6300,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向右转进行设置",Toast.LENGTH_SHORT).show();
         if(north_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.NORTH_RIGHT);
-            changeDirec2Red(GbtDefine.NORTH_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_RIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_RIGHT);
+            changeDirec2Red(GbtDefine.I_NORTH_RIGHT);
             north_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_RIGHT);
-            changeDirec2Green(GbtDefine.NORTH_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_RIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_RIGHT);
+            changeDirec2Green(GbtDefine.I_NORTH_RIGHT);
             north_right = true;
         }
 
@@ -6320,15 +6323,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向直行进行设置",Toast.LENGTH_SHORT).show();
         if(north_straight){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_STRAIGHT);
-            changeDirec2RedBySmall(GbtDefine.NORTH_STRAIGHT);
-            changeDirec2Red(GbtDefine.NORTH_STRAIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_STRAIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_STRAIGHT);
+            changeDirec2Red(GbtDefine.I_NORTH_STRAIGHT);
             north_straight = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_STRAIGHT);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_STRAIGHT);
-            changeDirec2Green(GbtDefine.NORTH_STRAIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_STRAIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_STRAIGHT);
+            changeDirec2Green(GbtDefine.I_NORTH_STRAIGHT);
             north_straight = true;
         }
 
@@ -6342,15 +6345,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向左转进行设置",Toast.LENGTH_SHORT).show();
         if(north_left){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_LEFT);
-            changeDirec2RedBySmall(GbtDefine.NORTH_LEFT);
-            changeDirec2Red(GbtDefine.NORTH_LEFT);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_LEFT);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_LEFT);
+            changeDirec2Red(GbtDefine.I_NORTH_LEFT);
             north_left = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_LEFT);
-            changeDirec2Green(GbtDefine.NORTH_LEFT);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_LEFT);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_LEFT);
+            changeDirec2Green(GbtDefine.I_NORTH_LEFT);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_LEFT);
             north_left = true;
         }
 
@@ -6364,15 +6367,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向人行1进行设置",Toast.LENGTH_SHORT).show();
         if(north_pedestrain1){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_PEDESTRAIN_ONE);
-            changeDirec2RedBySmall(GbtDefine.NORTH_PEDESTRAIN_ONE);
-            changeDirec2Red(GbtDefine.NORTH_PEDESTRAIN_ONE);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_PEDESTRAIN_ONE);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_PEDESTRAIN_ONE);
+            changeDirec2Red(GbtDefine.I_NORTH_PEDESTRAIN_ONE);
             north_pedestrain1 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_PEDESTRAIN_ONE);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_PEDESTRAIN_ONE);
-            changeDirec2Green(GbtDefine.NORTH_PEDESTRAIN_ONE);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_PEDESTRAIN_ONE);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_PEDESTRAIN_ONE);
+            changeDirec2Green(GbtDefine.I_NORTH_PEDESTRAIN_ONE);
             north_pedestrain1 = true;
         }
 
@@ -6386,15 +6389,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向人行2进行设置",Toast.LENGTH_SHORT).show();
         if(north_pedestrain2){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_PEDESTRAIN_TWO);
-            changeDirec2RedBySmall(GbtDefine.NORTH_PEDESTRAIN_TWO);
-            changeDirec2Red(GbtDefine.NORTH_PEDESTRAIN_TWO);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_PEDESTRAIN_TWO);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_PEDESTRAIN_TWO);
+            changeDirec2Red(GbtDefine.I_NORTH_PEDESTRAIN_TWO);
             north_pedestrain2 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_PEDESTRAIN_TWO);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_PEDESTRAIN_TWO);
-            changeDirec2Green(GbtDefine.NORTH_PEDESTRAIN_TWO);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_PEDESTRAIN_TWO);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_PEDESTRAIN_TWO);
+            changeDirec2Green(GbtDefine.I_NORTH_PEDESTRAIN_TWO);
             north_pedestrain2 = true;
         }
 
@@ -6408,15 +6411,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向调头进行设置",Toast.LENGTH_SHORT).show();
         if(north_turn_around){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_TURN_AROUND);
-            changeDirec2RedBySmall(GbtDefine.NORTH_TURN_AROUND);
-            changeDirec2Red(GbtDefine.NORTH_TURN_AROUND);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_NONE1);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_NONE1);
+            changeDirec2Red(GbtDefine.I_NORTH_NONE1);
             north_turn_around = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_TURN_AROUND);
-            changeDirec2Green(GbtDefine.NORTH_TURN_AROUND);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_TURN_AROUND);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_NONE1);
+            changeDirec2Green(GbtDefine.I_NORTH_NONE1);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_NONE1);
             north_turn_around = true;
         }
 
@@ -6430,15 +6433,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"北方向特殊进行设置",Toast.LENGTH_SHORT).show();
         if(north_left_straight_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Red(GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_NORTH_NONE2);
+            changeDirec2RedBySmall(GbtDefine.I_NORTH_NONE2);
+            changeDirec2Red(GbtDefine.I_NORTH_NONE2);
             north_left_straight_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Green(GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_NORTH_NONE2);
+            changeDirec2GreenBySmall(GbtDefine.I_NORTH_NONE2);
+            changeDirec2Green(GbtDefine.I_NORTH_NONE2);
             north_left_straight_right = true;
         }
 
@@ -6452,15 +6455,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向其它进行设置",Toast.LENGTH_SHORT).show();
         if(east_other){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_OTHER);
-            changeDirec2RedBySmall(GbtDefine.EAST_OTHER);
-            changeDirec2Red(GbtDefine.EAST_OTHER);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_OTHER);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_OTHER);
+            changeDirec2Red(GbtDefine.I_EAST_OTHER);
             east_other = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_OTHER);
-            changeDirec2GreenBySmall(GbtDefine.EAST_OTHER);
-            changeDirec2Green(GbtDefine.EAST_OTHER);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_OTHER);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_OTHER);
+            changeDirec2Green(GbtDefine.I_EAST_OTHER);
             east_other = true;
         }
 
@@ -6474,15 +6477,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向右转进行设置",Toast.LENGTH_SHORT).show();
         if(east_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.EAST_RIGHT);
-            changeDirec2Red(GbtDefine.EAST_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_RIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_RIGHT);
+            changeDirec2Red(GbtDefine.I_EAST_RIGHT);
             east_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.EAST_RIGHT);
-            changeDirec2Green(GbtDefine.EAST_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_RIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_RIGHT);
+            changeDirec2Green(GbtDefine.I_EAST_RIGHT);
             east_right = true;
         }
 
@@ -6496,16 +6499,16 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向直行进行设置",Toast.LENGTH_SHORT).show();
         if(east_straight){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_STRAIGHT);
-            changeDirec2RedBySmall(GbtDefine.EAST_STRAIGHT);
-            changeDirec2Red(GbtDefine.EAST_STRAIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_STRAIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_STRAIGHT);
+            changeDirec2Red(GbtDefine.I_EAST_STRAIGHT);
             east_straight = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_STRAIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_STRAIGHT);
 
-            changeDirec2GreenBySmall(GbtDefine.EAST_STRAIGHT);
-            changeDirec2Green(GbtDefine.EAST_STRAIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_STRAIGHT);
+            changeDirec2Green(GbtDefine.I_EAST_STRAIGHT);
             east_straight = true;
         }
 
@@ -6519,15 +6522,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向左转进行设置",Toast.LENGTH_SHORT).show();
         if(east_left){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_LEFT);
-            changeDirec2RedBySmall(GbtDefine.EAST_LEFT);
-            changeDirec2Red(GbtDefine.EAST_LEFT);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_LEFT);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_LEFT);
+            changeDirec2Red(GbtDefine.I_EAST_LEFT);
             east_left = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_LEFT);
-            changeDirec2GreenBySmall(GbtDefine.EAST_LEFT);
-            changeDirec2Green(GbtDefine.EAST_LEFT);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_LEFT);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_LEFT);
+            changeDirec2Green(GbtDefine.I_EAST_LEFT);
             east_left = true;
         }
 
@@ -6541,15 +6544,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向人行1进行设置",Toast.LENGTH_SHORT).show();
         if(east_pedestrain1){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_PEDESTRAIN_ONE);
-            changeDirec2RedBySmall(GbtDefine.EAST_PEDESTRAIN_ONE);
-            changeDirec2Red(GbtDefine.EAST_PEDESTRAIN_ONE);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_PEDESTRAIN_ONE);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_PEDESTRAIN_ONE);
+            changeDirec2Red(GbtDefine.I_EAST_PEDESTRAIN_ONE);
             east_pedestrain1 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_PEDESTRAIN_ONE);
-            changeDirec2GreenBySmall(GbtDefine.EAST_PEDESTRAIN_ONE);
-            changeDirec2Green(GbtDefine.EAST_PEDESTRAIN_ONE);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_PEDESTRAIN_ONE);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_PEDESTRAIN_ONE);
+            changeDirec2Green(GbtDefine.I_EAST_PEDESTRAIN_ONE);
             east_pedestrain1 = true;
         }
 
@@ -6563,15 +6566,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向人行2进行设置",Toast.LENGTH_SHORT).show();
         if(east_pedestrain2){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_PEDESTRAIN_TWO);
-            changeDirec2RedBySmall(GbtDefine.EAST_PEDESTRAIN_TWO);
-            changeDirec2Red(GbtDefine.EAST_PEDESTRAIN_TWO);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_PEDESTRAIN_TWO);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_PEDESTRAIN_TWO);
+            changeDirec2Red(GbtDefine.I_EAST_PEDESTRAIN_TWO);
             east_pedestrain2 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_PEDESTRAIN_TWO);
-            changeDirec2GreenBySmall(GbtDefine.EAST_PEDESTRAIN_TWO);
-            changeDirec2Green(GbtDefine.EAST_PEDESTRAIN_TWO);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_PEDESTRAIN_TWO);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_PEDESTRAIN_TWO);
+            changeDirec2Green(GbtDefine.I_EAST_PEDESTRAIN_TWO);
             east_pedestrain2 = true;
         }
 
@@ -6585,15 +6588,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向调头进行设置",Toast.LENGTH_SHORT).show();
         if(east_turn_around){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_TURN_AROUND);
-            changeDirec2RedBySmall(GbtDefine.EAST_TURN_AROUND);
-            changeDirec2Red(GbtDefine.EAST_TURN_AROUND);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_NONE1);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_NONE1);
+            changeDirec2Red(GbtDefine.I_EAST_NONE1);
             east_turn_around = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_TURN_AROUND);
-            changeDirec2GreenBySmall(GbtDefine.EAST_TURN_AROUND);
-            changeDirec2Green(GbtDefine.EAST_TURN_AROUND);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_NONE1);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_NONE1);
+            changeDirec2Green(GbtDefine.I_EAST_NONE1);
             east_turn_around = true;
         }
 
@@ -6607,15 +6610,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"东方向特殊进行设置",Toast.LENGTH_SHORT).show();
         if(east_left_straight_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Red(GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_EAST_NONE2);
+            changeDirec2RedBySmall(GbtDefine.I_EAST_NONE2);
+            changeDirec2Red(GbtDefine.I_EAST_NONE2);
             east_left_straight_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Green(GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_EAST_NONE2);
+            changeDirec2GreenBySmall(GbtDefine.I_EAST_NONE2);
+            changeDirec2Green(GbtDefine.I_EAST_NONE2);
             east_left_straight_right = true;
         }
 
@@ -6629,15 +6632,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向其它进行设置",Toast.LENGTH_SHORT).show();
         if(south_other){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_OTHER);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_OTHER);
-            changeDirec2Red(GbtDefine.SOUTH_OTHER);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_OTHER);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_OTHER);
+            changeDirec2Red(GbtDefine.I_SOUTH_OTHER);
             south_other = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_OTHER);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_OTHER);
-            changeDirec2Green(GbtDefine.SOUTH_OTHER);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_OTHER);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_OTHER);
+            changeDirec2Green(GbtDefine.I_SOUTH_OTHER);
             south_other = true;
         }
 
@@ -6651,15 +6654,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向右转进行设置",Toast.LENGTH_SHORT).show();
         if(south_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_RIGHT);
-            changeDirec2Red(GbtDefine.SOUTH_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_RIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_RIGHT);
+            changeDirec2Red(GbtDefine.I_SOUTH_RIGHT);
             south_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_RIGHT);
-            changeDirec2Green(GbtDefine.SOUTH_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_RIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_RIGHT);
+            changeDirec2Green(GbtDefine.I_SOUTH_RIGHT);
             south_right = true;
         }
 
@@ -6673,15 +6676,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向直行进行设置",Toast.LENGTH_SHORT).show();
         if(south_straight){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_STRAIGHT);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_STRAIGHT);
-            changeDirec2Red(GbtDefine.SOUTH_STRAIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_STRAIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_STRAIGHT);
+            changeDirec2Red(GbtDefine.I_SOUTH_STRAIGHT);
             south_straight = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_STRAIGHT);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_STRAIGHT);
-            changeDirec2Green(GbtDefine.SOUTH_STRAIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_STRAIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_STRAIGHT);
+            changeDirec2Green(GbtDefine.I_SOUTH_STRAIGHT);
             south_straight = true;
         }
 
@@ -6695,15 +6698,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向左转进行设置",Toast.LENGTH_SHORT).show();
         if(south_left){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_LEFT);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_LEFT);
-            changeDirec2Red(GbtDefine.SOUTH_LEFT);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_LEFT);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_LEFT);
+            changeDirec2Red(GbtDefine.I_SOUTH_LEFT);
             south_left = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_LEFT);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_LEFT);
-            changeDirec2Green(GbtDefine.SOUTH_LEFT);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_LEFT);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_LEFT);
+            changeDirec2Green(GbtDefine.I_SOUTH_LEFT);
             south_left = true;
         }
 
@@ -6717,15 +6720,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向人行1进行设置",Toast.LENGTH_SHORT).show();
         if(south_pedestrain1){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_PEDESTRAIN_ONE);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_PEDESTRAIN_ONE);
-            changeDirec2Red(GbtDefine.SOUTH_PEDESTRAIN_ONE);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
+            changeDirec2Red(GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
             south_pedestrain1 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_PEDESTRAIN_ONE);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_PEDESTRAIN_ONE);
-            changeDirec2Green(GbtDefine.SOUTH_PEDESTRAIN_ONE);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
+            changeDirec2Green(GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
             south_pedestrain1 = true;
         }
 
@@ -6739,15 +6742,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向人行2进行设置",Toast.LENGTH_SHORT).show();
         if(south_pedestrain2){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_PEDESTRAIN_TWO);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_PEDESTRAIN_TWO);
-            changeDirec2Red(GbtDefine.SOUTH_PEDESTRAIN_TWO);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
+            changeDirec2Red(GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
             south_pedestrain2 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_PEDESTRAIN_TWO);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_PEDESTRAIN_TWO);
-            changeDirec2Green(GbtDefine.SOUTH_PEDESTRAIN_TWO);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
+            changeDirec2Green(GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
             south_pedestrain2 = true;
         }
 
@@ -6761,15 +6764,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向调头进行设置",Toast.LENGTH_SHORT).show();
         if(south_turn_around){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_TURN_AROUND);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_TURN_AROUND);
-            changeDirec2Red(GbtDefine.SOUTH_TURN_AROUND);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_NONE1);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_NONE1);
+            changeDirec2Red(GbtDefine.I_SOUTH_NONE1);
             south_turn_around = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_TURN_AROUND);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_TURN_AROUND);
-            changeDirec2Green(GbtDefine.SOUTH_TURN_AROUND);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_NONE1);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_NONE1);
+            changeDirec2Green(GbtDefine.I_SOUTH_NONE1);
             south_turn_around = true;
         }
 
@@ -6783,15 +6786,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"南方向特殊进行设置",Toast.LENGTH_SHORT).show();
         if(south_left_straight_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Red(GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_SOUTH_NONE2);
+            changeDirec2RedBySmall(GbtDefine.I_SOUTH_NONE2);
+            changeDirec2Red(GbtDefine.I_SOUTH_NONE2);
             south_left_straight_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Green(GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_SOUTH_NONE2);
+            changeDirec2GreenBySmall(GbtDefine.I_SOUTH_NONE2);
+            changeDirec2Green(GbtDefine.I_SOUTH_NONE2);
             south_left_straight_right = true;
         }
 
@@ -6805,15 +6808,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向其它进行设置",Toast.LENGTH_SHORT).show();
         if(west_other){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_OTHER);
-            changeDirec2RedBySmall(GbtDefine.WEST_OTHER);
-            changeDirec2Red(GbtDefine.WEST_OTHER);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_OTHER);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_OTHER);
+            changeDirec2Red(GbtDefine.I_WEST_OTHER);
             west_other = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_OTHER);
-            changeDirec2GreenBySmall(GbtDefine.WEST_OTHER);
-            changeDirec2Green(GbtDefine.WEST_OTHER);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_OTHER);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_OTHER);
+            changeDirec2Green(GbtDefine.I_WEST_OTHER);
             west_other = true;
         }
 
@@ -6827,15 +6830,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向右转进行设置",Toast.LENGTH_SHORT).show();
         if(west_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.WEST_RIGHT);
-            changeDirec2Red(GbtDefine.WEST_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_RIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_RIGHT);
+            changeDirec2Red(GbtDefine.I_WEST_RIGHT);
             west_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.WEST_RIGHT);
-            changeDirec2Green(GbtDefine.WEST_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_RIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_RIGHT);
+            changeDirec2Green(GbtDefine.I_WEST_RIGHT);
             west_right = true;
         }
 
@@ -6849,15 +6852,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向直行进行设置",Toast.LENGTH_SHORT).show();
         if(west_straight){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_STRAIGHT);
-            changeDirec2RedBySmall(GbtDefine.WEST_STRAIGHT);
-            changeDirec2Red(GbtDefine.WEST_STRAIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_STRAIGHT);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_STRAIGHT);
+            changeDirec2Red(GbtDefine.I_WEST_STRAIGHT);
             west_straight = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_STRAIGHT);
-            changeDirec2GreenBySmall(GbtDefine.WEST_STRAIGHT);
-            changeDirec2Green(GbtDefine.WEST_STRAIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_STRAIGHT);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_STRAIGHT);
+            changeDirec2Green(GbtDefine.I_WEST_STRAIGHT);
             west_straight = true;
         }
 
@@ -6871,15 +6874,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向左转进行设置",Toast.LENGTH_SHORT).show();
         if(west_left){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_LEFT);
-            changeDirec2RedBySmall(GbtDefine.WEST_LEFT);
-            changeDirec2Red(GbtDefine.WEST_LEFT);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_LEFT);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_LEFT);
+            changeDirec2Red(GbtDefine.I_WEST_LEFT);
             west_left = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_LEFT);
-            changeDirec2GreenBySmall(GbtDefine.WEST_LEFT);
-            changeDirec2Green(GbtDefine.WEST_LEFT);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_LEFT);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_LEFT);
+            changeDirec2Green(GbtDefine.I_WEST_LEFT);
             west_left = true;
         }
 
@@ -6893,15 +6896,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向人行2进行设置",Toast.LENGTH_SHORT).show();
         if(west_pedestrain2){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_PEDESTRAIN_TWO);
-            changeDirec2RedBySmall(GbtDefine.WEST_PEDESTRAIN_TWO);
-            changeDirec2Red(GbtDefine.WEST_PEDESTRAIN_TWO);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_PEDESTRAIN_TWO);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_PEDESTRAIN_TWO);
+            changeDirec2Red(GbtDefine.I_WEST_PEDESTRAIN_TWO);
             west_pedestrain2 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_PEDESTRAIN_TWO);
-            changeDirec2GreenBySmall(GbtDefine.WEST_PEDESTRAIN_TWO);
-            changeDirec2Green(GbtDefine.WEST_PEDESTRAIN_TWO);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_PEDESTRAIN_TWO);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_PEDESTRAIN_TWO);
+            changeDirec2Green(GbtDefine.I_WEST_PEDESTRAIN_TWO);
             west_pedestrain2 = true;
         }
 
@@ -6915,15 +6918,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向人行1进行设置",Toast.LENGTH_SHORT).show();
         if(west_pedestrain1){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_PEDESTRAIN_ONE);
-            changeDirec2RedBySmall(GbtDefine.WEST_PEDESTRAIN_ONE);
-            changeDirec2Red(GbtDefine.WEST_PEDESTRAIN_ONE);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_PEDESTRAIN_ONE);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_PEDESTRAIN_ONE);
+            changeDirec2Red(GbtDefine.I_WEST_PEDESTRAIN_ONE);
             west_pedestrain1 = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_PEDESTRAIN_ONE);
-            changeDirec2GreenBySmall(GbtDefine.WEST_PEDESTRAIN_ONE);
-            changeDirec2Green(GbtDefine.WEST_PEDESTRAIN_ONE);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_PEDESTRAIN_ONE);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_PEDESTRAIN_ONE);
+            changeDirec2Green(GbtDefine.I_WEST_PEDESTRAIN_ONE);
             west_pedestrain1 = true;
         }
 
@@ -6938,15 +6941,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向调头进行设置",Toast.LENGTH_SHORT).show();
         if(west_turn_around){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_TURN_AROUND);
-            changeDirec2RedBySmall(GbtDefine.WEST_TURN_AROUND);
-            changeDirec2Red(GbtDefine.WEST_TURN_AROUND);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_NONE1);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_NONE1);
+            changeDirec2Red(GbtDefine.I_WEST_NONE1);
             west_turn_around = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_TURN_AROUND);
-            changeDirec2GreenBySmall(GbtDefine.WEST_TURN_AROUND);
-            changeDirec2Green(GbtDefine.WEST_TURN_AROUND);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_NONE1);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_NONE1);
+            changeDirec2Green(GbtDefine.I_WEST_NONE1);
             west_turn_around = true;
         }
 
@@ -6960,15 +6963,15 @@ public class StageActivity extends Activity {
         Toast.makeText(this,"西方向特殊进行设置",Toast.LENGTH_SHORT).show();
         if(west_left_straight_right){
             //当north_other 为true时，表示已经放行（绿灯）。此时的点击为红灯，不进行放行
-            setNoAllowPhaseByDirec(GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2RedBySmall(GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Red(GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
+            setNoAllowPhaseByDirec(GbtDefine.I_WEST_NONE2);
+            changeDirec2RedBySmall(GbtDefine.I_WEST_NONE2);
+            changeDirec2Red(GbtDefine.I_WEST_NONE2);
             west_left_straight_right = false;
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
-            setAllowPhaseByDirec(GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2GreenBySmall(GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
-            changeDirec2Green(GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
+            setAllowPhaseByDirec(GbtDefine.I_WEST_NONE2);
+            changeDirec2GreenBySmall(GbtDefine.I_WEST_NONE2);
+            changeDirec2Green(GbtDefine.I_WEST_NONE2);
             west_left_straight_right = true;
         }
 
@@ -6981,7 +6984,7 @@ public class StageActivity extends Activity {
      * @param gbtDirec
      */
     private void displayImageView(GbtDirec gbtDirec){
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
             stage_northLeft.setVisibility(View.VISIBLE);
             stage1_small_northLeft.setVisibility(View.VISIBLE);
             stage2_small_northLeft.setVisibility(View.VISIBLE);
@@ -7000,7 +7003,7 @@ public class StageActivity extends Activity {
             stage15_small_northLeft.setVisibility(View.VISIBLE);
             stage16_small_northLeft.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
             stage_northStraight.setVisibility(View.VISIBLE);
             stage1_small_northStriaght.setVisibility(View.VISIBLE);
             stage2_small_northStriaght.setVisibility(View.VISIBLE);
@@ -7019,7 +7022,7 @@ public class StageActivity extends Activity {
             stage15_small_northStriaght.setVisibility(View.VISIBLE);
             stage16_small_northStriaght.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
             stage_northRight.setVisibility(View.VISIBLE);
             stage1_small_northRight.setVisibility(View.VISIBLE);
             stage2_small_northRight.setVisibility(View.VISIBLE);
@@ -7038,7 +7041,7 @@ public class StageActivity extends Activity {
             stage15_small_northRight.setVisibility(View.VISIBLE);
             stage16_small_northRight.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
             stage_northOther.setVisibility(View.VISIBLE);
             stage1_small_northOther.setVisibility(View.VISIBLE);
             stage2_small_northOther.setVisibility(View.VISIBLE);
@@ -7057,7 +7060,7 @@ public class StageActivity extends Activity {
             stage15_small_northOther.setVisibility(View.VISIBLE);
             stage16_small_northOther.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             stage_northPedestrain2.setVisibility(View.VISIBLE);
             stage1_small_northPedestrain2.setVisibility(View.VISIBLE);
             stage2_small_northPedestrain2.setVisibility(View.VISIBLE);
@@ -7076,7 +7079,7 @@ public class StageActivity extends Activity {
             stage15_small_northPedestrain2.setVisibility(View.VISIBLE);
             stage16_small_northPedestrain2.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             stage_northPedestrain1.setVisibility(View.VISIBLE);
             stage1_small_northPedestrain1.setVisibility(View.VISIBLE);
             stage2_small_northPedestrain1.setVisibility(View.VISIBLE);
@@ -7095,7 +7098,7 @@ public class StageActivity extends Activity {
             stage15_small_northPedestrain1.setVisibility(View.VISIBLE);
             stage16_small_northPedestrain1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
             stage_north_turn_around.setVisibility(View.VISIBLE);
             stage1_small_northNone1.setVisibility(View.VISIBLE);
             stage2_small_northNone1.setVisibility(View.VISIBLE);
@@ -7114,7 +7117,7 @@ public class StageActivity extends Activity {
             stage15_small_northNone1.setVisibility(View.VISIBLE);
             stage16_small_northNone1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
             stage_north_left_straight_right.setVisibility(View.VISIBLE);
             stage1_small_northNone2.setVisibility(View.VISIBLE);
             stage2_small_northNone2.setVisibility(View.VISIBLE);
@@ -7134,7 +7137,7 @@ public class StageActivity extends Activity {
             stage16_small_northNone2.setVisibility(View.VISIBLE);
         }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
             stage_eastLeft.setVisibility(View.VISIBLE);
             stage1_small_eastLeft.setVisibility(View.VISIBLE);
             stage2_small_eastLeft.setVisibility(View.VISIBLE);
@@ -7153,7 +7156,7 @@ public class StageActivity extends Activity {
             stage15_small_eastLeft.setVisibility(View.VISIBLE);
             stage16_small_eastLeft.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
             stage_eastStriaght.setVisibility(View.VISIBLE);
             stage1_small_eastStriaght.setVisibility(View.VISIBLE);
             stage2_small_eastStriaght.setVisibility(View.VISIBLE);
@@ -7172,7 +7175,7 @@ public class StageActivity extends Activity {
             stage15_small_eastStriaght.setVisibility(View.VISIBLE);
             stage16_small_eastStriaght.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
             stage_eastRight.setVisibility(View.VISIBLE);
             stage1_small_eastRight.setVisibility(View.VISIBLE);
             stage2_small_eastRight.setVisibility(View.VISIBLE);
@@ -7191,7 +7194,7 @@ public class StageActivity extends Activity {
             stage15_small_eastRight.setVisibility(View.VISIBLE);
             stage16_small_eastRight.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
             stage_eastOther.setVisibility(View.VISIBLE);
             stage1_small_eastOther.setVisibility(View.VISIBLE);
             stage2_small_eastOther.setVisibility(View.VISIBLE);
@@ -7210,7 +7213,7 @@ public class StageActivity extends Activity {
             stage15_small_eastOther.setVisibility(View.VISIBLE);
             stage16_small_eastOther.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             stage_eastPedestrain2.setVisibility(View.VISIBLE);
             stage1_small_eastPedestrain2.setVisibility(View.VISIBLE);
             stage2_small_eastPedestrain2.setVisibility(View.VISIBLE);
@@ -7229,7 +7232,7 @@ public class StageActivity extends Activity {
             stage15_small_eastPedestrain2.setVisibility(View.VISIBLE);
             stage16_small_eastPedestrain2.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             stage_eastPedestrain1.setVisibility(View.VISIBLE);
             stage1_small_eastPedestrain1.setVisibility(View.VISIBLE);
             stage2_small_eastPedestrain1.setVisibility(View.VISIBLE);
@@ -7248,7 +7251,7 @@ public class StageActivity extends Activity {
             stage15_small_eastPedestrain1.setVisibility(View.VISIBLE);
             stage16_small_eastPedestrain1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
             stage_east_turn_around.setVisibility(View.VISIBLE);
             stage1_small_eastNone1.setVisibility(View.VISIBLE);
             stage2_small_eastNone1.setVisibility(View.VISIBLE);
@@ -7267,7 +7270,7 @@ public class StageActivity extends Activity {
             stage15_small_eastNone1.setVisibility(View.VISIBLE);
             stage16_small_eastNone1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
             stage_east_left_straight_right.setVisibility(View.VISIBLE);
             stage1_small_eastNone2.setVisibility(View.VISIBLE);
             stage2_small_eastNone2.setVisibility(View.VISIBLE);
@@ -7287,7 +7290,7 @@ public class StageActivity extends Activity {
             stage16_small_eastNone2.setVisibility(View.VISIBLE);
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
             stage_southLeft.setVisibility(View.VISIBLE);
             stage1_small_southLeft.setVisibility(View.VISIBLE);
             stage2_small_southLeft.setVisibility(View.VISIBLE);
@@ -7306,7 +7309,7 @@ public class StageActivity extends Activity {
             stage15_small_southLeft.setVisibility(View.VISIBLE);
             stage16_small_southLeft.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
             stage_southStriaght.setVisibility(View.VISIBLE);
             stage1_small_southStriaght.setVisibility(View.VISIBLE);
             stage2_small_southStriaght.setVisibility(View.VISIBLE);
@@ -7325,7 +7328,7 @@ public class StageActivity extends Activity {
             stage15_small_southStriaght.setVisibility(View.VISIBLE);
             stage16_small_southStriaght.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
             stage_southRight.setVisibility(View.VISIBLE);
             stage1_small_southRight.setVisibility(View.VISIBLE);
             stage2_small_southRight.setVisibility(View.VISIBLE);
@@ -7344,7 +7347,7 @@ public class StageActivity extends Activity {
             stage15_small_southRight.setVisibility(View.VISIBLE);
             stage16_small_southRight.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
             stage_southOther.setVisibility(View.VISIBLE);
             stage1_small_southOther.setVisibility(View.VISIBLE);
             stage2_small_southOther.setVisibility(View.VISIBLE);
@@ -7363,7 +7366,7 @@ public class StageActivity extends Activity {
             stage15_small_southOther.setVisibility(View.VISIBLE);
             stage16_small_southOther.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             stage_southPedestrain2.setVisibility(View.VISIBLE);
             stage1_small_southPedestrain2.setVisibility(View.VISIBLE);
             stage2_small_southPedestrain2.setVisibility(View.VISIBLE);
@@ -7382,7 +7385,7 @@ public class StageActivity extends Activity {
             stage15_small_southPedestrain2.setVisibility(View.VISIBLE);
             stage16_small_southPedestrain2.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             stage_southPedestrain1.setVisibility(View.VISIBLE);
             stage1_small_southPedestrain1.setVisibility(View.VISIBLE);
             stage2_small_southPedestrain1.setVisibility(View.VISIBLE);
@@ -7401,7 +7404,7 @@ public class StageActivity extends Activity {
             stage15_small_southPedestrain1.setVisibility(View.VISIBLE);
             stage16_small_southPedestrain1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
             stage_south_turn_around.setVisibility(View.VISIBLE);
             stage1_small_southNone1.setVisibility(View.VISIBLE);
             stage2_small_southNone1.setVisibility(View.VISIBLE);
@@ -7420,7 +7423,7 @@ public class StageActivity extends Activity {
             stage15_small_southNone1.setVisibility(View.VISIBLE);
             stage16_small_southNone1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
             stage_south_left_straight_right.setVisibility(View.VISIBLE);
             stage1_small_southNone2.setVisibility(View.VISIBLE);
             stage2_small_southNone2.setVisibility(View.VISIBLE);
@@ -7440,7 +7443,7 @@ public class StageActivity extends Activity {
             stage16_small_southNone2.setVisibility(View.VISIBLE);
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
             stage_westLeft.setVisibility(View.VISIBLE);
             stage1_small_westLeft.setVisibility(View.VISIBLE);
             stage2_small_westLeft.setVisibility(View.VISIBLE);
@@ -7459,7 +7462,7 @@ public class StageActivity extends Activity {
             stage15_small_westLeft.setVisibility(View.VISIBLE);
             stage16_small_westLeft.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
             stage_westStriaght.setVisibility(View.VISIBLE);
             stage1_small_westStriaght.setVisibility(View.VISIBLE);
             stage2_small_westStriaght.setVisibility(View.VISIBLE);
@@ -7478,7 +7481,7 @@ public class StageActivity extends Activity {
             stage15_small_westStriaght.setVisibility(View.VISIBLE);
             stage16_small_westStriaght.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
             stage_westRight.setVisibility(View.VISIBLE);
             stage1_small_westRight.setVisibility(View.VISIBLE);
             stage2_small_westRight.setVisibility(View.VISIBLE);
@@ -7497,7 +7500,7 @@ public class StageActivity extends Activity {
             stage15_small_westRight.setVisibility(View.VISIBLE);
             stage16_small_westRight.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_OTHER){
             stage_westOther.setVisibility(View.VISIBLE);
             stage1_small_westOther.setVisibility(View.VISIBLE);
             stage2_small_westOther.setVisibility(View.VISIBLE);
@@ -7516,7 +7519,7 @@ public class StageActivity extends Activity {
             stage15_small_westOther.setVisibility(View.VISIBLE);
             stage16_small_westOther.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             stage_westPedestrain2.setVisibility(View.VISIBLE);
             stage1_small_westPedestrain2.setVisibility(View.VISIBLE);
             stage2_small_westPedestrain2.setVisibility(View.VISIBLE);
@@ -7535,7 +7538,7 @@ public class StageActivity extends Activity {
             stage15_small_westPedestrain2.setVisibility(View.VISIBLE);
             stage16_small_westPedestrain2.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             stage_westPedestrain1.setVisibility(View.VISIBLE);
             stage1_small_westPedestrain1.setVisibility(View.VISIBLE);
             stage2_small_westPedestrain1.setVisibility(View.VISIBLE);
@@ -7554,7 +7557,7 @@ public class StageActivity extends Activity {
             stage15_small_westPedestrain1.setVisibility(View.VISIBLE);
             stage16_small_westPedestrain1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
             stage_west_turn_around.setVisibility(View.VISIBLE);
             stage1_small_westNone1.setVisibility(View.VISIBLE);
             stage2_small_westNone1.setVisibility(View.VISIBLE);
@@ -7573,7 +7576,7 @@ public class StageActivity extends Activity {
             stage15_small_westNone1.setVisibility(View.VISIBLE);
             stage16_small_westNone1.setVisibility(View.VISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2){
             stage_west_left_straight_right.setVisibility(View.VISIBLE);
             stage1_small_westNone2.setVisibility(View.VISIBLE);
             stage2_small_westNone2.setVisibility(View.VISIBLE);
@@ -7599,7 +7602,7 @@ public class StageActivity extends Activity {
      * @param gbtDirec
      */
     private void hiddenImageView(GbtDirec gbtDirec){
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
             stage_northLeft.setVisibility(View.INVISIBLE);
             stage1_small_northLeft.setVisibility(View.INVISIBLE);
             stage2_small_northLeft.setVisibility(View.INVISIBLE);
@@ -7618,7 +7621,7 @@ public class StageActivity extends Activity {
             stage15_small_northLeft.setVisibility(View.INVISIBLE);
             stage16_small_northLeft.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_STRAIGHT){
             stage_northStraight.setVisibility(View.INVISIBLE);
             stage1_small_northStriaght.setVisibility(View.INVISIBLE);
             stage2_small_northStriaght.setVisibility(View.INVISIBLE);
@@ -7637,7 +7640,7 @@ public class StageActivity extends Activity {
             stage15_small_northStriaght.setVisibility(View.INVISIBLE);
             stage16_small_northStriaght.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_RIGHT){
             stage_northRight.setVisibility(View.INVISIBLE);
             stage1_small_northRight.setVisibility(View.INVISIBLE);
             stage2_small_northRight.setVisibility(View.INVISIBLE);
@@ -7656,7 +7659,7 @@ public class StageActivity extends Activity {
             stage15_small_northRight.setVisibility(View.INVISIBLE);
             stage16_small_northRight.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_OTHER){
             stage_northOther.setVisibility(View.INVISIBLE);
             stage1_small_northOther.setVisibility(View.INVISIBLE);
             stage2_small_northOther.setVisibility(View.INVISIBLE);
@@ -7675,7 +7678,7 @@ public class StageActivity extends Activity {
             stage15_small_northOther.setVisibility(View.INVISIBLE);
             stage16_small_northOther.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_TWO){
             stage_northPedestrain2.setVisibility(View.INVISIBLE);
             stage1_small_northPedestrain2.setVisibility(View.INVISIBLE);
             stage2_small_northPedestrain2.setVisibility(View.INVISIBLE);
@@ -7694,7 +7697,7 @@ public class StageActivity extends Activity {
             stage15_small_northPedestrain2.setVisibility(View.INVISIBLE);
             stage16_small_northPedestrain2.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_PEDESTRAIN_ONE){
             stage_northPedestrain1.setVisibility(View.INVISIBLE);
             stage1_small_northPedestrain1.setVisibility(View.INVISIBLE);
             stage2_small_northPedestrain1.setVisibility(View.INVISIBLE);
@@ -7713,7 +7716,7 @@ public class StageActivity extends Activity {
             stage15_small_northPedestrain1.setVisibility(View.INVISIBLE);
             stage16_small_northPedestrain1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE1){
             stage_north_turn_around.setVisibility(View.INVISIBLE);
             stage1_small_northNone1.setVisibility(View.INVISIBLE);
             stage2_small_northNone1.setVisibility(View.INVISIBLE);
@@ -7732,7 +7735,7 @@ public class StageActivity extends Activity {
             stage15_small_northNone1.setVisibility(View.INVISIBLE);
             stage16_small_northNone1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_NONE2){
             stage_north_left_straight_right.setVisibility(View.INVISIBLE);
             stage1_small_northNone2.setVisibility(View.INVISIBLE);
             stage2_small_northNone2.setVisibility(View.INVISIBLE);
@@ -7752,7 +7755,7 @@ public class StageActivity extends Activity {
             stage16_small_northNone2.setVisibility(View.INVISIBLE);
         }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_LEFT){
             stage_eastLeft.setVisibility(View.INVISIBLE);
             stage1_small_eastLeft.setVisibility(View.INVISIBLE);
             stage2_small_eastLeft.setVisibility(View.INVISIBLE);
@@ -7771,7 +7774,7 @@ public class StageActivity extends Activity {
             stage15_small_eastLeft.setVisibility(View.INVISIBLE);
             stage16_small_eastLeft.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_STRAIGHT){
             stage_eastStriaght.setVisibility(View.INVISIBLE);
             stage1_small_eastStriaght.setVisibility(View.INVISIBLE);
             stage2_small_eastStriaght.setVisibility(View.INVISIBLE);
@@ -7790,7 +7793,7 @@ public class StageActivity extends Activity {
             stage15_small_eastStriaght.setVisibility(View.INVISIBLE);
             stage16_small_eastStriaght.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_RIGHT){
             stage_eastRight.setVisibility(View.INVISIBLE);
             stage1_small_eastRight.setVisibility(View.INVISIBLE);
             stage2_small_eastRight.setVisibility(View.INVISIBLE);
@@ -7809,7 +7812,7 @@ public class StageActivity extends Activity {
             stage15_small_eastRight.setVisibility(View.INVISIBLE);
             stage16_small_eastRight.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_OTHER){
             stage_eastOther.setVisibility(View.INVISIBLE);
             stage1_small_eastOther.setVisibility(View.INVISIBLE);
             stage2_small_eastOther.setVisibility(View.INVISIBLE);
@@ -7828,7 +7831,7 @@ public class StageActivity extends Activity {
             stage15_small_eastOther.setVisibility(View.INVISIBLE);
             stage16_small_eastOther.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_TWO){
             stage_eastPedestrain2.setVisibility(View.INVISIBLE);
             stage1_small_eastPedestrain2.setVisibility(View.INVISIBLE);
             stage2_small_eastPedestrain2.setVisibility(View.INVISIBLE);
@@ -7847,7 +7850,7 @@ public class StageActivity extends Activity {
             stage15_small_eastPedestrain2.setVisibility(View.INVISIBLE);
             stage16_small_eastPedestrain2.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_PEDESTRAIN_ONE){
             stage_eastPedestrain1.setVisibility(View.INVISIBLE);
             stage1_small_eastPedestrain1.setVisibility(View.INVISIBLE);
             stage2_small_eastPedestrain1.setVisibility(View.INVISIBLE);
@@ -7866,7 +7869,7 @@ public class StageActivity extends Activity {
             stage15_small_eastPedestrain1.setVisibility(View.INVISIBLE);
             stage16_small_eastPedestrain1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE1){
             stage_east_turn_around.setVisibility(View.INVISIBLE);
             stage1_small_eastNone1.setVisibility(View.INVISIBLE);
             stage2_small_eastNone1.setVisibility(View.INVISIBLE);
@@ -7885,7 +7888,7 @@ public class StageActivity extends Activity {
             stage15_small_eastNone1.setVisibility(View.INVISIBLE);
             stage16_small_eastNone1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.EAST_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_EAST_NONE2){
             stage_east_left_straight_right.setVisibility(View.INVISIBLE);
             stage1_small_eastNone2.setVisibility(View.INVISIBLE);
             stage2_small_eastNone2.setVisibility(View.INVISIBLE);
@@ -7905,7 +7908,7 @@ public class StageActivity extends Activity {
             stage16_small_eastNone2.setVisibility(View.INVISIBLE);
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_LEFT){
             stage_southLeft.setVisibility(View.INVISIBLE);
             stage1_small_southLeft.setVisibility(View.INVISIBLE);
             stage2_small_southLeft.setVisibility(View.INVISIBLE);
@@ -7924,7 +7927,7 @@ public class StageActivity extends Activity {
             stage15_small_southLeft.setVisibility(View.INVISIBLE);
             stage16_small_southLeft.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_STRAIGHT){
             stage_southStriaght.setVisibility(View.INVISIBLE);
             stage1_small_southStriaght.setVisibility(View.INVISIBLE);
             stage2_small_southStriaght.setVisibility(View.INVISIBLE);
@@ -7943,7 +7946,7 @@ public class StageActivity extends Activity {
             stage15_small_southStriaght.setVisibility(View.INVISIBLE);
             stage16_small_southStriaght.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_RIGHT){
             stage_southRight.setVisibility(View.INVISIBLE);
             stage1_small_southRight.setVisibility(View.INVISIBLE);
             stage2_small_southRight.setVisibility(View.INVISIBLE);
@@ -7962,7 +7965,7 @@ public class StageActivity extends Activity {
             stage15_small_southRight.setVisibility(View.INVISIBLE);
             stage16_small_southRight.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_OTHER){
             stage_southOther.setVisibility(View.INVISIBLE);
             stage1_small_southOther.setVisibility(View.INVISIBLE);
             stage2_small_southOther.setVisibility(View.INVISIBLE);
@@ -7981,7 +7984,7 @@ public class StageActivity extends Activity {
             stage15_small_southOther.setVisibility(View.INVISIBLE);
             stage16_small_southOther.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_TWO){
             stage_southPedestrain2.setVisibility(View.INVISIBLE);
             stage1_small_southPedestrain2.setVisibility(View.INVISIBLE);
             stage2_small_southPedestrain2.setVisibility(View.INVISIBLE);
@@ -8000,7 +8003,7 @@ public class StageActivity extends Activity {
             stage15_small_southPedestrain2.setVisibility(View.INVISIBLE);
             stage16_small_southPedestrain2.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_PEDESTRAIN_ONE){
             stage_southPedestrain1.setVisibility(View.INVISIBLE);
             stage1_small_southPedestrain1.setVisibility(View.INVISIBLE);
             stage2_small_southPedestrain1.setVisibility(View.INVISIBLE);
@@ -8019,7 +8022,7 @@ public class StageActivity extends Activity {
             stage15_small_southPedestrain1.setVisibility(View.INVISIBLE);
             stage16_small_southPedestrain1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE1){
             stage_south_turn_around.setVisibility(View.INVISIBLE);
             stage1_small_southNone1.setVisibility(View.INVISIBLE);
             stage2_small_southNone1.setVisibility(View.INVISIBLE);
@@ -8038,7 +8041,7 @@ public class StageActivity extends Activity {
             stage15_small_southNone1.setVisibility(View.INVISIBLE);
             stage16_small_southNone1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_SOUTH_NONE2){
             stage_south_left_straight_right.setVisibility(View.INVISIBLE);
             stage1_small_southNone2.setVisibility(View.INVISIBLE);
             stage2_small_southNone2.setVisibility(View.INVISIBLE);
@@ -8058,7 +8061,7 @@ public class StageActivity extends Activity {
             stage16_small_southNone2.setVisibility(View.INVISIBLE);
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_LEFT){
             stage_westLeft.setVisibility(View.INVISIBLE);
             stage1_small_westLeft.setVisibility(View.INVISIBLE);
             stage2_small_westLeft.setVisibility(View.INVISIBLE);
@@ -8077,7 +8080,7 @@ public class StageActivity extends Activity {
             stage15_small_westLeft.setVisibility(View.INVISIBLE);
             stage16_small_westLeft.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_STRAIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_STRAIGHT){
             stage_westStriaght.setVisibility(View.INVISIBLE);
             stage1_small_westStriaght.setVisibility(View.INVISIBLE);
             stage2_small_westStriaght.setVisibility(View.INVISIBLE);
@@ -8096,7 +8099,7 @@ public class StageActivity extends Activity {
             stage15_small_westStriaght.setVisibility(View.INVISIBLE);
             stage16_small_westStriaght.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_RIGHT){
             stage_westRight.setVisibility(View.INVISIBLE);
             stage1_small_westRight.setVisibility(View.INVISIBLE);
             stage2_small_westRight.setVisibility(View.INVISIBLE);
@@ -8115,7 +8118,7 @@ public class StageActivity extends Activity {
             stage15_small_westRight.setVisibility(View.INVISIBLE);
             stage16_small_westRight.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_OTHER){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_OTHER){
             stage_westOther.setVisibility(View.INVISIBLE);
             stage1_small_westOther.setVisibility(View.INVISIBLE);
             stage2_small_westOther.setVisibility(View.INVISIBLE);
@@ -8134,7 +8137,7 @@ public class StageActivity extends Activity {
             stage15_small_westOther.setVisibility(View.INVISIBLE);
             stage16_small_westOther.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_TWO){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_TWO){
             stage_westPedestrain2.setVisibility(View.INVISIBLE);
             stage1_small_westPedestrain2.setVisibility(View.INVISIBLE);
             stage2_small_westPedestrain2.setVisibility(View.INVISIBLE);
@@ -8153,7 +8156,7 @@ public class StageActivity extends Activity {
             stage15_small_westPedestrain2.setVisibility(View.INVISIBLE);
             stage16_small_westPedestrain2.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_PEDESTRAIN_ONE){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_PEDESTRAIN_ONE){
             stage_westPedestrain1.setVisibility(View.INVISIBLE);
             stage1_small_westPedestrain1.setVisibility(View.INVISIBLE);
             stage2_small_westPedestrain1.setVisibility(View.INVISIBLE);
@@ -8172,7 +8175,7 @@ public class StageActivity extends Activity {
             stage15_small_westPedestrain1.setVisibility(View.INVISIBLE);
             stage16_small_westPedestrain1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_TURN_AROUND){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE1){
             stage_west_turn_around.setVisibility(View.INVISIBLE);
             stage1_small_westNone1.setVisibility(View.INVISIBLE);
             stage2_small_westNone1.setVisibility(View.INVISIBLE);
@@ -8191,7 +8194,7 @@ public class StageActivity extends Activity {
             stage15_small_westNone1.setVisibility(View.INVISIBLE);
             stage16_small_westNone1.setVisibility(View.INVISIBLE);
         }
-        if(gbtDirec.getDirecId() == GbtDefine.WEST_LEFT_STRAIGHT_RIGHT){
+        if(gbtDirec.getDirecId() == GbtDefine.I_WEST_NONE2){
             stage_west_left_straight_right.setVisibility(View.INVISIBLE);
             stage1_small_westNone2.setVisibility(View.INVISIBLE);
             stage2_small_westNone2.setVisibility(View.INVISIBLE);

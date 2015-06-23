@@ -32,6 +32,7 @@ import cn.com.aiton.domain.TscNode;
 import cn.com.aiton.services.PhaseToDirecService;
 import cn.com.aiton.services.impl.PhaseToDirecServiceImpl;
 import cn.com.aiton.utils.AndroidTscDefine;
+import cn.com.aiton.utils.ByteUtils;
 import cn.com.aiton.utils.GbtDefine;
 
 
@@ -132,100 +133,100 @@ public class PhaseConfigActivity extends FinalActivity {
     }
     private void displayPhaseToDirec(GbtDirec gbtDirec){
        switch(gbtDirec.getDirecId()){
-           case GbtDefine.NORTH_LEFT:
+           case GbtDefine.I_NORTH_LEFT:
                tv_northleft.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_STRAIGHT:
+           case GbtDefine.I_NORTH_STRAIGHT:
                tv_northstraight.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_RIGHT:
+           case GbtDefine.I_NORTH_RIGHT:
                tv_northright.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_OTHER:
+           case GbtDefine.I_NORTH_OTHER:
                tv_northother.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_PEDESTRAIN_ONE:
+           case GbtDefine.I_NORTH_PEDESTRAIN_ONE:
                tv_northpedestrain1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_PEDESTRAIN_TWO:
+           case GbtDefine.I_NORTH_PEDESTRAIN_TWO:
                tv_northpedestrain2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_LEFT:
+           case GbtDefine.I_EAST_LEFT:
                tv_eastleft.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_STRAIGHT:
+           case GbtDefine.I_EAST_STRAIGHT:
                tv_eaststraight.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_RIGHT:
+           case GbtDefine.I_EAST_RIGHT:
                tv_eastright.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_OTHER:
+           case GbtDefine.I_EAST_OTHER:
                tv_eastother.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_PEDESTRAIN_ONE:
+           case GbtDefine.I_EAST_PEDESTRAIN_ONE:
                tv_eastpedestrain1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_PEDESTRAIN_TWO:
+           case GbtDefine.I_EAST_PEDESTRAIN_TWO:
                tv_eastpedestrain2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_LEFT:
+           case GbtDefine.I_SOUTH_LEFT:
                tv_southleft.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_STRAIGHT:
+           case GbtDefine.I_SOUTH_STRAIGHT:
                tv_southstraight.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_RIGHT:
+           case GbtDefine.I_SOUTH_RIGHT:
                tv_southright.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_OTHER:
-               tv_eastother.setText(""+phaseOrOverlap(gbtDirec));
+           case GbtDefine.I_SOUTH_OTHER:
+               tv_southother.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_PEDESTRAIN_ONE:
+           case GbtDefine.I_SOUTH_PEDESTRAIN_ONE:
                tv_southpedestrain1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_PEDESTRAIN_TWO:
+           case GbtDefine.I_SOUTH_PEDESTRAIN_TWO:
                tv_southpedestrain2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_LEFT:
+           case GbtDefine.I_WEST_LEFT:
                tv_westleft.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_STRAIGHT:
+           case GbtDefine.I_WEST_STRAIGHT:
                tv_weststraight.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_RIGHT:
+           case GbtDefine.I_WEST_RIGHT:
                tv_westright.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_OTHER:
+           case GbtDefine.I_WEST_OTHER:
                tv_westother.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_PEDESTRAIN_ONE:
+           case GbtDefine.I_WEST_PEDESTRAIN_ONE:
                tv_westpedestrain1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_PEDESTRAIN_TWO:
+           case GbtDefine.I_WEST_PEDESTRAIN_TWO:
                tv_westpedestrain2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_TURN_AROUND:
+           case GbtDefine.I_NORTH_NONE1:
                tv_northnone1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_TURN_AROUND:
+           case GbtDefine.I_EAST_NONE1:
                tv_eastnone1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_TURN_AROUND:
+           case GbtDefine.I_SOUTH_NONE1:
                tv_southnone1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_TURN_AROUND:
+           case GbtDefine.I_WEST_NONE1:
                tv_westnone1.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT:
+           case GbtDefine.I_NORTH_NONE2:
                tv_northnone2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.EAST_LEFT_STRAIGHT_RIGHT:
+           case GbtDefine.I_EAST_NONE2:
                tv_eastnone2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT:
+           case GbtDefine.I_SOUTH_NONE2:
                tv_southnone2.setText(""+phaseOrOverlap(gbtDirec));
                break;
-           case GbtDefine.WEST_LEFT_STRAIGHT_RIGHT:
+           case GbtDefine.I_WEST_NONE2:
                tv_westnone2.setText(""+phaseOrOverlap(gbtDirec));
                break;
 
@@ -234,105 +235,105 @@ public class PhaseConfigActivity extends FinalActivity {
        }
     }
     public void northRight(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_RIGHT);
     }
     public void northOther(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_OTHER);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_OTHER);
     }
     public void northLeft(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_LEFT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_LEFT);
     }
     public void northStriaght(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_STRAIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_STRAIGHT);
     }
     public void northPedestrain1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_PEDESTRAIN_ONE);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_PEDESTRAIN_ONE);
     }
     public void northPedestrain2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_PEDESTRAIN_TWO);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_PEDESTRAIN_TWO);
     }
     public void northNone1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_TURN_AROUND);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_NONE1);
     }
     public void northNone2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_NORTH_NONE2);
     }
 
     public void eastOther(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_OTHER);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_OTHER);
     }
     public void eastRight(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_RIGHT);
     }
     public void eastStriaght(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_STRAIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_STRAIGHT);
     }
     public void eastLeft(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_LEFT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_LEFT);
     }
     public void eastPedestrain1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_PEDESTRAIN_ONE);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_PEDESTRAIN_ONE);
     }
     public void eastPedestrain2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_PEDESTRAIN_TWO);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_PEDESTRAIN_TWO);
     }
     public void eastNone2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_LEFT_STRAIGHT_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_NONE2);
     }
     public void eastNone1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.EAST_TURN_AROUND);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_EAST_NONE1);
     }
 
     public void southOther(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_OTHER);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_OTHER);
     }
     public void southRight(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_RIGHT);
     }
     public void southStraight(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_STRAIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_STRAIGHT);
     }
     public void southLeft(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_LEFT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_LEFT);
     }
     public void southPedestrain2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_PEDESTRAIN_TWO);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_PEDESTRAIN_TWO);
     }
     public void southPedestrain1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_PEDESTRAIN_ONE);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_PEDESTRAIN_ONE);
     }
     public void southNone1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_TURN_AROUND);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_NONE1);
     }
     public void southNone2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_SOUTH_NONE2);
     }
 
     public void westOther(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_OTHER);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_OTHER);
     }
     public void westRight(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_RIGHT);
     }
     public void westStriaght(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_STRAIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_STRAIGHT);
     }
     public void westLeft(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_LEFT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_LEFT);
     }
     public void westPedestrain1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_PEDESTRAIN_ONE);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_PEDESTRAIN_ONE);
     }
     public void westPedestrain2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_PEDESTRAIN_TWO);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_PEDESTRAIN_TWO);
     }
     public void westNone1(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_TURN_AROUND);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_NONE1);
     }
     public void westNone2(View view){
-        showDialog(PhaseConfigActivity.this,GbtDefine.WEST_LEFT_STRAIGHT_RIGHT);
+        showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_NONE2);
     }
-    private void updateDirecInDb(boolean isPhase, int phaseid,byte direc){
+    private void updateDirecInDb(boolean isPhase, int phaseid,int direc){
         FinalDb db = AndroidTscDefine.getFinalDb(PhaseConfigActivity.this);
         TscNode node = AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(PhaseConfigActivity.this));
         List<GbtDirec> gbtDirecs = db.findAllByWhere(GbtDirec.class,"direcId = '"+direc+"' and deviceId = '"+node.getId()+"'");
@@ -407,133 +408,133 @@ public class PhaseConfigActivity extends FinalActivity {
         Thread t1 = new Thread(runnable);
         t1.start();
     }
-    private void setPhaseToTextViewAndDb(int phaseid,byte direc,boolean isPhase){
+    private void setPhaseToTextViewAndDb(int phaseid,int direc,boolean isPhase){
         switch(direc){
-            case GbtDefine.NORTH_LEFT:
+            case GbtDefine.I_NORTH_LEFT:
                 tv_northleft.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_STRAIGHT:
+            case GbtDefine.I_NORTH_STRAIGHT:
                 tv_northstraight.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_RIGHT:
+            case GbtDefine.I_NORTH_RIGHT:
                 tv_northright.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_OTHER:
+            case GbtDefine.I_NORTH_OTHER:
                 tv_northother.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_PEDESTRAIN_ONE:
+            case GbtDefine.I_NORTH_PEDESTRAIN_ONE:
                 tv_northpedestrain1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_PEDESTRAIN_TWO:
+            case GbtDefine.I_NORTH_PEDESTRAIN_TWO:
                 tv_northpedestrain2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_TURN_AROUND:
+            case GbtDefine.I_NORTH_NONE1:
                 tv_northnone1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.NORTH_LEFT_STRAIGHT_RIGHT:
+            case GbtDefine.I_NORTH_NONE2:
                 tv_northnone2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_LEFT:
+            case GbtDefine.I_EAST_LEFT:
                 tv_eastleft.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_STRAIGHT:
+            case GbtDefine.I_EAST_STRAIGHT:
                 tv_eaststraight.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_RIGHT:
+            case GbtDefine.I_EAST_RIGHT:
                 tv_eastright.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_OTHER:
+            case GbtDefine.I_EAST_OTHER:
                 tv_eastother.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_PEDESTRAIN_ONE:
+            case GbtDefine.I_EAST_PEDESTRAIN_ONE:
                 tv_eastpedestrain1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_PEDESTRAIN_TWO:
+            case GbtDefine.I_EAST_PEDESTRAIN_TWO:
                 tv_eastpedestrain2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_TURN_AROUND:
+            case GbtDefine.I_EAST_NONE1:
                 tv_eastnone1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.EAST_LEFT_STRAIGHT_RIGHT:
+            case GbtDefine.I_EAST_NONE2:
                 tv_eastnone2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_LEFT:
+            case GbtDefine.I_SOUTH_LEFT:
                 tv_southleft.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_STRAIGHT:
+            case GbtDefine.I_SOUTH_STRAIGHT:
                 tv_southstraight.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_RIGHT:
+            case GbtDefine.I_SOUTH_RIGHT:
                 tv_southright.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_OTHER:
+            case GbtDefine.I_SOUTH_OTHER:
                 tv_southother.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_PEDESTRAIN_ONE:
+            case GbtDefine.I_SOUTH_PEDESTRAIN_ONE:
                 tv_southpedestrain1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_PEDESTRAIN_TWO:
+            case GbtDefine.I_SOUTH_PEDESTRAIN_TWO:
                 tv_southpedestrain2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_TURN_AROUND:
+            case GbtDefine.I_SOUTH_NONE1:
                 tv_southnone1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.SOUTH_LEFT_STRAIGHT_RIGHT:
+            case GbtDefine.I_SOUTH_NONE2:
                 tv_southnone2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_LEFT:
+            case GbtDefine.I_WEST_LEFT:
                 tv_westleft.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_STRAIGHT:
+            case GbtDefine.I_WEST_STRAIGHT:
                 tv_weststraight.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_RIGHT:
+            case GbtDefine.I_WEST_RIGHT:
                 tv_westright.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_OTHER:
+            case GbtDefine.I_WEST_OTHER:
                 tv_westother.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_PEDESTRAIN_ONE:
+            case GbtDefine.I_WEST_PEDESTRAIN_ONE:
                 tv_westpedestrain1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_PEDESTRAIN_TWO:
+            case GbtDefine.I_WEST_PEDESTRAIN_TWO:
                 tv_westpedestrain2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_TURN_AROUND:
+            case GbtDefine.I_WEST_NONE1:
                 tv_westnone1.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
-            case GbtDefine.WEST_LEFT_STRAIGHT_RIGHT:
+            case GbtDefine.I_WEST_NONE2:
                 tv_westnone2.setText(phaseid+"");
                 updateDirecInDb(isPhase,phaseid,direc);
                 break;
@@ -542,7 +543,7 @@ public class PhaseConfigActivity extends FinalActivity {
         }
     }
     //显示基本的AlertDialog
-    private void showDialog(Context context, final byte direc) {
+    private void showDialog(Context context, final int direc) {
         LayoutInflater inflater = LayoutInflater.from(this);
         final View textEntryView = inflater.inflate(
                 R.layout.phase_dialoglayout, null);

@@ -375,14 +375,14 @@ public class DetectorServiceImpl implements DetectorService {
             for(int i=0; i< bytes[3] ;i++){
                 GbtDetector gbtDetector = new GbtDetector();
                 gbtDetector.setDeviceId(node.getId());
-                gbtDetector.setDetectorId(detectorArrayResult[i][0]);
-                gbtDetector.setPhaseId(detectorArrayResult[i][1]);
-                gbtDetector.setDetectorType(detectorArrayResult[i][2]);
-                gbtDetector.setDirec(detectorArrayResult[i][3]);
-                gbtDetector.setRequestEffectTime(detectorArrayResult[i][4]);
-                gbtDetector.setDetectorOption(detectorArrayResult[i][5]);
+                gbtDetector.setDetectorId(ByteUtils.bytesUInt(detectorArrayResult[i][0]));
+                gbtDetector.setPhaseId(ByteUtils.bytesUInt(detectorArrayResult[i][1]));
+                gbtDetector.setDetectorType(ByteUtils.bytesUInt(detectorArrayResult[i][2]));
+                gbtDetector.setDirec(ByteUtils.bytesUInt(detectorArrayResult[i][3]));
+                gbtDetector.setRequestEffectTime(ByteUtils.bytesUInt(detectorArrayResult[i][4]));
+                gbtDetector.setDetectorOption(ByteUtils.bytesUInt(detectorArrayResult[i][5]));
                 gbtDetector.setSaturationVolume((short)((detectorArrayResult[i][6] << 8) + detectorArrayResult[i][7]));
-                gbtDetector.setSaturationOccupancy(detectorArrayResult[i][8]);
+                gbtDetector.setSaturationOccupancy(ByteUtils.bytesUInt(detectorArrayResult[i][8]));
                 gbtDetectors.add(gbtDetector);
             }
         }catch (Exception ex){

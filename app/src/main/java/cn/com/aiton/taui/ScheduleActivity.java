@@ -16,10 +16,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,12 +30,15 @@ import net.tsz.afinal.FinalDb;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
+import cn.com.aiton.domain.GbtControlModel;
 import cn.com.aiton.domain.GbtSchedule;
+import cn.com.aiton.domain.GbtTimePattern;
 import cn.com.aiton.domain.TscNode;
 import cn.com.aiton.utils.AndroidTscDefine;
 
@@ -48,6 +54,12 @@ public class ScheduleActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         setContentView(R.layout.activity_schedule);
+
+        SharedPreferences sp = this.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
+        TscNode node = AndroidTscDefine.spToTscNode(sp);
+        FinalDb db = FinalDb.create(this, AndroidTscDefine.DBNAME);
+        List<GbtTimePattern> gbtTimePatterns = db.findAllByWhere(GbtTimePattern.class,"deviceId = '"+node.getId()+"'");
+
         listView = (ListView)findViewById(R.id.list);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -87,6 +99,20 @@ android.os.Handler handler = new android.os.Handler(){
             handler.sendMessage(msg);
         }
     };
+
+    public List<String> getTimePatternData(){
+        List<String> list = new ArrayList<String>();
+        Context ctx = ScheduleActivity.this;
+        SharedPreferences sp = ctx.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
+        TscNode node = AndroidTscDefine.spToTscNode(sp);
+        FinalDb db = FinalDb.create(this,AndroidTscDefine.DBNAME);
+        List<GbtTimePattern> gbtTimePatterns = db.findAllByWhere(GbtTimePattern.class,"deviceId = '"+node.getId()+"'");
+        Iterator<GbtTimePattern> gbtTimePatternIterator = gbtTimePatterns.iterator();
+        while(gbtTimePatternIterator.hasNext()){
+            list.add(gbtTimePatternIterator.next().getTimePatternId()+"");
+        }
+        return list;
+    }
     private List<Map<String, String>> getData() {
         Context ctx = ScheduleActivity.this;
         SharedPreferences sp = ctx.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
@@ -141,12 +167,12 @@ android.os.Handler handler = new android.os.Handler(){
 
     public final class ViewHolder{
         public ImageView img;
-        public TextView scheduleId;
-        public TextView eventId;
-        public TextView beginHour;
-        public TextView beginMinute;
-        public TextView controlMode;
-        public TextView timePatternId;
+        public EditText scheduleId;
+        public EditText eventId;
+        public EditText beginHour;
+        public EditText beginMinute;
+        public Spinner controlMode;
+        public Spinner timePatternId;
         public Button viewBtn;
     }
 
@@ -186,14 +212,14 @@ android.os.Handler handler = new android.os.Handler(){
                 holder=new ViewHolder();
 
                 convertView = mInflater.inflate(R.layout.lv_schedule, null);
-                holder.img = (ImageView)convertView.findViewById(R.id.img);
-                holder.scheduleId = (TextView)convertView.findViewById(R.id.scheduleId);
-                holder.eventId = (TextView)convertView.findViewById(R.id.eventId);
-                holder.beginHour = (TextView)convertView.findViewById(R.id.beginHour);
-                holder.beginMinute = (TextView)convertView.findViewById(R.id.beginMinute);
-                holder.controlMode = (TextView)convertView.findViewById(R.id.controlMode);
-                holder.timePatternId = (TextView)convertView.findViewById(R.id.timePatternId);
-                holder.viewBtn = (Button)convertView.findViewById(R.id.view_btn);
+                holder.img = (ImageView)convertView.findViewById(R.id.lvs_img);
+                holder.scheduleId = (EditText)convertView.findViewById(R.id.lvs_scheduleId);
+                holder.eventId = (EditText)convertView.findViewById(R.id.lvs_eventId);
+                holder.beginHour = (EditText)convertView.findViewById(R.id.lvs_beginHour);
+                holder.beginMinute = (EditText)convertView.findViewById(R.id.lvs_beginMinute);
+                holder.controlMode = (Spinner)convertView.findViewById(R.id.lvs_controlMode);
+                holder.timePatternId = (Spinner)convertView.findViewById(R.id.lvs_timePatternId);
+                holder.viewBtn = (Button)convertView.findViewById(R.id.lvs_btn);
                 convertView.setTag(holder);
 
             }else {
@@ -204,10 +230,29 @@ android.os.Handler handler = new android.os.Handler(){
 
             holder.scheduleId.setText((String)mData.get(position).get("scheduleId"));
             holder.eventId.setText((String)mData.get(position).get("eventId"));
-            holder.beginHour.setText((String)mData.get(position).get("beginHour"));
-            holder.beginMinute.setText((String)mData.get(position).get("beginMinute"));
-            holder.controlMode.setText((String)mData.get(position).get("controlMode"));
-            holder.timePatternId.setText((String)mData.get(position).get("timePatternId"));
+            holder.beginHour.setText((String) mData.get(position).get("beginHour"));
+            holder.beginMinute.setText((String) mData.get(position).get("beginMinute"));
+            //List<String> list = SpinnerControlModeAdapter.getData();
+            //ArrayAdapter<String> adapter = new ArrayAdapter<String>(ScheduleActivity.this,android.R.layout.simple_spinner_item,list);
+            List<GbtControlModel> gbtControlModels = new ArrayList<GbtControlModel>();
+            gbtControlModels.add(new GbtControlModel("自主控制",0));
+            gbtControlModels.add(new GbtControlModel("关灯控制",1));
+            gbtControlModels.add(new GbtControlModel("黄闪控制",2));
+            gbtControlModels.add(new GbtControlModel("全红控制",3));
+            gbtControlModels.add(new GbtControlModel("感应控制",6));
+            gbtControlModels.add(new GbtControlModel("无电缆协调",7));
+            gbtControlModels.add(new GbtControlModel("单点优化",8));
+            gbtControlModels.add(new GbtControlModel("主从控制", 11));
+            gbtControlModels.add(new GbtControlModel("联网控制", 12));
+            gbtControlModels.add(new GbtControlModel("手动控制", 13));
+
+            SpinnerControlModeAdapter spinnerControlModeAdapter = new SpinnerControlModeAdapter(gbtControlModels,ScheduleActivity.this);
+            holder.controlMode.setAdapter(spinnerControlModeAdapter);
+            List<String> timePatternData = getTimePatternData();
+            ArrayAdapter<String> timepatternAdapter = new ArrayAdapter<String>(ScheduleActivity.this,android.R.layout.simple_spinner_item,timePatternData);
+            holder.timePatternId.setAdapter(timepatternAdapter);
+           // holder.controlMode.setText((String) mData.get(position).get("controlMode"));
+            //holder.timePatternId.setText((String)mData.get(position).get("timePatternId"));
 
             holder.viewBtn.setOnClickListener(new View.OnClickListener() {
 

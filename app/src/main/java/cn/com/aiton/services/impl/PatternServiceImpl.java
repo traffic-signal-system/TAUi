@@ -40,11 +40,11 @@ public class PatternServiceImpl implements PatternService {
             for(int i=0; i< bytes[3] ;i++){
                 GbtTimePattern gbtTimePattern = new GbtTimePattern();
                 gbtTimePattern.setDeviceId(node.getId());
-                gbtTimePattern.setTimePatternId(timePatternArrayResult[i][0]);
-                gbtTimePattern.setCycleTime(timePatternArrayResult[i][1]);
-                gbtTimePattern.setOffset(timePatternArrayResult[i][2]);
-                gbtTimePattern.setCoordinatePhase(timePatternArrayResult[i][3]);
-                gbtTimePattern.setStagePatternId(timePatternArrayResult[i][4]);
+                gbtTimePattern.setTimePatternId(ByteUtils.bytesUInt(timePatternArrayResult[i][0]));
+                gbtTimePattern.setCycleTime(ByteUtils.bytesUInt(timePatternArrayResult[i][1]));
+                gbtTimePattern.setOffset(ByteUtils.bytesUInt(timePatternArrayResult[i][2]));
+                gbtTimePattern.setCoordinatePhase(ByteUtils.bytesUInt(timePatternArrayResult[i][3]));
+                gbtTimePattern.setStagePatternId(ByteUtils.bytesUInt(timePatternArrayResult[i][4]));
                 gbtTimePatterns.add(gbtTimePattern);
             }
         }catch (Exception ex){
