@@ -53,6 +53,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -216,6 +217,32 @@ public class FullscreenActivity extends FinalActivity {
             }
         }
     };
+
+    private class AnotherTask extends AsyncTask<String, Void, String> {
+        @Override
+        protected void onPostExecute(String result) {
+            //对UI组件的更新操作
+            SimpleAdapter simpleAdapter = new SimpleAdapter(FullscreenActivity.this,arraylistTsc,R.layout.lv_tsc,new String[]{"devicename","ipaddress"},new int[]{R.id.itemTitle,R.id.itemIPAddress});
+            gridView.setAdapter(simpleAdapter);
+        }
+        @Override
+        protected String doInBackground(String... params) {
+            //耗时的操作
+            HashMap<String,String> map = new HashMap<String, String>();
+            arraylistTsc.clear();
+            FinalDb db = FinalDb.create(FullscreenActivity.this,AndroidTscDefine.DBNAME);
+            List<TscNode> nodes = db.findAll(TscNode.class);
+            Iterator<TscNode> tscNodeIterator = nodes.iterator();
+            while (tscNodeIterator.hasNext()){
+
+                TscNode node = tscNodeIterator.next();
+                map.put("ipaddress", node.getIpAddress());
+                map.put("devicename",node.getDeviceName());
+                arraylistTsc.add(map);
+            }
+            return params[0];
+        }
+    }
     /**
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
      * user interaction before hiding the system UI.
@@ -248,8 +275,11 @@ public class FullscreenActivity extends FinalActivity {
 //
 //        Thread thread1 = new Thread(runnableSend);
 //        thread1.start();
-        Thread t4 = new Thread(runnableDisplayTscByDb);
-        t4.start();
+        new Thread(){
+            public void run(){
+                new AnotherTask().execute("JSON");
+            }
+        }.start();
     }
     //当AdapterView被单击(触摸屏或者键盘)，则返回的Item单击事件
       class  ItemClickListener implements AdapterView.OnItemClickListener

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:orientation="horizontal" android:layout_width="fill_parent"
     android:layout_height="wrap_content">
     <ImageView android:id="@+id/lvs_img"
         android:layout_width="wrap_content"
@@ -8,17 +8,17 @@
         android:layout_margin="10px"
         android:src="@drawable/tsc_page_schedule"/>
     <EditText android:id="@+id/lvs_scheduleId"
-        android:layout_width="60dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:text="1"
         android:layout_margin="5px"
-        android:textSize="50dp" />
+        android:textSize="20dp" />
     <EditText android:id="@+id/lvs_eventId"
-        android:layout_width="60dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:text="1"
         android:layout_margin="5px"
-        android:textSize="50dp" />
+        android:textSize="20dp" />
     <LinearLayout android:orientation="vertical"
         android:layout_width="wrap_content"
 
@@ -39,7 +39,7 @@
     </LinearLayout>
 
     <Spinner android:id="@+id/lvs_controlMode"
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
 
         android:layout_margin="5px"

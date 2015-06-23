@@ -140,7 +140,7 @@ public class BasetimeMonthActivity extends Activity {
 
     }
     public void initTimeBaseID(){
-        for(int i=1;i<=40;i++){
+        for(int i=31;i<=40;i++){
             list.add(i+"");
         }
     }

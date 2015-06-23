@@ -65,7 +65,7 @@ public class ScheduleActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.v("MyListView4-click", (String) mData.get(position).get("eventId")+"    --    "+ (String) mData.get(position).get("scheduleId"));
-               // Toast.makeText(this,"fff",Toast.LENGTH_LONG).show();
+
             }
         });
         Thread t2 = new Thread(runnable);
@@ -120,26 +120,6 @@ android.os.Handler handler = new android.os.Handler(){
         FinalDb db = FinalDb.create(this,AndroidTscDefine.DBNAME);
         List<GbtSchedule> gbtSchedules = db.findAllByWhere(GbtSchedule.class,"deviceId = '"+node.getId()+"'");
         List<Map<String,String>> maps = AndroidTscDefine.listScheduleToListMap(gbtSchedules);
-//        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-//
-//        Map<String, Object> map = new HashMap<String, Object>();
-//        map.put("title", "G1");
-//        map.put("info", "google 1");
-//        map.put("img", R.drawable.ic_launcher);
-//
-//        list.add(map);
-//
-//        map = new HashMap<String, Object>();
-//        map.put("title", "G2");
-//        map.put("info", "google 2");
-//        map.put("img", R.drawable.ic_launcher);
-//        list.add(map);
-//
-//        map = new HashMap<String, Object>();
-//        map.put("title", "G3");
-//        map.put("info", "google 3");
-//        map.put("img", R.drawable.ic_launcher);
-//        list.add(map);
 
         return maps;
     }
@@ -150,13 +130,16 @@ android.os.Handler handler = new android.os.Handler(){
     /**
      * listview中点击按键弹出对话框
      */
-    public void showInfo(){
+    public void showInfo(final int position){
+
         new AlertDialog.Builder(this.getParent())
                 .setTitle("提示")
                 .setMessage("功能未开放，请联系厂家！")
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        Map<String,String> map = mData.get(position);
+                        GbtSchedule gbtSchedule = AndroidTscDefine.mapToSchedule(map);
                     }
                 })
                 .show();
@@ -202,9 +185,9 @@ android.os.Handler handler = new android.os.Handler(){
             // TODO Auto-generated method stub
             return 0;
         }
-
+        public GbtSchedule gbtSchedule = new GbtSchedule();
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
 
             ViewHolder holder = null;
             if (convertView == null) {
@@ -229,7 +212,30 @@ android.os.Handler handler = new android.os.Handler(){
 
 
             holder.scheduleId.setText((String)mData.get(position).get("scheduleId"));
-            holder.eventId.setText((String)mData.get(position).get("eventId"));
+            holder.scheduleId.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View view, boolean b) {
+                    if (b) {
+                        // 此处为得到焦点时的处理内容
+                    } else {
+                        // 此处为失去焦点时的处理内容
+                        //   EditText et_scheduleid = (EditText)view;
+                        //  gbtSchedule.setScheduleId(Integer.parseInt(et_scheduleid.getText().toString()));
+                    }
+                }
+            });
+            holder.eventId.setText((String) mData.get(position).get("eventId"));
+            holder.eventId.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View view, boolean b) {
+                    if(b){
+
+                    }else{
+                        EditText et_event_id = (EditText)view;
+                        //gbtSchedule.setEventId(Integer.set);
+                    }
+                }
+            });
             holder.beginHour.setText((String) mData.get(position).get("beginHour"));
             holder.beginMinute.setText((String) mData.get(position).get("beginMinute"));
             //List<String> list = SpinnerControlModeAdapter.getData();
@@ -248,24 +254,51 @@ android.os.Handler handler = new android.os.Handler(){
 
             SpinnerControlModeAdapter spinnerControlModeAdapter = new SpinnerControlModeAdapter(gbtControlModels,ScheduleActivity.this);
             holder.controlMode.setAdapter(spinnerControlModeAdapter);
+            holder.controlMode.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                    String s = adapterView.getItemAtPosition(i).toString();
+                    Log.e("Schedule",s);
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
             List<String> timePatternData = getTimePatternData();
             ArrayAdapter<String> timepatternAdapter = new ArrayAdapter<String>(ScheduleActivity.this,android.R.layout.simple_spinner_item,timePatternData);
             holder.timePatternId.setAdapter(timepatternAdapter);
            // holder.controlMode.setText((String) mData.get(position).get("controlMode"));
             //holder.timePatternId.setText((String)mData.get(position).get("timePatternId"));
+            holder.timePatternId.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                    String s = adapterView.getItemAtPosition(i).toString();
+                    Log.e("Schedule", s);
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
 
             holder.viewBtn.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
-                    showInfo();
+                    showInfo(position);
+                   // holder.timePatternId.get
+//                    holder.controlMode
+                   // Button bt = (Button)v;
+
                 }
             });
 
 
             return convertView;
         }
-
     }
 
 
@@ -287,4 +320,5 @@ android.os.Handler handler = new android.os.Handler(){
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

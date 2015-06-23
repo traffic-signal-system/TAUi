@@ -25,7 +25,7 @@ public class AndroidTscDefine {
         return context.getSharedPreferences(AndroidTscDefine.TSCNODE,Context.MODE_PRIVATE);
     }
     public static FinalDb getFinalDb(android.content.Context context){
-        return FinalDb.create(context,AndroidTscDefine.DBNAME);
+        return FinalDb.create(context, AndroidTscDefine.DBNAME);
     }
 
     public static TscNode spToTscNode(SharedPreferences sp){
@@ -46,16 +46,16 @@ public class AndroidTscDefine {
     public static boolean tscNodeToSP(TscNode node,SharedPreferences sp){
         SharedPreferences.Editor editor = sp.edit();
         editor.putInt("id", node.getId());
-        editor.putString("deviceName",node.getDeviceName());
-        editor.putString("ipAddress",node.getIpAddress());
-        editor.putString("version",node.getVersion());
-        editor.putInt("groupId",node.getGroupId());
-        editor.putInt("groupSequence",node.getGroupSequence());
-        editor.putInt("linkType",node.getLinkType());
-        editor.putInt("port",node.getPort());
-        editor.putInt("protocolType",node.getProtocolType());
-        editor.putFloat("latitude",(float)node.getLatitude());
-        editor.putFloat("longitude",(float)node.getLongitude());
+        editor.putString("deviceName", node.getDeviceName());
+        editor.putString("ipAddress", node.getIpAddress());
+        editor.putString("version", node.getVersion());
+        editor.putInt("groupId", node.getGroupId());
+        editor.putInt("groupSequence", node.getGroupSequence());
+        editor.putInt("linkType", node.getLinkType());
+        editor.putInt("port", node.getPort());
+        editor.putInt("protocolType", node.getProtocolType());
+        editor.putFloat("latitude", (float) node.getLatitude());
+        editor.putFloat("longitude", (float) node.getLongitude());
         editor.commit();
         return true;
     }
@@ -78,6 +78,46 @@ public class AndroidTscDefine {
             maps.add(map);
         }
         return maps;
+    }
+
+    /**
+     *
+     * @param map
+     * @return
+     */
+    public static GbtSchedule mapToSchedule(Map<String,String> map){
+        GbtSchedule gbtSchedule = new GbtSchedule();
+        gbtSchedule.setScheduleId(Integer.parseInt((String) map.get("scheduleId")));
+        gbtSchedule.setEventId(Integer.parseInt((String)map.get("eventId")));
+        gbtSchedule.setBeginHour(Integer.parseInt((String)map.get("beginHour")));
+        gbtSchedule.setBeginMinute(Integer.parseInt((String)map.get("beginMinute")));
+        gbtSchedule.setAuxOut(Integer.parseInt((String)map.get("auxOut")));
+        gbtSchedule.setControlMode((Integer.parseInt(detailToInt((String)map.get("controlMode")))));
+        gbtSchedule.setSpecialOut(Integer.parseInt((String)map.get("specialOut")));
+        gbtSchedule.setTimePatternId(Integer.parseInt((String)map.get("timePatternId")));
+        gbtSchedule.setDeviceId(Integer.parseInt((String)map.get("deviceId")));
+        gbtSchedule.setId(Integer.parseInt((String) map.get("id")));
+        return gbtSchedule;
+    }
+
+    /**
+     *
+     * @param gbtSchedule
+     * @return
+     */
+    public static Map<String,String> scheduleToMap(GbtSchedule gbtSchedule){
+        Map<String,String> map = new HashMap<String, String>();
+        map.put("auxOut",String.valueOf(gbtSchedule.getAuxOut()));
+        map.put("beginHour",String.valueOf(gbtSchedule.getBeginHour()));
+        map.put("beginMinute",String.valueOf(gbtSchedule.getBeginMinute()));
+        map.put("controlMode",intToDetail(String.valueOf(gbtSchedule.getControlMode())));
+        map.put("deviceId",String.valueOf(gbtSchedule.getDeviceId()));
+        map.put("eventId",String.valueOf(gbtSchedule.getEventId()));
+        map.put("id",String.valueOf(gbtSchedule.getId()));
+        map.put("scheduleId",String.valueOf(gbtSchedule.getScheduleId()));
+        map.put("specialOut",String.valueOf(gbtSchedule.getSpecialOut()));
+        map.put("timePatternId",String.valueOf(gbtSchedule.getTimePatternId()));
+        return map;
     }
     public static List<GbtSchedule> listMapToListSchedule(List<Map<String,String>> maps){
         List<GbtSchedule> gbtSchedules = new ArrayList<GbtSchedule>();

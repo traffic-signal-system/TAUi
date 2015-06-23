@@ -131,7 +131,7 @@ public class BasetimeWeekActivity extends Activity {
         });
     }
     public void initTimeBaseID(){
-        for(int i=1;i<=40;i++){
+        for(int i=21;i<=30;i++){
             list.add(i+"");
         }
     }
