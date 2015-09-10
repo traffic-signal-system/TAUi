@@ -635,6 +635,9 @@ public class StageActivity extends Activity {
     private int selected_id = 1;
     private NumberPicker np_stage_pattern_id;
 
+    /**
+     * 阶段对象初始化为集合Views对象
+     */
     List<View> views = new ArrayList<View>();
     private void initViews(){
         views.add(stage1);
@@ -654,6 +657,10 @@ public class StageActivity extends Activity {
         views.add(stage15);
         views.add(stage16);
     }
+
+    /**
+     * 将大图中的方向图片初始化为ImageViews集合对象
+     */
     List<ImageView> imageViews = new ArrayList<ImageView>();
     private void initImageViews(){
         imageViews.add(stage_northLeft);
@@ -1218,6 +1225,10 @@ public class StageActivity extends Activity {
         imageViews.add(stage15_small_westNone2);
     }
 
+    /**
+     * 显示小图的所有阶段
+     * @param gbtStagePattern
+     */
     private void displayStageView(GbtStagePattern gbtStagePattern){
         switch(gbtStagePattern.getStageId()){
             case 1:
@@ -1305,6 +1316,9 @@ public class StageActivity extends Activity {
         }
     }
 
+    /**
+     * 将所有大图上的方向重置为红灯
+     */
     private void resetBigMapRed(){
          stage_northLeft.setImageResource(R.drawable.redone);
          stage_northStraight.setImageResource(R.drawable.redone);
@@ -1339,16 +1353,30 @@ public class StageActivity extends Activity {
          stage_south_turn_around.setImageResource(R.drawable.redone);
         stage_south_left_straight_right.setImageResource(R.drawable.redone);
     }
+
+    /**
+     * 将所有方向重置为红灯
+     */
     private void resetAllRed(){
         Iterator<ImageView> imageViewIterator = imageViews.iterator();
         while(imageViewIterator.hasNext()){
             imageViewIterator.next().setImageResource(R.drawable.redone);
         }
     }
+
+    /**
+     * 设置单个方向的绿灯
+     * @param imageView
+     */
     private void setGreenOne(ImageView imageView){
         imageView.setImageResource(R.drawable.greenone);
     }
 
+    /**
+     * 显示小图上的绿灯放行
+     * @param gbtDirec
+     * @param gbtStagePattern
+     */
     private void setSmallGreenOne(GbtDirec gbtDirec,GbtStagePattern gbtStagePattern){
         if(gbtStagePattern.getStageId() ==1) {
             if (gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT) {
@@ -2376,6 +2404,12 @@ public class StageActivity extends Activity {
             }
         }
     }
+
+    /**
+     * * 根据阶段配时表与方向表，显示所有阶段小图上的绿灯。其它都为红灯。
+     * @param gbtStagePattern
+     * @param gbtDirecs
+     */
     private void displayGreen2Small(GbtStagePattern gbtStagePattern,List<GbtDirec> gbtDirecs){
         int ap = gbtStagePattern.getAllowPhase();
         Iterator<GbtDirec> gbtDirecIterator = gbtDirecs.iterator();
@@ -2390,7 +2424,7 @@ public class StageActivity extends Activity {
                     {
                         if (gbtDirec.getPhaseId() == (i + 1))
                         {
-                            //初始化
+                            //小图上显示绿灯
                             setSmallGreenOne(gbtDirec, gbtStagePattern);
                             //Define.NORTH_LEFT
                         }
@@ -2399,6 +2433,10 @@ public class StageActivity extends Activity {
             }
         }
     }
+
+    /**
+     * 隐藏所有方向图标
+     */
     private void hiddenImageViews(){
         Iterator<ImageView> imageViewIterator = imageViews.iterator();
         while(imageViewIterator.hasNext()){
@@ -2406,6 +2444,10 @@ public class StageActivity extends Activity {
         }
 
     }
+
+    /**
+     * 隐藏所有阶段小图
+     */
     private void hiddenViews(){
         Iterator<View> viewIterator = views.iterator();
         while(viewIterator.hasNext()){
@@ -2413,6 +2455,9 @@ public class StageActivity extends Activity {
         }
     }
 
+    /**
+     * 根据方向表数据，对方向上的图片进行显示或隐藏
+     */
     private void displayOrHidden(){
         Iterator<GbtDirec> gbtDirecIterator = gbtDirecs.iterator();
         while(gbtDirecIterator.hasNext()){
@@ -2425,6 +2470,10 @@ public class StageActivity extends Activity {
         }
     }
 
+    /**
+     * 根据方向数据，显示大图上的绿灯
+     * @param gbtDirec
+     */
     private void setBigGreenOne(GbtDirec gbtDirec){
         if(gbtDirec.getDirecId() == GbtDefine.I_NORTH_LEFT){
             setGreenOne(stage_northLeft);
@@ -2491,6 +2540,9 @@ public class StageActivity extends Activity {
         }
     }
 
+    /**
+     * 将小图中的配置反应到大图中。
+     */
     private void small2BigMap(){
         //selected_id
         int stageid = np_stage_pattern_id.getValue();
@@ -2534,6 +2586,7 @@ public class StageActivity extends Activity {
         initImageViews();
         hiddenViews();
         hiddenImageViews();
+        //得到数据库中对像的数据
         TscNode node = AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(this));
         FinalDb db = AndroidTscDefine.getFinalDb(this);
         gbtStagePatterns = db.findAllByWhere(GbtStagePattern.class,"deviceId = '"+node.getId()+"'");
@@ -2548,7 +2601,6 @@ public class StageActivity extends Activity {
                 displayStageView(gbtStagePattern);
                 displayGreen2Small(gbtStagePattern,gbtDirecs);
             }
-
         }
         displayOrHidden();
 
@@ -6506,7 +6558,6 @@ public class StageActivity extends Activity {
         }else{
             //将未放行的相位设置成放行相位，也就是绿灯
             setAllowPhaseByDirec(GbtDefine.I_EAST_STRAIGHT);
-
             changeDirec2GreenBySmall(GbtDefine.I_EAST_STRAIGHT);
             changeDirec2Green(GbtDefine.I_EAST_STRAIGHT);
             east_straight = true;
@@ -8214,6 +8265,10 @@ public class StageActivity extends Activity {
             stage16_small_westNone2.setVisibility(View.INVISIBLE);
         }
     }
+
+    /**
+     * 初始化VIew对象
+     */
     private void initView(){
         stage1 = findViewById(R.id.stage1);
         stage2 = findViewById(R.id.stage2);

@@ -75,7 +75,10 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             while(gbtTimeBaseIterator.hasNext()){
                 GbtTimeBase gbtTimeBase = gbtTimeBaseIterator.next();
                 byte timeBaseId =(byte)gbtTimeBase.getTimeBaseId();
-                byte[] monthFlag = ByteUtils.shortToByte(gbtTimeBase.getMonth());
+                byte[] monthFlagtemp = ByteUtils.intToByte(gbtTimeBase.getMonth());
+                byte[] monthFlag = new byte[2];
+                monthFlag[0] = monthFlagtemp[0];
+                monthFlag[1] = monthFlagtemp[1];
                 byte weekFlag = (byte)gbtTimeBase.getWeek();
                 byte[] dayFlag = ByteUtils.intToByte(gbtTimeBase.getDay());
                 byte scheduleId = (byte)gbtTimeBase.getScheduleId();
@@ -118,7 +121,10 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             while(gbtTimeBaseIterator.hasNext()){
                 GbtTimeBase gbtTimeBase = gbtTimeBaseIterator.next();
                 byte timeBaseId =(byte)gbtTimeBase.getTimeBaseId();
-                byte[] monthFlag = ByteUtils.shortToByte(gbtTimeBase.getMonth());
+                byte[] monthFlagtemp = ByteUtils.intToByte(gbtTimeBase.getMonth());
+                byte[] monthFlag = new byte[2];
+                monthFlag[0] = monthFlagtemp[0];
+                monthFlag[1] = monthFlagtemp[1];
                 byte weekFlag = (byte)gbtTimeBase.getWeek();
                 byte[] dayFlag = ByteUtils.intToByte(gbtTimeBase.getDay());
                 byte scheduleId = (byte)gbtTimeBase.getScheduleId();

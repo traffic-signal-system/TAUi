@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,6 +39,8 @@ import cn.com.aiton.utils.GbtDefine;
 
 public class PhaseConfigActivity extends FinalActivity {
 
+    @ViewInject(id=R.id.tv_phase_config_alarm)
+    TextView tv_phase_config_alarm;
     @ViewInject(id=R.id.tv_northleft)
     TextView tv_northleft;
     @ViewInject(id=R.id.tv_northstraight)
@@ -110,7 +113,7 @@ public class PhaseConfigActivity extends FinalActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         setContentView(R.layout.activity_phase_config);
-
+        tv_phase_config_alarm.setMovementMethod(ScrollingMovementMethod.getInstance());
         FinalDb db = AndroidTscDefine.getFinalDb(PhaseConfigActivity.this);
         SharedPreferences sp = this.getSharedPreferences(AndroidTscDefine.TSCNODE, MODE_PRIVATE);
         TscNode node = AndroidTscDefine.spToTscNode(sp);

@@ -107,16 +107,16 @@ public class AndroidTscDefine {
      */
     public static Map<String,String> scheduleToMap(GbtSchedule gbtSchedule){
         Map<String,String> map = new HashMap<String, String>();
-        map.put("auxOut",String.valueOf(gbtSchedule.getAuxOut()));
-        map.put("beginHour",String.valueOf(gbtSchedule.getBeginHour()));
-        map.put("beginMinute",String.valueOf(gbtSchedule.getBeginMinute()));
-        map.put("controlMode",intToDetail(String.valueOf(gbtSchedule.getControlMode())));
-        map.put("deviceId",String.valueOf(gbtSchedule.getDeviceId()));
-        map.put("eventId",String.valueOf(gbtSchedule.getEventId()));
-        map.put("id",String.valueOf(gbtSchedule.getId()));
-        map.put("scheduleId",String.valueOf(gbtSchedule.getScheduleId()));
-        map.put("specialOut",String.valueOf(gbtSchedule.getSpecialOut()));
-        map.put("timePatternId",String.valueOf(gbtSchedule.getTimePatternId()));
+        map.put("auxOut", String.valueOf(gbtSchedule.getAuxOut()));
+        map.put("beginHour", String.valueOf(gbtSchedule.getBeginHour()));
+        map.put("beginMinute", String.valueOf(gbtSchedule.getBeginMinute()));
+        map.put("controlMode", intToDetail(String.valueOf(gbtSchedule.getControlMode())));
+        map.put("deviceId", String.valueOf(gbtSchedule.getDeviceId()));
+        map.put("eventId", String.valueOf(gbtSchedule.getEventId()));
+        map.put("id", String.valueOf(gbtSchedule.getId()));
+        map.put("scheduleId", String.valueOf(gbtSchedule.getScheduleId()));
+        map.put("specialOut", String.valueOf(gbtSchedule.getSpecialOut()));
+        map.put("timePatternId", String.valueOf(gbtSchedule.getTimePatternId()));
         return map;
     }
     public static List<GbtSchedule> listMapToListSchedule(List<Map<String,String>> maps){
@@ -166,6 +166,146 @@ public class AndroidTscDefine {
             return "手动控制";
         }else{
             return "自主控制";
+        }
+    }
+
+    public static String timePatternIntToDetail(int i){
+        if (i==1){
+            return "方案1";
+        }else if(i==2){
+            return "方案2";
+        }else if(i==3){
+            return "方案3";
+        }else if(i==4){
+            return "方案4";
+        }else if(i==5){
+            return "方案5";
+        }else if(i==6){
+            return "方案6";
+        }else if(i==7){
+            return "方案7";
+        }else if(i==8){
+            return "方案8";
+        }else if(i==9){
+            return "方案9";
+        }else if(i==10){
+            return "方案10";
+        }else if(i==11){
+            return "方案11";
+        }else if(i==12){
+            return "方案12";
+        }else if(i==13){
+            return "方案13";
+        }else if(i==14){
+            return "方案14";
+        }else if(i==15){
+            return "方案15";
+        }else if(i==16){
+            return "方案16";
+        }else if(i==17){
+            return "方案17";
+        }else if(i==18){
+            return "方案18";
+        }else if(i==19){
+            return "方案19";
+        }else if(i==20){
+            return "方案20";
+        }else if(i==21){
+            return "方案21";
+        }else if(i==22){
+            return "方案22";
+        }else if(i==23){
+            return "方案23";
+        }else if(i==24){
+            return "方案24";
+        }else if(i==25){
+            return "方案25";
+        }else if(i==26){
+            return "方案26";
+        }else if(i==27){
+            return "方案27";
+        }else if(i==28){
+            return "方案28";
+        }else if(i==29){
+            return "方案29";
+        }else if(i==30){
+            return "方案30";
+        }else if(i==31){
+            return "方案31";
+        }else if(i==32){
+            return "方案32";
+        }else{
+            return "方案0";
+        }
+    }
+
+    public static int timePatternDetailToInt(String string){
+        if (string.equals("方案1")){
+            return 1;
+        }else if(string.equals("方案2")){
+            return 2;
+        }else if(string.equals("方案3")){
+            return 3;
+        }else if(string.equals("方案4")){
+            return 4;
+        }else if(string.equals("方案5")){
+            return 5;
+        }else if(string.equals("方案6")){
+            return 6;
+        }else if(string.equals("方案7")){
+            return 7;
+        }else if(string.equals("方案8")){
+            return 8;
+        }else if(string.equals("方案9")){
+            return 9;
+        }else if(string.equals("方案10")){
+            return 10;
+        }else if(string.equals("方案11")){
+            return 11;
+        }else if(string.equals("方案12")){
+            return 12;
+        }else if(string.equals("方案13")){
+            return 13;
+        }else if(string.equals("方案14")){
+            return 14;
+        }else if(string.equals("方案15")){
+            return 15;
+        }else if(string.equals("方案16")){
+            return 16;
+        }else if(string.equals("方案17")){
+            return 17;
+        }else if(string.equals("方案18")){
+            return 18;
+        }else if(string.equals("方案19")){
+            return 19;
+        }else if(string.equals("方案20")){
+            return 20;
+        }else if(string.equals("方案21")){
+            return 21;
+        }else if(string.equals("方案22")){
+            return 22;
+        }else if(string.equals("方案23")){
+            return 23;
+        }else if(string.equals("方案24")){
+            return 24;
+        }else if(string.equals("方案25")){
+            return 25;
+        }else if(string.equals("方案26")){
+            return 26;
+        }else if(string.equals("方案27")){
+            return 27;
+        }else if(string.equals("方案28")){
+            return 28;
+        }else if(string.equals("方案29")){
+            return 29;
+        }else if(string.equals("方案30")){
+            return 30;
+        }else if(string.equals("方案31")){
+            return 31;
+        }else if(string.equals("方案32")){
+            return 32;
+        }else{
+            return 0;
         }
     }
 

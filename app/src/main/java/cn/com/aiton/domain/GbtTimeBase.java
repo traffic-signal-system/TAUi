@@ -12,7 +12,7 @@ public class GbtTimeBase {
 
 	private int timeBaseId;
 
-	private short month;
+	private int month;
 
 	private int week;
 
@@ -44,11 +44,11 @@ public class GbtTimeBase {
         this.timeBaseId = timeBaseId;
     }
 
-    public short getMonth() {
+    public int getMonth() {
         return month;
     }
 
-    public void setMonth(short month) {
+    public void setMonth(int month) {
         this.month = month;
     }
 

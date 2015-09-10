@@ -416,10 +416,10 @@ public class ManaulActivity extends FinalActivity {
                  //   Collections.reverse(listChannelRed);
                     List<Integer> listChannelYellow = ers.getListChannelYellowStatus();
                   //  Collections.reverse(listChannelYellow);
-                    System.out.println(listChannelRed);
-                    System.out.println(listChannelYellow);
+                    //System.out.println(listChannelRed);
+                   // System.out.println(listChannelYellow);
 
-                    System.out.println(listChannelGreen);
+                  //  System.out.println(listChannelGreen);
                     for(int i=0;i<listChannelGreen.size();i++){
                         for(int j=0;j<gbtChannelList.size();j++){
                             GbtChannel gbtchannel = gbtChannelList.get(j);
@@ -610,7 +610,7 @@ public class ManaulActivity extends FinalActivity {
                     msg.what = SUCCESS;
 
                     byte[] bytes = ucs.receiveByte(node.getIpAddress(),node.getPort());
-                    System.out.println("bytes : "+Integer.toHexString(bytes[0])+" "+Integer.toHexString(bytes[1])+" "+Integer.toHexString(bytes[2])+" "+Integer.toHexString(bytes[3])+" "+Integer.toHexString(bytes[4])+" "+Integer.toHexString(bytes[5])+" "+Integer.toHexString(bytes[6])+" "+Integer.toHexString(bytes[7])+" "+Integer.toHexString(bytes[8])+" "+Integer.toHexString(bytes[9])+" "+Integer.toHexString(bytes[10])+" "+Integer.toHexString(bytes[11])+" "+Integer.toHexString(bytes[12])+" "+Integer.toHexString(bytes[13])+" "+Integer.toHexString(bytes[14])+" "+Integer.toHexString(bytes[15])+" "+Integer.toHexString(bytes[16])+" "+Integer.toHexString(bytes[17])+" "+Integer.toHexString(bytes[18])+" "+Integer.toHexString(bytes[19])+" "+Integer.toHexString(bytes[20])+" "+Integer.toHexString(bytes[21])+" "+Integer.toHexString(bytes[22])+" "+Integer.toHexString(bytes[23])+" "+ Integer.toHexString(bytes[24])+" "+ Integer.toHexString(bytes[25])+" "+ Integer.toHexString(bytes[26])+" "+ Integer.toHexString(bytes[27])+" "+ Integer.toHexString(bytes[28]));
+                   // System.out.println("bytes : "+Integer.toHexString(bytes[0])+" "+Integer.toHexString(bytes[1])+" "+Integer.toHexString(bytes[2])+" "+Integer.toHexString(bytes[3])+" "+Integer.toHexString(bytes[4])+" "+Integer.toHexString(bytes[5])+" "+Integer.toHexString(bytes[6])+" "+Integer.toHexString(bytes[7])+" "+Integer.toHexString(bytes[8])+" "+Integer.toHexString(bytes[9])+" "+Integer.toHexString(bytes[10])+" "+Integer.toHexString(bytes[11])+" "+Integer.toHexString(bytes[12])+" "+Integer.toHexString(bytes[13])+" "+Integer.toHexString(bytes[14])+" "+Integer.toHexString(bytes[15])+" "+Integer.toHexString(bytes[16])+" "+Integer.toHexString(bytes[17])+" "+Integer.toHexString(bytes[18])+" "+Integer.toHexString(bytes[19])+" "+Integer.toHexString(bytes[20])+" "+Integer.toHexString(bytes[21])+" "+Integer.toHexString(bytes[22])+" "+Integer.toHexString(bytes[23])+" "+ Integer.toHexString(bytes[24])+" "+ Integer.toHexString(bytes[25])+" "+ Integer.toHexString(bytes[26])+" "+ Integer.toHexString(bytes[27])+" "+ Integer.toHexString(bytes[28]));
                     Bundle bundle = new Bundle();
                     ExtReportState ers = ExtReportUtils.byte2ReportState(bytes);
 
