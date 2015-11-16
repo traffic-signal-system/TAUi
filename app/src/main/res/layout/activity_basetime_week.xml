@@ -115,6 +115,7 @@
                 android:id="@+id/cbxSunday" />
 
             <CheckBox
+                android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/all"
@@ -129,6 +130,16 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
+
+        <Button
+            android:visibility="visible"
+            android:onClick="btWeekRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendtotsc"
+            android:layout_weight="1"
+            android:id="@+id/btnRead"/>
         <Button
             android:onClick="btWeekSubmit"
             android:layout_width="wrap_content"
@@ -136,15 +147,6 @@
             android:text="@string/submit"
             android:layout_weight="1"
             android:id="@+id/btnSubmit"/>
-
-        <Button
-            android:onClick="btWeekRead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/read"
-            android:layout_weight="1"
-            android:id="@+id/btnRead"/>
-
         </LinearLayout>
 
 

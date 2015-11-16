@@ -39,8 +39,7 @@ import cn.com.aiton.utils.GbtDefine;
 
 public class PhaseConfigActivity extends FinalActivity {
 
-    @ViewInject(id=R.id.tv_phase_config_alarm)
-    TextView tv_phase_config_alarm;
+
     @ViewInject(id=R.id.tv_northleft)
     TextView tv_northleft;
     @ViewInject(id=R.id.tv_northstraight)
@@ -108,6 +107,8 @@ public class PhaseConfigActivity extends FinalActivity {
     TextView tv_westnone1;
     @ViewInject(id=R.id.tv_westnone2)
     TextView tv_westnone2;
+    @ViewInject(id=R.id.tv_phase_config_alarm)
+    TextView tv_phase_config_alarm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,6 +124,13 @@ public class PhaseConfigActivity extends FinalActivity {
             displayPhaseToDirec(gbtDirecIterator.next());
         }
     }
+
+    /**
+     * 根据方向对象，显示如果主相位有数据便是显示主相位，
+     * 如果主相位没有数据，跟随相位有数据，显示跟随相位的数据
+     * @param gbtDirec
+     * @return
+     */
     private int phaseOrOverlap(GbtDirec gbtDirec){
         if(gbtDirec.getPhaseId() != 0){
             return gbtDirec.getPhaseId();
@@ -134,6 +142,11 @@ public class PhaseConfigActivity extends FinalActivity {
             }
         }
     }
+
+    /**
+     * 根据信号机方向对象数据来在界面上显示 方向的相位号。
+     * @param gbtDirec
+     */
     private void displayPhaseToDirec(GbtDirec gbtDirec){
        switch(gbtDirec.getDirecId()){
            case GbtDefine.I_NORTH_LEFT:
@@ -336,6 +349,13 @@ public class PhaseConfigActivity extends FinalActivity {
     public void westNone2(View view){
         showDialog(PhaseConfigActivity.this,GbtDefine.I_WEST_NONE2);
     }
+
+    /**
+     *  根据，主相位 或 跟随相位。将方向上的相位ID及方向保存到GBTDirec对象中。
+     * @param isPhase   true 主相位    false 跟随相位
+     * @param phaseid   相位ID
+     * @param direc         方向
+     */
     private void updateDirecInDb(boolean isPhase, int phaseid,int direc){
         FinalDb db = AndroidTscDefine.getFinalDb(PhaseConfigActivity.this);
         TscNode node = AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(PhaseConfigActivity.this));
@@ -404,13 +424,42 @@ public class PhaseConfigActivity extends FinalActivity {
     };
     TscNode sendTscNode;
     List<GbtDirec> sendGbtDirecs;
-    public void configSaveToTsc(View view){
 
+    /**
+     * 主要是将更改后的相位，方向数据保存到信号机中。以便信号机在下一个周期立刻生效
+     * @param view
+     */
+    public void configSaveToTsc(View view){
         sendTscNode = AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(this));
         sendGbtDirecs = AndroidTscDefine.getFinalDb(this).findAllByWhere(GbtDirec.class,"deviceId = '"+sendTscNode.getId()+"'");
         Thread t1 = new Thread(runnable);
         t1.start();
     }
+    public void checkData(View view){
+        TscNode node= AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(this));
+        List<GbtDirec> gbtDirecs = AndroidTscDefine.getFinalDb(this).findAllByWhere(GbtDirec.class, "deviceId = '" + node.getId() + "'");
+        Iterator<GbtDirec> gbtDirecIterator = gbtDirecs.iterator();
+        while (gbtDirecIterator.hasNext()){
+            GbtDirec gbtDirec = gbtDirecIterator.next();
+            if(gbtDirec.getDirecId() == 0){
+                tv_phase_config_alarm.append("方向的ID存在0的严重数据异常，请联系厂家！！！");
+        }
+            if(gbtDirec.getPhaseId() == 0 && gbtDirec.getOverlapId()==0){
+                tv_phase_config_alarm.append("方向上的主相位与跟随相位都没有绑定，请重新配置！");
+            }
+            if(gbtDirec.getRoadCount() == 0){
+                tv_phase_config_alarm.append("方向上的车道数据为0，请联系厂家！");
+            }
+        }
+    }
+
+    /**
+     * 将修改的方向上的相位ID变更后，并将数据修改后的ID  保存到数据库中。
+     * @param phaseid    相位ID
+     * @param direc         方向
+     * @param isPhase       true 主相位，false 跟随 相位
+     */
+
     private void setPhaseToTextViewAndDb(int phaseid,int direc,boolean isPhase){
         switch(direc){
             case GbtDefine.I_NORTH_LEFT:
@@ -545,7 +594,7 @@ public class PhaseConfigActivity extends FinalActivity {
 
         }
     }
-    //显示基本的AlertDialog
+    //显示基本的AlertDialog，显示内容有相位ID的选择，主相位与跟随相位的选择
     private void showDialog(Context context, final int direc) {
         LayoutInflater inflater = LayoutInflater.from(this);
         final View textEntryView = inflater.inflate(
@@ -556,6 +605,7 @@ public class PhaseConfigActivity extends FinalActivity {
         edtInput.setMinValue(1);
         edtInput.setMaxValue(32);
         edtInput.setValue(1);
+        edtInput.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
         final AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.tsc_page_phase);
@@ -563,6 +613,11 @@ public class PhaseConfigActivity extends FinalActivity {
         builder.setView(textEntryView);
         builder.setPositiveButton("确认",
                 new DialogInterface.OnClickListener() {
+                    /**
+                     * 点击确认按钮后，根据主相位选中，还是跟随相位选中。来更新界面上的相位号及数据库的数据
+                     * @param dialog
+                     * @param whichButton
+                     */
                     public void onClick(DialogInterface dialog, int whichButton) {
 
                         if(rb_phase.isChecked()){

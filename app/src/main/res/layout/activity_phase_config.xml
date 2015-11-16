@@ -796,7 +796,12 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/phase_config_save"/>
+        <Button
 
+            android:onClick="checkData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check"/>
 
     </LinearLayout>
     <LinearLayout
@@ -812,7 +817,7 @@
             android:singleLine="false"
             android:maxLines="15"
             android:textColor="#FF0000"
-            android:text="@string/phase_config_save"/>
+            android:text=""/>
 
 
     </LinearLayout>

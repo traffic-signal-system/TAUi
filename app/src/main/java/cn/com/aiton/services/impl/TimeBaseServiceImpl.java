@@ -80,7 +80,12 @@ public class TimeBaseServiceImpl implements TimeBaseService {
                 monthFlag[0] = monthFlagtemp[0];
                 monthFlag[1] = monthFlagtemp[1];
                 byte weekFlag = (byte)gbtTimeBase.getWeek();
-                byte[] dayFlag = ByteUtils.intToByte(gbtTimeBase.getDay());
+                byte[] dayFl = ByteUtils.longToByte(gbtTimeBase.getDay());
+                byte[] dayFlag = new byte[4];
+                dayFlag[0] = dayFl[0];
+                dayFlag[1] = dayFl[1];
+                dayFlag[2] = dayFl[2];
+                dayFlag[3] = dayFl[3];
                 byte scheduleId = (byte)gbtTimeBase.getScheduleId();
                 hex = ArrayUtils.add(hex,timeBaseId);
                 hex = ArrayUtils.addAll(hex,monthFlag);
@@ -95,6 +100,7 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
            //System.out.println("服务端回应数据：" + info);
+            message = CheckGbt.check(bytes);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();
@@ -126,7 +132,12 @@ public class TimeBaseServiceImpl implements TimeBaseService {
                 monthFlag[0] = monthFlagtemp[0];
                 monthFlag[1] = monthFlagtemp[1];
                 byte weekFlag = (byte)gbtTimeBase.getWeek();
-                byte[] dayFlag = ByteUtils.intToByte(gbtTimeBase.getDay());
+                byte[] dayfl = ByteUtils.longToByte(gbtTimeBase.getDay());
+                byte[] dayFlag = new byte[4];
+                dayFlag[0] = dayfl[0];
+                dayFlag[1] = dayfl[1];
+                dayFlag[2] = dayfl[2];
+                dayFlag[3] = dayfl[3];
                 byte scheduleId = (byte)gbtTimeBase.getScheduleId();
                 hex = ArrayUtils.add(hex,timeBaseId);
                 hex = ArrayUtils.addAll(hex,monthFlag);
@@ -141,6 +152,7 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
            // System.out.println("服务端回应数据：" + info);
+            message = CheckGbt.check(bytes);
 //TODO   缩写是否成功部分
         }catch (Exception ex){
             ex.printStackTrace();

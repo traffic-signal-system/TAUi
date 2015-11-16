@@ -16,7 +16,7 @@ public class GbtTimeBase {
 
 	private int week;
 
-	private int day;
+	private long day;
 
 	private int scheduleId;
 
@@ -60,11 +60,11 @@ public class GbtTimeBase {
         this.week = week;
     }
 
-    public int getDay() {
+    public long getDay() {
         return day;
     }
 
-    public void setDay(int day) {
+    public void setDay(long day) {
         this.day = day;
     }
 

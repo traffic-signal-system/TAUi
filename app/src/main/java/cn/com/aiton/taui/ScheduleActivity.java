@@ -52,6 +52,8 @@ import cn.com.aiton.domain.GbtSchedule;
 import cn.com.aiton.domain.GbtTimePattern;
 import cn.com.aiton.domain.TimePatterDesc;
 import cn.com.aiton.domain.TscNode;
+import cn.com.aiton.services.ScheduleService;
+import cn.com.aiton.services.impl.ScheduleServiceImpl;
 import cn.com.aiton.utils.AndroidTscDefine;
 
 
@@ -236,6 +238,12 @@ android.os.Handler handler = new android.os.Handler(){
                     gbtSchedule.setTimePatternId(((TimePatterDesc) lvs_sp_time_pattern_id.getSelectedItem()).getValue());
                     mData.get(position).put("timePatternId", ((TimePatterDesc) lvs_sp_time_pattern_id.getSelectedItem()).getValue() + "");
                     db.update(gbtSchedule);
+                    //<<<<<<<<<<<<< 这个地方将信号机的schedule 数据发送到信号机端。目前这里只实现了保存到android 数据库中
+
+                    List<GbtSchedule> gbtSchedules = db.findAllByWhere(GbtSchedule.class,"deviceId="+node.getId());
+                    ScheduleService scheduleService = new ScheduleServiceImpl();
+                    scheduleService.setSchedule(node,gbtSchedules);
+                    //>>>>>>>>>>>>>>>>>>
                     popWindow.dismiss(); //Close the Pop Window
                     myAdapter.notifyDataSetChanged();
                   //  MyAdapter myAdapter = new MyAdapter(ScheduleActivity.this);

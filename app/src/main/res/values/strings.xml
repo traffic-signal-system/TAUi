@@ -51,8 +51,10 @@
     <string name="october">十月</string>
     <string name="november">十一月</string>
     <string name="december">十二月</string>
-    <string name="submit">提交</string>
+    <string name="submit">保存到数据库</string>
+    <string name="check">检测信号机数据合法性</string>
     <string name="read">读取</string>
+    <string name="sendtotsc">更新到信号机</string>
     <string name="title_activity_manaul">手动控制</string>
     <string name="title_activity_schedule">时段设置</string>
     <string name="loadtsc">加载信号机</string>

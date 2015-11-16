@@ -167,18 +167,20 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
+
+        <Button
+            android:visibility="visible"
+            android:onClick="btMonthBtnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sendtotsc"/>
         <Button
             android:onClick="btMonthBtnSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/submit"/>
-        <Button
-            android:onClick="btMonthBtnRead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/read"/>
         </LinearLayout>
 
 </LinearLayout>
